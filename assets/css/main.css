@@ -57,6 +57,18 @@ footer a {
   text-decoration: underline;
 }
 
+.not-found {
+  display: grid;
+  place-items: center center;
+  padding-top: 150px;
+}
+.not-found h1 {
+  font-size: 45px;
+}
+.not-found p {
+  font-size: 22px;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
