@@ -1,0 +1,34 @@
+@use "./constants" as *
+
+nav
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  background-color: $colors-black
+  padding: $spacing-s $spacing-s
+
+  img
+    height: 50px
+
+  ul
+    display: flex
+
+    li
+      margin: $spacing-xs
+    
+    a
+      color: $colors-white
+      font-weight: bold
+      font-size: $fontSizes-l
+      position: relative
+
+    a:hover:before
+      content: ''
+      position: absolute
+      bottom: -5px
+      left: 0
+      right: 0
+      height: 3px
+      background-color: $colors-white
+  
