@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-
-<ul class="post-list">
-  {% for post in site.posts %}
-  {% include post-list-item.html 
+<main class="blog">
+  <ul>
+    {% for post in site.posts %}
+    {% include post-list-item.html 
           title=post.title
           url=post.url
           excerpt=post.excerpt
@@ -13,5 +13,6 @@ layout: default
           date=post.date
           min=post.minutes
       %}
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</main>

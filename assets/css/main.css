@@ -57,6 +57,25 @@ footer a {
   text-decoration: underline;
 }
 
+.blog {
+  padding: 30px 30px;
+}
+@media only screen and (min-width: 680px) and (max-width: 855px) {
+  .blog {
+    padding: 30px 60px;
+  }
+}
+@media only screen and (min-width: 855px) and (max-width: 1182px) {
+  .blog {
+    padding: 30px 100px;
+  }
+}
+@media only screen and (min-width: 1182px) {
+  .blog {
+    padding: 30px 250px;
+  }
+}
+
 .not-found {
   display: grid;
   place-items: center center;
@@ -67,10 +86,6 @@ footer a {
 }
 .not-found p {
   font-size: 22px;
-}
-
-.post-list {
-  padding: 30px 60px;
 }
 
 .post-list-item {
