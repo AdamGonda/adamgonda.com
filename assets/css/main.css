@@ -1,158 +1,17 @@
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #222222;
-  padding: 30px 30px;
-}
-nav img {
-  height: 50px;
-}
-nav ul {
-  display: flex;
-}
-nav ul li {
-  margin: 10px;
-}
-nav ul a {
-  color: #FFFFFF;
-  font-weight: bold;
-  font-size: 22px;
-  position: relative;
-}
-nav ul a:hover:before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background-color: #FFFFFF;
-}
-@media only screen and (min-width: 680px) {
-  nav {
-    padding: 30px 60px;
-  }
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 3 | @use "./blog"
+ *   | ^^^^^^^^^^^^^
+ *   '
+ *   main.sass 3:1  root stylesheet */
 
-.current-page:before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background-color: #FFFFFF;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @use \"./blog\"\a   \2502  ^^^^^^^^^^^^^\a   \2575 \a   main.sass 3:1  root stylesheet";
 }
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 50px;
-  background-color: #222222;
-  color: white;
-  font-size: 14px;
-}
-footer p,
-footer span {
-  margin: 0 10px;
-}
-footer p {
-  font-size: 10px;
-}
-footer a {
-  text-decoration: underline;
-}
-
-.blog {
-  padding: 30px 30px;
-}
-@media only screen and (min-width: 680px) and (max-width: 855px) {
-  .blog {
-    padding: 30px 60px;
-  }
-}
-@media only screen and (min-width: 855px) and (max-width: 1182px) {
-  .blog {
-    padding: 30px 100px;
-  }
-}
-@media only screen and (min-width: 1182px) {
-  .blog {
-    padding: 30px 250px;
-  }
-}
-
-.not-found {
-  display: grid;
-  place-items: center center;
-  padding-top: 150px;
-}
-.not-found h1 {
-  font-size: 45px;
-}
-.not-found p {
-  font-size: 22px;
-}
-
-.post-list-item {
-  margin-bottom: 60px;
-}
-.post-list-item a {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.post-list-item a section {
-  padding-right: 30px;
-}
-.post-list-item a section h1 {
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-.post-list-item a section p {
-  font-size: 14px;
-}
-.post-list-item a section span {
-  display: inline-block;
-  font-size: 14px;
-  margin-top: 10px;
-}
-.post-list-item img {
-  width: 150px;
-  object-fit: cover;
-}
-
-.tags {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-}
-.tags p {
-  font-weight: bold;
-  font-size: 14px;
-}
-.tags span {
-  font-size: 10px;
-}
-.tags li {
-  font-weight: bold;
-  font-size: 14px;
-  border: 2px solid #222222;
-  padding: 2px 5px;
-  margin-right: 5px;
-}
-
-body {
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-.content {
-  min-height: calc(100vh - 160px);
-}
-
-/*# sourceMappingURL=main.css.map */

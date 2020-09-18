@@ -4,8 +4,21 @@
 @use "./notfoundpage"
 @use "./post-list-item"
 
+@use "./constants" as *
+
+
 body
   font-family: 'Source Sans Pro', sans-serif
 
 .content
   min-height: calc(100vh - 160px)
+  padding: $spacing-s $spacing-s
+
+  @media only screen and (min-width: $breakPoints-s) and (max-width: $breakPoints-m)
+    padding: $spacing-s $spacing-m
+  
+  @media only screen and (min-width: $breakPoints-m) and (max-width: $breakPoints-xl)
+    padding: $spacing-s $spacing-l
+  
+  @media only screen and (min-width: $breakPoints-xl)
+    padding: $spacing-s $spacing-xxl
