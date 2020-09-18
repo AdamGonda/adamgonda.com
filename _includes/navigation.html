@@ -4,10 +4,10 @@
   </a>
   <ul>
     <li>
-      <a href="/">Blog</a>
+      <a href="/" {% if page.url == "/" %}class="current-page"{% endif %}>Blog</a>
     </li>
     <li>
-      <a href="/about">About</a>
+      <a href="/about" {% if page.url == "/about.html" %}class="current-page"{% endif %}>About</a>
     </li>
   </ul>
 </nav>
