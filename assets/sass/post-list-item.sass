@@ -1,0 +1,49 @@
+@use "./constants" as *
+
+.post-list-item
+  margin-bottom: $spacing-m
+
+  a
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+    section
+      padding-right: $spacing-s
+
+      h1
+        font-weight: bold
+        font-size: $fontSizes-m
+        margin-bottom: $spacing-xs
+      
+      p
+        font-size: $fontSizes-s
+      
+      span
+        display: inline-block
+        font-size: $fontSizes-s
+        margin-top: $spacing-xs
+
+  img
+    width: 150px
+    object-fit: cover
+
+
+.tags
+  margin-top: $spacing-ss
+  display: flex
+  align-items: center
+
+  p
+    font-weight: bold
+    font-size: $fontSizes-s
+  
+  span
+    font-size: $fontSizes-xs
+  
+  li
+    font-weight: bold
+    font-size: $fontSizes-s
+    border: 2px solid $colors-black
+    padding: 2px $spacing-xxs
+    margin-right: $spacing-xxs

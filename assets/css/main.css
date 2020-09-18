@@ -69,6 +69,59 @@ footer a {
   font-size: 22px;
 }
 
+.post-list {
+  padding: 30px 60px;
+}
+
+.post-list-item {
+  margin-bottom: 60px;
+}
+.post-list-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.post-list-item a section {
+  padding-right: 30px;
+}
+.post-list-item a section h1 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.post-list-item a section p {
+  font-size: 14px;
+}
+.post-list-item a section span {
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.post-list-item img {
+  width: 150px;
+  object-fit: cover;
+}
+
+.tags {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.tags p {
+  font-weight: bold;
+  font-size: 14px;
+}
+.tags span {
+  font-size: 10px;
+}
+.tags li {
+  font-weight: bold;
+  font-size: 14px;
+  border: 2px solid #222222;
+  padding: 2px 5px;
+  margin-right: 5px;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
 }

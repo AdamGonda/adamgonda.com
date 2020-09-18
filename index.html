@@ -1,4 +1,17 @@
 ---
 layout: default
 ---
-index page
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  {% include post-list-item.html 
+          title=post.title
+          url=post.url
+          excerpt=post.excerpt
+          cover=post.cover
+          tags=post.tags
+          date=post.date
+          min=post.minutes
+      %}
+  {% endfor %}
+</ul>
