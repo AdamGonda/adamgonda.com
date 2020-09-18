@@ -52,6 +52,10 @@ footer a {
   text-decoration: underline;
 }
 
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 .content {
   min-height: calc(100vh - 160px);
 }
