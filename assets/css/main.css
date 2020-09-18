@@ -30,6 +30,11 @@ nav ul a:hover:before {
   height: 3px;
   background-color: #FFFFFF;
 }
+@media only screen and (min-width: 680px) {
+  nav {
+    padding: 30px 60px;
+  }
+}
 
 footer {
   display: flex;
