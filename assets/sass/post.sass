@@ -1,0 +1,31 @@
+@use "./constants" as *
+
+.post
+  header
+    margin-bottom: $spacing-xs
+
+    section
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: $spacing-s
+
+      h1
+        font-size: $fontSizes-xxl
+        margin-bottom: $spacing-xs
+        font-weight: bold
+        font-family: 'Playfair Display', serif
+      
+      p
+        color: $colors-grey
+    
+    img
+      width: 100%
+      height: 30vw
+      object-fit: cover
+
+
+.post
+  main
+    font-family: 'Playfair Display', serif
+    font-size: $fontSizes-l
