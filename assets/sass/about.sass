@@ -1,0 +1,29 @@
+@use "constants" as *
+
+.about
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  header
+    display: flex
+    justify-content: center
+    margin: $spacing-s $spacing-m
+
+    img
+      height: 200px
+      width: 200px
+      border-radius:50%
+      object-fit: cover
+
+  h1
+    font-weight: bold
+    font-size: $fontSizes-l
+    margin-bottom: $spacing-xxs
+
+  p
+    margin-bottom: $spacing-s
+
+  h1,p
+    max-width: 500px
+
