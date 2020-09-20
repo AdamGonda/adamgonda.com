@@ -155,6 +155,7 @@ footer a {
   width: 100%;
   height: 30vw;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .post main {
