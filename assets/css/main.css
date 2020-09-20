@@ -94,9 +94,12 @@ footer a {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
 }
 .post-list-item a section p {
   font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: #606060;
 }
 .post-list-item a section span {
   display: inline-block;
