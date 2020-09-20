@@ -178,10 +178,6 @@ footer a {
 }
 .post main h1,
 .post main h2,
-.post main h3,
-.post main h4,
-.post main h5,
-.post main h6,
 .post main p {
   margin-bottom: 20px;
 }
@@ -190,6 +186,12 @@ footer a {
   max-height: 20vw;
   object-fit: cover;
   margin: 20px 0;
+  border-radius: 5px;
+}
+.post main pre {
+  padding: 25px;
+  border-radius: 5px;
+  overflow: scroll;
 }
 
 body {
