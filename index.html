@@ -4,7 +4,20 @@ layout: default
 <main>
   <ul>
     {% for post in site.posts %}
-    {% include post-list-item.html 
+      {% if forloop.index == 1 %}
+        <div class="new-post">
+          {% include post-list-item.html 
+            title=post.title
+            url=post.url
+            excerpt=post.excerpt
+            cover=post.cover
+            tags=post.tags
+            date=post.date
+            min=post.minutes
+          %}
+        </div>
+      {% else %}
+        {% include post-list-item.html 
           title=post.title
           url=post.url
           excerpt=post.excerpt
@@ -12,7 +25,8 @@ layout: default
           tags=post.tags
           date=post.date
           min=post.minutes
-      %}
+          %}
+      {% endif %}
     {% endfor %}
   </ul>
 </main>

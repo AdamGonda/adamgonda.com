@@ -140,6 +140,20 @@ footer a {
   margin-right: 5px;
 }
 
+.new-post {
+  position: relative;
+}
+
+.new-post:before {
+  position: absolute;
+  content: "new";
+  font-weight: bold;
+  top: -19px;
+  left: 0;
+  color: #FF1F15;
+  font-size: 14px;
+}
+
 .post header {
   margin-bottom: 30px;
 }
@@ -229,21 +243,21 @@ body {
 
 .content {
   min-height: calc(100vh - 160px);
-  padding: 30px 30px;
+  padding: 45px 30px;
 }
 @media only screen and (min-width: 680px) and (max-width: 855px) {
   .content {
-    padding: 30px 60px;
+    padding: 45px 60px;
   }
 }
 @media only screen and (min-width: 855px) and (max-width: 1182px) {
   .content {
-    padding: 30px 100px;
+    padding: 45px 100px;
   }
 }
 @media only screen and (min-width: 1182px) {
   .content {
-    padding: 30px 250px;
+    padding: 45px 250px;
   }
 }
 

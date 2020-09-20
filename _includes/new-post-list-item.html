@@ -1,0 +1,17 @@
+<li class="post-list-item">
+  <a href={{ include.url }}>
+    <section>
+      <h1>{{ include.title }}</h1>
+      <p>{{ include.excerpt }}</p>
+      <ul class="tags">
+        {% for tag in include.tags %}
+        <li>
+          {{ tag }}
+        </li>
+        {% endfor %}
+      </ul>
+      <span>{{ include.date | date_to_string }} - {{ include.min }} min read</span>
+    </section>
+    <img src="/assets/images/{{ include.cover }}" alt="post image">
+  </a>
+</li>
