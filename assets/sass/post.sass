@@ -2,7 +2,7 @@
 
 .post
   header
-    margin-bottom: $spacing-xs
+    margin-bottom: $spacing-s
 
     section
       display: flex
@@ -15,9 +15,6 @@
         margin-bottom: $spacing-xs
         font-weight: bold
         font-family: 'Playfair Display', serif
-      
-      p
-        color: $colors-grey
     
     img
       width: 100%
@@ -29,3 +26,10 @@
   main
     font-family: 'Playfair Display', serif
     font-size: $fontSizes-l
+    padding: 0 $spacing-m
+
+    @media only screen and (max-width: $breakPoints-ss)
+      padding: 0 0
+    
+    @media only screen and (max-width: $breakPoints-l)
+      font-size: $fontSizes-m

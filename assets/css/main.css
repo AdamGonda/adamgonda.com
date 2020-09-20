@@ -137,7 +137,7 @@ footer a {
 }
 
 .post header {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .post header section {
   display: flex;
@@ -151,9 +151,6 @@ footer a {
   font-weight: bold;
   font-family: "Playfair Display", serif;
 }
-.post header section p {
-  color: #606060;
-}
 .post header img {
   width: 100%;
   height: 30vw;
@@ -163,6 +160,17 @@ footer a {
 .post main {
   font-family: "Playfair Display", serif;
   font-size: 22px;
+  padding: 0 60px;
+}
+@media only screen and (max-width: 550px) {
+  .post main {
+    padding: 0 0;
+  }
+}
+@media only screen and (max-width: 1032px) {
+  .post main {
+    font-size: 18px;
+  }
 }
 
 body {
