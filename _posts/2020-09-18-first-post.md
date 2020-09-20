@@ -6,11 +6,20 @@ minutes: 8
 tags:
   - javaScript
 ---
-A banana is an edible fruit – botanically a berry – produced by several kinds
-of large herbaceous flowering plants in the genus Musa.
+This post is for to test out how jekyll markdown works
 
-In some countries, bananas used for cooking may be called "plantains",
-distinguishing them from dessert bananas. The fruit is variable in size, color,
-and firmness, but is usually elongated and curved, with soft flesh rich in
-starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.
+# This is a heading lv1
+
+This will be a paragraph so we can check that how it is looks
+like on the screen thanks good I hope it is cool
+
+# Now render some code
+
+```python
+const foo = 12
+def abc(hello){
+  return hello + 100
+}
+```
+
+![Philadelphia's Magic Gardens. This place was so cool!](/assets/images/2020-09-18-first-post/test.jpg "Philadelphia's Magic Gardens")
