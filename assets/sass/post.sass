@@ -25,23 +25,23 @@
 .post
   main
     font-family: 'Playfair Display', serif
-    font-size: $fontSizes-l
     padding: 0 $spacing-m
+    font-size: $fontSizes-m
 
     @media only screen and (max-width: $breakPoints-ss)
       padding: 0 0
-    
-    @media only screen and (max-width: $breakPoints-l)
-      font-size: $fontSizes-m
+      
 
     h1
+      margin-top: $spacing-s
+      margin-bottom: $spacing-xs
       font-size: $fontSizes-l
       font-weight: bold
+      line-height: initial
 
-    h1,
-    h2,
     p
-      margin-bottom: $spacing-ss
+      margin-bottom: $spacing-m
+      line-height: initial
 
     img
       width: 100%
