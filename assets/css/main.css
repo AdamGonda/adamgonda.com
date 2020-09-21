@@ -140,15 +140,16 @@ footer a {
   margin-right: 5px;
 }
 
-.new-post {
+.new {
   position: relative;
+  border-width: 2px;
 }
 
-.new-post:before {
+.new:before {
   position: absolute;
   content: "new";
   font-weight: bold;
-  top: -19px;
+  top: -20px;
   left: 0;
   color: #FF1F15;
   font-size: 14px;

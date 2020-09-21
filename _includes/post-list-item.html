@@ -1,4 +1,4 @@
-<li class="post-list-item">
+<li class="post-list-item {% if include.loopIdx == 1 %}new{% endif %}">
   <a href={{ include.url }}>
     <section>
       <h1>{{ include.title }}</h1>
