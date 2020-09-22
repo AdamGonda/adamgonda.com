@@ -187,21 +187,21 @@ footer a {
   }
 }
 .post main h1 {
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: bold;
   line-height: initial;
 }
 .post main p {
   margin-bottom: 30px;
+  font-size: 22px;
   line-height: initial;
 }
 .post main img {
   width: 100%;
-  max-height: 20vw;
   object-fit: cover;
-  margin: 20px 0;
+  margin-top: 30px;
   border-radius: 5px;
 }
 .post main pre {
