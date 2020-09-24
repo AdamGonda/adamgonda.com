@@ -22,7 +22,7 @@ title: Adam Gonda
 email: adamgondagyula@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   I am a software developer and this is my blog.
-  I mostly write about topics that interest me and related to development.
+  I mostly write about topics related to software development.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
