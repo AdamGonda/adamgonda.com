@@ -201,12 +201,18 @@ footer a {
 @media only screen and (max-width: 680px) {
   .post main h1 {
     margin-top: 60px;
+    font-size: 22px;
   }
 }
 .post main p {
   margin-bottom: 30px;
   font-size: 22px;
   line-height: initial;
+}
+@media only screen and (max-width: 680px) {
+  .post main p {
+    font-size: 18px;
+  }
 }
 .post main img {
   width: 100%;
@@ -255,6 +261,11 @@ footer a {
   position: relative;
   margin-top: 10px;
   font-size: 22px;
+}
+@media only screen and (max-width: 680px) {
+  .post-content-list li {
+    font-size: 18px;
+  }
 }
 .post-content-list li:before {
   position: absolute;
