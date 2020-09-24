@@ -12,6 +12,17 @@
   <link rel="stylesheet" href="/assets/css/main.css">
   {% feed_meta %}
   {% seo %}
+  {% if jekyll.environment == "production" %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178874876-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-178874876-1');
+  </script>
+  {% endif %}
   <title>Adam Gonda</title>
 </head>
 
