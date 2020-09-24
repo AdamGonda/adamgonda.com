@@ -1,0 +1,9 @@
+<ul class="post-content-list">
+  {% for title in include.titles %}
+    <li>
+      <a href="#{{ title | downcase | replace: " ", "-" }}">
+        {{ title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,29 @@
+@use "constants" as *
+
+.post-content-list
+  padding-left: $spacing-ss
+
+  li
+    position: relative
+    margin-top: $spacing-xs
+    font-size: $fontSizes-l
+
+
+  li:before
+    position: absolute
+    content: '->'
+    top: 0
+    left: - $spacing-ss
+
+  li
+    a
+      position: relative
+
+    a:after
+      position: absolute
+      content: ''
+      bottom: -2px
+      left: 0
+      right: 0
+      background-color: $colors-black
+      height: 2px

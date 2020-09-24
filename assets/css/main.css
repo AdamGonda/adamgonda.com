@@ -248,6 +248,33 @@ footer a {
   max-width: 500px;
 }
 
+.post-content-list {
+  padding-left: 20px;
+}
+.post-content-list li {
+  position: relative;
+  margin-top: 10px;
+  font-size: 22px;
+}
+.post-content-list li:before {
+  position: absolute;
+  content: "->";
+  top: 0;
+  left: -20px;
+}
+.post-content-list li a {
+  position: relative;
+}
+.post-content-list li a:after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  background-color: #222222;
+  height: 2px;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
 }

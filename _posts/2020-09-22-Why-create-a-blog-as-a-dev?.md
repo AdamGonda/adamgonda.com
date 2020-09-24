@@ -7,8 +7,16 @@ tags:
   - why
   - blog
   - dev life
+titles:
+  - Learning by teaching
+  - Stand out
+  - Showcase your knowledge
+  - Organize your thoughts
 ---
 I thought it would be nice to create a shortlist with a few items to explain why I think that it’s a good idea to create a blog as a software developer.
+
+# Content:
+{% include post-content-list.html titles=page.titles %}
 
 # Learning by teaching
 When you have to write about a topic, you have to understand it well enough so you can explain it in detail to others, so if you have holes in your knowledge you inevitably have to learn.
@@ -28,7 +36,7 @@ Finding the right job is not easy, you have to go through a lot of interviews du
 The last time I had to do this I felt that in an ideal situation if I apply somewhere the people who will decide if I am a good fit or not potentially benefit from some kind of an information pool where they can draw from to further investigate me.
 I think in a form of a blog you can showcase your knowledge.
 
-# Organise your toughs
+# Organize your thoughts
 I don’t know if it's just me but I very frequently find myself thinking about different concepts regarding software development. Probably because I am drawn to it and I like to think about them 😄
 
 But I tend to forget stuff so if I create a post about something at least I can find it and also I can show it to others, like colleges, so they can check out what I think about the given subject.
