@@ -15,6 +15,9 @@
         margin-bottom: $spacing-xs
         font-weight: bold
         font-family: 'Playfair Display', serif
+
+        @media only screen and (max-width: $breakPoints-s)
+          font-size: $fontSizes-xl
     
     img
       width: 100%
@@ -38,6 +41,9 @@
       font-size: $fontSizes-xl
       font-weight: bold
       line-height: initial
+
+      @media only screen and (max-width: $breakPoints-s)
+        margin-top: $spacing-m
 
     p
       margin-bottom: $spacing-s
