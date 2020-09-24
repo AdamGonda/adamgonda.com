@@ -15,7 +15,6 @@ titles:
 ---
 I thought it would be nice to create a shortlist with a few items to explain why I think that it’s a good idea to create a blog as a software developer.
 
-# Content:
 {% include post-content-list.html titles=page.titles %}
 
 # Learning by teaching
