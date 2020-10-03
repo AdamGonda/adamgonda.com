@@ -4,7 +4,7 @@ Node, JavaScript, Functional Programing, RPC, Retro Game
 
 ## Why, How it’s made
 
-I started to play with FP as a concept and I wondered how can an application can be built with it.
+I started to play with FP as a concept and I wondered how an application can be built with it.
 I think JavaScript is a good choice if you like to experiment with this paradigm.
 
 I have this good habit regarding experimenting with new tech. I usually build something familiar with it first, something that I built before for a few times, in this case I went with the good old snake game in the terminal.
