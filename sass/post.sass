@@ -59,9 +59,40 @@
       object-fit: cover
       margin-top: $spacing-s
       border-radius: 5px
-      
+
+    a
+      position: relative
+
+    a:after
+      position: absolute
+      content: ''
+      bottom: -2px
+      left: 0
+      right: 0
+      background-color: $colors-black
+      height: 2px
 
     pre
       padding: 25px
       border-radius: 5px
       overflow: scroll
+
+.post
+  main
+    ul
+      padding-left: $spacing-ss
+
+    li
+      position: relative
+      margin-top: $spacing-xs
+      font-size: $fontSizes-l
+
+      @media only screen and (max-width: $breakPoints-s)
+        font-size: $fontSizes-m
+
+
+    li:before
+      position: absolute
+      content: '->'
+      top: 0
+      left: - $spacing-ss

@@ -220,10 +220,42 @@ footer a {
   margin-top: 30px;
   border-radius: 5px;
 }
+.post main a {
+  position: relative;
+}
+.post main a:after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  background-color: #222222;
+  height: 2px;
+}
 .post main pre {
   padding: 25px;
   border-radius: 5px;
   overflow: scroll;
+}
+
+.post main ul {
+  padding-left: 20px;
+}
+.post main li {
+  position: relative;
+  margin-top: 10px;
+  font-size: 22px;
+}
+@media only screen and (max-width: 680px) {
+  .post main li {
+    font-size: 18px;
+  }
+}
+.post main li:before {
+  position: absolute;
+  content: "->";
+  top: 0;
+  left: -20px;
 }
 
 .about {
@@ -252,38 +284,6 @@ footer a {
 }
 .about h1, .about p {
   max-width: 500px;
-}
-
-.post-content-list {
-  padding-left: 20px;
-}
-.post-content-list li {
-  position: relative;
-  margin-top: 10px;
-  font-size: 22px;
-}
-@media only screen and (max-width: 680px) {
-  .post-content-list li {
-    font-size: 18px;
-  }
-}
-.post-content-list li:before {
-  position: absolute;
-  content: "->";
-  top: 0;
-  left: -20px;
-}
-.post-content-list li a {
-  position: relative;
-}
-.post-content-list li a:after {
-  position: absolute;
-  content: "";
-  bottom: -2px;
-  left: 0;
-  right: 0;
-  background-color: #222222;
-  height: 2px;
 }
 
 body {
