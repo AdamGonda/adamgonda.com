@@ -29,6 +29,7 @@ so I took my favorite game to implement [Snake](https://en.wikipedia.org/wiki/Sn
 When it was done I started to think about the [stateless](https://subscription.packtpub.com/book/application_development/9781788831437/1/ch01lvl1sec16/stateless-versus-stateful){:target="_blank"}
 nature of FP and the beauty of this implementation. The business logic is nicely separated from everything
 else, and the whole thing is a pure function. This implementation used [Node](https://nodejs.org/en/){:target="_blank"} and I rendered the game to the [console](https://en.wikipedia.org/wiki/System_console){:target="_blank"}.
+So at this point I had a simple Snake game in the terminal.
 
 # Spice it up
 
@@ -36,7 +37,7 @@ The presentation and the game logic already was two different things.
 The API between the two was very clear, so I started to think... 
 
 One option is to ship the logic to the frontend, but it's too obvious
-and this is my little fun project. So I though that it would be
+and this is my fun little project. So I though that it would be
 interesting if this code stays at the backend.
 The API is already very clear and my implementation is totally stateless
 and separate from the presentation 🤠.
