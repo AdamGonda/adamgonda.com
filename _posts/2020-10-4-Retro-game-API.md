@@ -2,10 +2,11 @@
 layout: post
 author: Adam Gonda
 cover: 2020-10-05/
-minutes: 5
+minutes: 3
 tags:
   - JavaScript
-  - RPC API
+  - RPC
+  - Game
 titles:
   - First steps
   - Spice it up
@@ -13,16 +14,18 @@ titles:
   - PS
 ---
 
-Here comes some kind of short introduction
+This is one of my fun experimental projects. I was interested in FP, so I thought
+I will create a small terminal game. Then things started to evolve…
 
 {% include post-content-list.html titles=page.titles %}
 
 # First steps
 
-It's one of my fun experimental projects. I like to create games and I
+I like to create games, and I
 liked to learn more about [FP](https://en.wikipedia.org/wiki/Functional_programming){:target="_blank"}
 so I took my favorite game to implement [Snake](https://en.wikipedia.org/wiki/Snake_(video_game_genre)){:target="_blank"} and implemented it using
 [JavaScript](https://en.wikipedia.org/wiki/JavaScript){:target="_blank"} in a functional manner.
+
 When it was done I started to think about the [stateless](https://subscription.packtpub.com/book/application_development/9781788831437/1/ch01lvl1sec16/stateless-versus-stateful){:target="_blank"}
 nature of FP and the beauty of this implementation. The business logic is nicely separated from everything
 else, and the whole thing is a pure function. This implementation used [Node](https://nodejs.org/en/){:target="_blank"} and I rendered the game to the [console](https://en.wikipedia.org/wiki/System_console){:target="_blank"}.
