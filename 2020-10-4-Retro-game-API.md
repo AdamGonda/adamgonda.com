@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Adam Gonda
-cover: 2020-10-05/
+cover: 2020-10-05/retro_game_api.png
 minutes: 3
 tags:
   - JavaScript
