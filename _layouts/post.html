@@ -21,7 +21,7 @@ layout: default
         </span>
       </div>
     </section>
-    <img src="/assets/images/{{ page.cover }}">
+    <img src="/assets/images/{{ page.date | date: "%Y-%m-%d" }}/cover.jpg">
   </header>
   <main>
     {{ content }}

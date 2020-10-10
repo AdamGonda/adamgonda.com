@@ -2,6 +2,7 @@
 layout: post
 author: Adam Gonda
 cover: 2020-09-22/writing.jpg
+thumbnail: 2020-09-22/tn.jpg
 minutes: 3
 tags:
   - why
