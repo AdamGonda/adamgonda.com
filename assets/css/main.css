@@ -112,7 +112,7 @@ footer a {
 }
 .post-list-item img {
   max-height: 150px;
-  width: 150px;
+  min-width: 150px;
   object-fit: cover;
 }
 @media only screen and (max-width: 550px) {
