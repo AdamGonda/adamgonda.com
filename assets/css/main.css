@@ -111,6 +111,7 @@ footer a {
   margin-top: 10px;
 }
 .post-list-item img {
+  max-height: 150px;
   width: 150px;
   object-fit: cover;
 }
