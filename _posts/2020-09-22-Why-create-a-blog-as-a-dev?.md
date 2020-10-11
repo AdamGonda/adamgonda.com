@@ -24,8 +24,14 @@ When you have to write about a topic, you have to understand it well enough so y
 If I am presented with a problem I like to take it apart into the smallest pieces and first understand all of them from the ground up, then build my understanding from there.
 So in case of my process of understanding, when I try to reconstruct the whole concept from the ground up I can clearly see if one piece is shaky in my knowledge so I can focus on that part then repeat it until eventually, I master the whole subject.
 
-![This is an image](/assets/images/2020-09-22/learning-pyramid.jpg)
-The picture ↗️ is the **Learning Pyramid** which shows that there are passive and active ways to learn and how effective the knowledge acquisition is respectively, if you check out the bottom part where the learning process is the most effective, you can see that teaching is the best way to learn something. So it seems that writing a blog post with the right mindset is probably a nice way to acquire new knowledge.
+{% include image.html
+  title="Learning pyramid"
+  caption="Learning pyramid"
+  src="2020-09-22/learning-pyramid.jpg"
+  border=true
+%}
+
+The picture shows that there are passive and active ways to learn and how effective the knowledge acquisition is respectively, if you check out the bottom part where the learning process is the most effective, you can see that teaching is the best way to learn something. So it seems that writing a blog post with the right mindset is probably a nice way to acquire new knowledge.
 
 # Stand out
 Not everybody takes the trouble to invest in a blog. It is not easy so you have to be diligent and you have to really care about it. I think it really shows if you really care about the job or not. I am not saying if you’re not doing it you are a terrible developer, I am just saying if you do it, it shows your enthusiasm.
