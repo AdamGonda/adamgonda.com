@@ -296,6 +296,11 @@ footer a {
   margin-top: 100px;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 680px) {
+  .post-image {
+    margin-top: 60px;
+  }
+}
 .post-image img {
   margin-top: 0 !important;
 }
