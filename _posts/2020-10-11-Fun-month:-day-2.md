@@ -14,8 +14,8 @@ titles:
   - API
 ---
 
-I am a Functional Programming fan, so I thought I will create a small game in the terminal.
-Then it turned out to be an RPC API at the end.
+I am a Functional Programming fanboy, and I thought I will create a small game in the terminal,
+then it turned out to be a perfect RPC API also.
 
 
 You can check out the
@@ -28,7 +28,8 @@ or if you are interested in the
 # First steps 
 
 I like to create games, and I
-liked to learn more about [FP](https://en.wikipedia.org/wiki/Functional_programming){:target="_blank"}
+liked to practice my [FP](https://en.wikipedia.org/wiki/Functional_programming){:target="_blank"}
+skills
 so I took my favorite game to implement [Snake](https://en.wikipedia.org/wiki/Snake_(video_game_genre)){:target="_blank"} and implemented it using
 [JavaScript](https://en.wikipedia.org/wiki/JavaScript){:target="_blank"} in a functional manner.
 
