@@ -6,16 +6,22 @@ tags:
   - JavaScript
   - RPC
   - Game
+  - Node
 titles:
   - First steps
   - Spice it up
   - Solution
-  - PS
-  - Node
+  - API
 ---
 
 I am a Functional Programming fan, so I thought I will create a small game in the terminal.
 Then it turned out to be an RPC API at the end.
+
+
+You can check out the
+[demo](https://retro-game-api-snake.herokuapp.com/){:target="_blank"},
+or if you are interested in the
+[code](https://github.com/AdamGonda/retro-game-api-snake){:target="_blank"}.
 
 {% include post-content-list.html titles=page.titles %}
 
@@ -47,22 +53,22 @@ So I took the game logic and I created a Node app and I decided to host it on
 
 # Solution
 
-**Backend**:
-Node server running on Heroku, totally stateless and it knows nothing about the rendering.
-It is just a mapping between:
-``` js
-(currentState, input) => newState
-```
+{% include image.html src="2020-10-11/communication.jpg" title="Cycle" caption="Cycle" border=true %}
 
 <br>
-
 **Frontend**:
 I called my old friend [p5.js](https://p5js.org){:target="_blank"}
 to the rescue for the rendering. With the clean separation, this
 module's job is very straightforward. It's initializes the state, then
 it calls the Node server on every iteration of the game to get the new state to render.
 
-# PS
+**Backend**:
+Node server running on Heroku, totally stateless and it knows nothing about the rendering.
+It is just a mapping between:
+``` js
+(currentState, input) => newState
+```
+<br>
 
 Of course this is not an optimal solution, But I thought it maybe can
 useful for learning proposes for other if they like to implement the rendering part,
@@ -73,7 +79,44 @@ useful for learning proposes for other if they like to implement the rendering p
 - [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns){:target="_blank"}
 
 <br>
-<br>
+
 So you can learn about them first hand without the need to implement
 any business logic, and with games involved 😀, which always makes
 things more fun I think.
+
+# API
+<br>
+``` js
+async function testAPI() {
+  const ROOT_URL = 'https://retro-game-api-snake.herokuapp.com'
+
+  // Possible inputs
+  const DIRS = {
+    UP: 'UP',
+    DOWN: 'DOWN',
+    RIGHT: 'RIGHT',
+    LEFT: 'LEFT',
+}
+
+  // Init
+  const currentState = await fetch(`${ROOT_URL}/init`)
+    .then(res => res.json())
+    .then(data => data)
+
+  console.log('Init state: ', currentState)
+
+  // Update
+  fetch(`${ROOT_URL}/update`, {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ state: currentState, input: DIRS.UP }),
+  })
+    .then(res => res.json())
+    .then(data => console.log('New state: ', data))
+}
+
+testAPI()
+```
