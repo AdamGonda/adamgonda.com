@@ -293,11 +293,21 @@ footer a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.post-image img {
+  margin-top: 0 !important;
 }
 .post-image p {
   margin-top: 10px;
+  margin-bottom: 0 !important;
   font-size: 18px !important;
   color: #606060;
+}
+
+.border {
+  border: 1px solid #222222;
 }
 
 body {
