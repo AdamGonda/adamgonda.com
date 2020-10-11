@@ -58,6 +58,7 @@
 .highlight .vg { color: #f8f8f2 } /* Name.Variable.Global */
 .highlight .vi { color: #f8f8f2 } /* Name.Variable.Instance */
 .highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+.highlight .dl { color: #e6db74 } /* Literal.Number.Integer.Long */
 
 .highlight .gh { } /* Generic Heading & Diff Header */
 .highlight .gu { color: #75715e; } /* Generic.Subheading & Diff Unified/Comment? */
