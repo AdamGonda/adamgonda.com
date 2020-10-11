@@ -97,7 +97,7 @@ async function testAPI() {
     DOWN: 'DOWN',
     RIGHT: 'RIGHT',
     LEFT: 'LEFT',
-}
+  }
 
   // Init
   const currentState = await fetch(`${ROOT_URL}/init`)
@@ -110,7 +110,7 @@ async function testAPI() {
   fetch(`${ROOT_URL}/update`, {
     method: 'POST',
     headers: {
-      Accept: 'application/json',
+      'Accept': 'application/json',
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ state: currentState, input: DIRS.UP }),
