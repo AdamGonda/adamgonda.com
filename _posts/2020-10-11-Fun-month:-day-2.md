@@ -1,7 +1,6 @@
 ---
 layout: post
 author: Adam Gonda
-cover: 2020-10-05/retro_game_api.png
 minutes: 3
 tags:
   - JavaScript
@@ -12,14 +11,15 @@ titles:
   - Spice it up
   - Solution
   - PS
+  - Node
 ---
 
-This is one of my fun experimental projects. I was interested in FP, so I thought
-I will create a small terminal game. Then things started to evolve…
+I am a Functional Programming fan, so I thought I will create a small game in the terminal.
+Then it turned out to be an RPC API at the end.
 
 {% include post-content-list.html titles=page.titles %}
 
-# First steps
+# First steps 
 
 I like to create games, and I
 liked to learn more about [FP](https://en.wikipedia.org/wiki/Functional_programming){:target="_blank"}
@@ -65,7 +65,8 @@ it calls the Node server on every iteration of the game to get the new state to 
 # PS
 
 Of course this is not an optimal solution, But I thought it maybe can
-useful for learning proposes, for concepts like:
+useful for learning proposes for other if they like to implement the rendering part,
+<br>for concepts like:
 
 - [Network latency](https://en.wikipedia.org/wiki/Latency_(engineering)){:target="_blank"}
 - [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)){:target="_blank"}
@@ -76,7 +77,3 @@ useful for learning proposes, for concepts like:
 So you can learn about them first hand without the need to implement
 any business logic, and with games involved 😀, which always makes
 things more fun I think.
-
-Ooo! after snake I was interested in what
-other games can I implement this way, so I started to add more, check
-them out.
