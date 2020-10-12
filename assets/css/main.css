@@ -116,6 +116,8 @@ footer a {
   max-width: 150px;
   min-width: 150px;
   object-fit: cover;
+  border: 1px solid #222222;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 550px) {
   .post-list-item img {
@@ -190,6 +192,8 @@ footer a {
   width: 100%;
   height: 30vw;
   object-fit: cover;
+  border: 1px solid #222222;
+  border-radius: 5px;
 }
 
 .post main {
@@ -228,6 +232,7 @@ footer a {
   width: 100%;
   object-fit: cover;
   margin-top: 30px;
+  border: 1px solid #222222;
   border-radius: 5px;
 }
 .post main a {
@@ -315,11 +320,7 @@ footer a {
   margin-top: 10px;
   margin-bottom: 0 !important;
   font-size: 18px !important;
-  color: #606060;
-}
-
-.border {
-  border: 1px solid #222222;
+  color: #222222;
 }
 
 body {

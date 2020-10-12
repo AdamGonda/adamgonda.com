@@ -22,11 +22,10 @@ When you have to write about a topic, you have to understand it well enough so y
 If I am presented with a problem I like to take it apart into the smallest pieces and first understand all of them from the ground up, then build my understanding from there.
 So in case of my process of understanding, when I try to reconstruct the whole concept from the ground up I can clearly see if one piece is shaky in my knowledge so I can focus on that part then repeat it until eventually, I master the whole subject.
 
-{% include image.html
+{% include post-image.html
   title="Learning pyramid"
   caption="Learning pyramid"
   src="2020-09-22/learning-pyramid.jpg"
-  border=true
 %}
 
 The picture shows that there are passive and active ways to learn and how effective the knowledge acquisition is respectively, if you check out the bottom part where the learning process is the most effective, you can see that teaching is the best way to learn something. So it seems that writing a blog post with the right mindset is probably a nice way to acquire new knowledge.
