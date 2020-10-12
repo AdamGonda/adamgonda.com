@@ -5,6 +5,7 @@ nav {
   align-items: center;
   background-color: #222222;
   padding: 30px 30px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 nav img {
   height: 50px;
@@ -16,7 +17,7 @@ nav ul li {
   margin: 10px;
 }
 nav ul a {
-  color: #FFFFFF;
+  color: whitesmoke;
   font-weight: bold;
   font-size: 22px;
   position: relative;
@@ -28,7 +29,7 @@ nav ul a:hover:before {
   left: 0;
   right: 0;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: whitesmoke;
 }
 @media only screen and (min-width: 680px) {
   nav {
@@ -43,7 +44,7 @@ nav ul a:hover:before {
   left: 0;
   right: 0;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: whitesmoke;
 }
 
 footer {
@@ -84,6 +85,7 @@ footer a {
   padding: 10px 0;
   border-top: 1px solid #222222;
   border-bottom: 1px solid #222222;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .post-list-item a {
   display: flex;
@@ -98,11 +100,9 @@ footer a {
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 10px;
-  font-family: "Playfair Display", serif;
 }
 .post-list-item a section p {
   font-size: 18px;
-  font-family: "Playfair Display", serif;
   color: #606060;
 }
 .post-list-item a section span {
@@ -158,6 +158,12 @@ footer a {
   font-size: 14px;
 }
 
+.post h1 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.post p {
+  font-weight: 300;
+}
 .post header {
   margin-bottom: 30px;
 }
@@ -171,12 +177,14 @@ footer a {
   font-size: 45px;
   margin-bottom: 10px;
   font-weight: bold;
-  font-family: "Playfair Display", serif;
 }
 @media only screen and (max-width: 680px) {
   .post header section h1 {
     font-size: 30px;
   }
+}
+.post header section li {
+  font-family: "Source Sans Pro", sans-serif;
 }
 .post header img {
   width: 100%;
@@ -185,7 +193,6 @@ footer a {
 }
 
 .post main {
-  font-family: "Playfair Display", serif;
   padding: 0 60px;
   font-size: 18px;
 }
@@ -316,7 +323,8 @@ footer a {
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto Slab", serif;
+  background-color: whitesmoke;
 }
 
 .content {

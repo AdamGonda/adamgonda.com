@@ -1,6 +1,12 @@
 @use "./constants" as *
 
 .post
+  h1
+    font-family: 'Source Sans Pro', sans-serif
+  
+  p
+    font-weight: 300
+
   header
     margin-bottom: $spacing-s
 
@@ -14,10 +20,12 @@
         font-size: $fontSizes-xxl
         margin-bottom: $spacing-xs
         font-weight: bold
-        font-family: 'Playfair Display', serif
 
         @media only screen and (max-width: $breakPoints-s)
           font-size: $fontSizes-xl
+
+      li
+        font-family: 'Source Sans Pro', sans-serif
     
     img
       width: 100%
@@ -27,7 +35,6 @@
 
 .post
   main
-    font-family: 'Playfair Display', serif
     padding: 0 $spacing-m
     font-size: $fontSizes-m
 
