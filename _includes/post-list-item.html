@@ -1,16 +1,20 @@
 <li class="post-list-item {% if include.loopIdx == 1 %}new{% endif %}">
   <a href={{ include.url }}>
     <section>
-      <h1>{{ include.title }}</h1>
-      <p>{{ include.excerpt }}</p>
-      <ul class="tags">
-        {% for tag in include.tags %}
-        <li>
-          {{ tag }}
-        </li>
-        {% endfor %}
-      </ul>
-      <span>{{ include.date | date_to_string }} - {{ include.min }} min read</span>
+      <div class="top">
+        <h1>{{ include.title }}</h1>
+        <p>{{ include.excerpt }}</p>
+      </div>
+      <div class="bottom">
+        <ul class="tags">
+          {% for tag in include.tags %}
+          <li>
+            {{ tag }}
+          </li>
+          {% endfor %}
+        </ul>
+        <span>{{ include.date | date_to_string }} - {{ include.min }} min read</span>
+      </div>
     </section>
     <img src="/assets/images/{{ include.date | date: "%Y-%m-%d" }}/thumbnail.jpg" alt="post image">
   </a>

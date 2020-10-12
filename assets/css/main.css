@@ -94,6 +94,9 @@ footer a {
   position: relative;
 }
 .post-list-item a section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-right: 30px;
 }
 .post-list-item a section h1 {
@@ -108,7 +111,7 @@ footer a {
 .post-list-item a section span {
   display: inline-block;
   font-size: 14px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .post-list-item img {
   max-height: 150px;
@@ -127,15 +130,10 @@ footer a {
 
 .tags {
   margin-top: 10px;
-  display: flex;
-  align-items: center;
 }
 .tags p {
   font-weight: bold;
   font-size: 14px;
-}
-.tags span {
-  font-size: 10px;
 }
 .tags li {
   font-weight: bold;
@@ -143,6 +141,8 @@ footer a {
   border: 2px solid #222222;
   padding: 2px 5px;
   margin-right: 5px;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 .new {

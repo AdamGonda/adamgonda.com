@@ -14,6 +14,9 @@
     position: relative
 
     section
+      display: flex
+      flex-direction: column
+      justify-content: space-between
       padding-right: $spacing-s
 
       h1
@@ -28,7 +31,7 @@
       span
         display: inline-block
         font-size: $fontSizes-s
-        margin-top: $spacing-xs
+        margin-top: $spacing-xxs
 
   img
     max-height: 150px
@@ -45,15 +48,10 @@
 
 .tags
   margin-top: $spacing-xs
-  display: flex
-  align-items: center
 
   p
     font-weight: bold
     font-size: $fontSizes-s
-  
-  span
-    font-size: $fontSizes-xs
   
   li
     font-weight: bold
@@ -61,6 +59,8 @@
     border: 2px solid $colors-black
     padding: 2px $spacing-xxs
     margin-right: $spacing-xxs
+    display: inline-block
+    margin-bottom: $spacing-xxs
 
 
 .new
