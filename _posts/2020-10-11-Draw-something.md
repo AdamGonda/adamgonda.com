@@ -9,11 +9,14 @@ tags:
   - FunMonth 1
 ---
 
-I felt I had to embrace my creativity, so I started this challenge.
-I have to create something every day, for a month, starting today.
+It is just a fun little drawing
+
+This post part of the series of FunMonth. I did draw this during the day into my notepad
+but not with the intention to call it my "daily creation". But then I thought it would be
+fun to create a vector graphic from if in Affinity Designer so here is the result.
 
 {% include post-image.html
   title="Faces"
-  src="face.jpg"
+  src="faces.jpg"
   date=page.date
 %}
