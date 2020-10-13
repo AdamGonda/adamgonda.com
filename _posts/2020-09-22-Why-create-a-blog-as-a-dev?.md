@@ -24,7 +24,8 @@ So in case of my process of understanding, when I try to reconstruct the whole c
 
 {% include post-image.html
   title="Learning pyramid"
-  src="2020-09-22/learning-pyramid.jpg"
+  src="learning-pyramid.jpg"
+  date=page.date
 %}
 
 The picture shows that there are passive and active ways to learn and how effective the knowledge acquisition is respectively, if you check out the bottom part where the learning process is the most effective, you can see that teaching is the best way to learn something. So it seems that writing a blog post with the right mindset is probably a nice way to acquire new knowledge.

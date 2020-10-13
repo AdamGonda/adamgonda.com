@@ -3,8 +3,7 @@ layout: post
 author: Adam Gonda
 minutes: 3
 tags:
-  - funMonth
-  - Day_3
+  - funMonth 3
 
 titles:
   - Title
@@ -15,7 +14,7 @@ Here comes some intro text
 
 {% include post-content-list.html titles=page.titles %}
 
-{% include post-image.html src="2020-10-12/development.svg" title="Development" %}
+{% include post-image.html src="development.svg" title="Development" date=page.date%}
 
 # Title
 
