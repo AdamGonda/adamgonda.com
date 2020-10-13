@@ -8,7 +8,7 @@ function fromDir(startPath, filter) {
   }
 
   const files = fs.readdirSync(startPath)
-  for (const i = 0; i < files.length; i++) {
+  for (let i = 0; i < files.length; i++) {
     const filename = path.join(startPath, files[i])
     const stat = fs.lstatSync(filename)
     if (stat.isDirectory()) {
