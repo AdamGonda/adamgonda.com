@@ -13,6 +13,5 @@ I have to create something every day, for a month, starting today.
 
 {% include post-image.html
   title="Faces"
-  caption="Faces"
   src="2020-10-10/face.jpg"
 %}

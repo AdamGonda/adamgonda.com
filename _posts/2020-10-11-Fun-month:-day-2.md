@@ -54,7 +54,7 @@ So I took the game logic and I created a Node app and I decided to host it on
 
 # Solution
 
-{% include post-image.html src="2020-10-11/communication.jpg" title="Cycle" caption="Cycle" %}
+{% include post-image.html src="2020-10-11/communication.jpg" title="Cycle" %}
 
 <br>
 **Frontend**:

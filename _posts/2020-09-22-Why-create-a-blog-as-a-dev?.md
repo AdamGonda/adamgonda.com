@@ -24,7 +24,6 @@ So in case of my process of understanding, when I try to reconstruct the whole c
 
 {% include post-image.html
   title="Learning pyramid"
-  caption="Learning pyramid"
   src="2020-09-22/learning-pyramid.jpg"
 %}
 
