@@ -1,0 +1,36 @@
+{
+	// Place your adamgonda.com workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	"Insert image": {
+		"scope": "markdown",
+		"prefix": "i",
+		"body": [
+			"{% include post-image.html",
+			"  title='${1:title}'",
+			"  src='${2:src}'",
+			"  date=page.date",
+			"%}"
+		],
+		"description": "Inserts post-image from _includes"
+	},
+	"Content list": {
+		"scope": "markdown",
+		"prefix": "c",
+		"body": [
+			"{% include post-content-list.html titles=page.titles %}"
+		],
+		"description": "Inserts post-content-list from _includes"
+	},
+	"Insert Link": {
+		"scope": "markdown",
+		"prefix": "l",
+		"body": [
+			"[${1:title}](${2:url}){:target='_blank'}"
+		],
+		"description": "Inserts a link with target blank"
+	}
+}
