@@ -1,17 +1,22 @@
-// const glob = require('glob')
-// const fs = require('fs')
+const glob = require('glob')
+const fs = require('fs')
 
-// glob(__dirname + '/**/*.html', {}, (err, files) => {
-//   const filter = file => file.includes('_site')
+console.log('|------------ ENABLE-PIL: IMPORTED ------------|')
 
-//   files.filter(filter).forEach((root, idx) => {
-//     fs.readFile(root, 'utf8', function (err, html) {
-//       if (err) {
-//         return console.log(err)
-//       }
+exports.start = () => {
+  console.log('|------------ ENABLE-PIL: STARTED ------------|')
 
-//     })
-//   })
-// })
+  glob(__dirname + '../../**/*.html', {}, (err, files) => {
+    const filter = file => file.includes('_site')
 
-console.log('>>>>>>>>> HELLLLOO')
+    files.filter(filter).forEach((root, idx) => {
+      fs.readFile(root, 'utf8', function (err, html) {
+        if (err) {
+          return console.log(err)
+        }
+
+        console.log(html)
+      })
+    })
+  })
+}
