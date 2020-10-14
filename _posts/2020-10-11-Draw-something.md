@@ -15,7 +15,6 @@ Affinity Designer and see what happens so here is the result.
 
 <br>
 {% include post-image.html
-  title="Faces"
   src="faces.jpg"
   date=page.date
 %}

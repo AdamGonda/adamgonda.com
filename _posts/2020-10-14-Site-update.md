@@ -20,7 +20,6 @@ but I always like to listen for valuable feedback.
 I noted a few issues, both were on the index page, where you can scroll through the blog posts. Both related to the list items that represent a post.
 
 {% include post-image.html
-  title='Problem 1'
   src='tag-fix.svg'
   date=page.date
 %}
@@ -28,7 +27,6 @@ I noted a few issues, both were on the index page, where you can scroll through 
 As you can see, if it was too many tags related to a blog post, it messed up the whole layout of the page on small screen sizes.
 
 {% include post-image.html
-  title='Problem 2'
   src='post-list-item-fix.svg'
   date=page.date
 %}
@@ -41,7 +39,6 @@ The issue was that the image styles wasn't felt unified, and also they didn't su
 the layout.
 
 {% include post-image.html
-  title='index page - old'
   src='on-index-old.png'
   date=page.date
 %}
@@ -49,7 +46,6 @@ the layout.
 The first image looks odd, compared to the others, where are clear boundaries.
 
 {% include post-image.html
-  title='Index page - new'
   src='on-index-new.png'
   date=page.date
 %}
@@ -63,7 +59,6 @@ Then the last one, I changed the font type because people said the old one was n
 and at the same time, if I was considering readability I decided to go with a bit less blinding background color.
 
 {% include post-image.html
-  title='Font type & background color'
   src='comparison-text-and-color.svg'
   date=page.date
 %}

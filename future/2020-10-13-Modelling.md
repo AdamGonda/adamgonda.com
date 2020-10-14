@@ -14,7 +14,7 @@ Here comes some intro text
 
 {% include post-content-list.html titles=page.titles %}
 
-{% include post-image.html src="development.svg" title="Development" date=page.date%}
+{% include post-image.html src="development.svg" date=page.date%}
 
 # Title
 

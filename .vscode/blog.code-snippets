@@ -10,7 +10,6 @@
 		"prefix": "i",
 		"body": [
 			"{% include post-image.html",
-			"  title='${1:title}'",
 			"  src='${2:src}'",
 			"  date=page.date",
 			"%}"

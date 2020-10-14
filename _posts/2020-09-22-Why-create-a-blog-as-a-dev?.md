@@ -22,9 +22,7 @@ When you have to write about a topic, you have to understand it well enough so y
 If I am presented with a problem I like to take it apart into the smallest pieces and first understand all of them from the ground up, then build my understanding from there.
 So in case of my process of understanding, when I try to reconstruct the whole concept from the ground up I can clearly see if one piece is shaky in my knowledge so I can focus on that part then repeat it until eventually, I master the whole subject.
 
-<br>
 {% include post-image.html
-  title="Learning pyramid"
   src="learning-pyramid.jpg"
   date=page.date
 %}
