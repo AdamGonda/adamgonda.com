@@ -1,10 +1,12 @@
-<h1>Content:</h1>
-<ul class="post-content-list">
-  {% for title in include.titles %}
+<div class="post-content-list">
+  <h1>Content:</h1>
+  <ul class="post-content-list">
+    {% for title in include.titles %}
     <li>
       <a href="#{{ title | downcase | replace: " ", "-" }}">
         {{ title }}
       </a>
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</div>
