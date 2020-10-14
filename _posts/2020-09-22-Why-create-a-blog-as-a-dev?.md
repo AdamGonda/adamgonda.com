@@ -3,9 +3,9 @@ layout: post
 author: Adam Gonda
 minutes: 3
 tags:
-  - why
-  - blog
-  - dev life
+  - Why
+  - Blog
+  - Dev life
 titles:
   - Learning by teaching
   - Stand out

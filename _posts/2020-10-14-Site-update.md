@@ -3,6 +3,9 @@ layout: post
 author: Adam Gonda
 minutes: 3
 tags:
+  - Blog
+  - Coding
+  - Dev life
   - FunMonth 3
 titles:
   - Bug fixes
