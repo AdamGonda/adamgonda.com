@@ -15,13 +15,8 @@ async function resizeImage(image, width, quality, cl) {
 async function getBase64Images(images) {
   return await Promise.all(
     Array.from(images).map(async img => {
-      
-      
       const htmlPath = img.src.slice(img.src.indexOf('assets'), img.src.length)
       const diskPath = __dirname + '/_site/' + htmlPath.replace('//', '/')
-
-      console.log('curr dir: ', __dirname);
-      console.log('disk path: ', diskPath + '\n')
 
       return await resizeImage(diskPath, 64, 90)
     }),
@@ -35,12 +30,15 @@ async function enable(path) {
   const b64s = await getBase64Images(images)
 
   Array.from(images).map((img, idx) => {
-    const htmlImgPath =
-      '/' + img.src.slice(img.src.indexOf('assets'), img.src.length)
+    const ignore = img.classList.contains('ignore-PIL')
+    if (!ignore) {
+      const htmlImgPath =
+        '/' + img.src.slice(img.src.indexOf('assets'), img.src.length)
 
-    img.classList.add('lazyload')
-    img.setAttribute('data-src', htmlImgPath)
-    img.setAttribute('src', b64s[idx])
+      img.classList.add('lazyload')
+      img.setAttribute('data-src', htmlImgPath)
+      img.setAttribute('src', b64s[idx])
+    }
   })
 
   fs.writeFile(path, dom.serialize(), function (err) {
@@ -48,7 +46,6 @@ async function enable(path) {
     console.log(`${path} > html`)
   })
 }
-
 
 function main() {
   console.log(
