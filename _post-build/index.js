@@ -3,7 +3,7 @@ const jsdom = require('jsdom')
 const glob = require('glob')
 const path = require('path')
 
-const { pipe } = require('./utils')
+const { pipe } = require('./utils') 
 const PIL = require('./progressive-image-loading')
 
 console.log(`|------------ ${path.basename(__filename)}: STARTED ------------|`)
