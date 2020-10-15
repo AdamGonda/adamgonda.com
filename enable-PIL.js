@@ -14,7 +14,7 @@ async function resizeImage(image, width, quality, cl) {
 
 async function getBase64Images(images) {
   return await Promise.all(
-    Array.from(images).map(async img => {
+    images.map(async img => {
       const htmlPath = img.src.slice(img.src.indexOf('assets'), img.src.length)
       const diskPath = __dirname + '/_site/' + htmlPath.replace('//', '/')
 
@@ -25,25 +25,25 @@ async function getBase64Images(images) {
 
 async function enable(path) {
   const dom = await JSDOM.fromFile(path, {})
-  const images = dom.window.document.querySelectorAll('img')
+  const images = Array.from(
+    dom.window.document.querySelectorAll('img'),
+  ).filter(image => !image.classList.contains('ignore-PIL')) 
 
   const b64s = await getBase64Images(images)
 
-  Array.from(images).map((img, idx) => {
-    const ignore = img.classList.contains('ignore-PIL')
-    if (!ignore) {
-      const htmlImgPath =
-        '/' + img.src.slice(img.src.indexOf('assets'), img.src.length)
+  images.map((img, idx) => {
+    const htmlImgPath =
+      '/' + img.src.slice(img.src.indexOf('assets'), img.src.length)
 
-      img.classList.add('lazyload')
-      img.setAttribute('data-src', htmlImgPath)
-      img.setAttribute('src', b64s[idx])
-    }
+    img.classList.add('lazyload')
+    img.setAttribute('data-src', htmlImgPath)
+    img.setAttribute('src', b64s[idx])
+    console.log(`${htmlImgPath} > base64`)
   })
 
+  // Write to file
   fs.writeFile(path, dom.serialize(), function (err) {
     if (err) return console.log(err)
-    console.log(`${path} > html`)
   })
 }
 
