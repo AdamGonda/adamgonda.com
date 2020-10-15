@@ -10,5 +10,5 @@
   publish = "_site/"
 
   # Default build command.
-  command = "JEKYLL_ENV=production jekyll build && npm i && npm run pre-deploy"
+  command = "JEKYLL_ENV=production jekyll build && npm i && npm run post-build"
 
