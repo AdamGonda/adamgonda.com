@@ -13,29 +13,23 @@ function main() {
   glob(__dirname + '../../**/*.html', {}, (err, files) => {
     const filter = file => file.includes('_site')
 
-    files.filter(filter).forEach((absPath, idx) => {
-      const pathToHtml =
-        './' + absPath.slice(absPath.indexOf('_site'), absPath.length)
-
-      processPage(pathToHtml)
+    files.filter(filter).forEach(async absPath => {
+      const path = './' + absPath.slice(absPath.indexOf('_site'), absPath.length) // prettier-ignore
+      const dom = await JSDOM.fromFile(path, {})
+      const newDom = await processPage(dom)
+      fs.writeFile(path, newDom.serialize(), err => err ? console.log(err) : null) // prettier-ignore
     })
   })
 }
 
-async function processPage(path) {
-  const dom = await JSDOM.fromFile(path, {})
-
+async function processPage(dom) {
   const images = Array.from(dom.window.document.querySelectorAll('img')).filter(
     image => !image.classList.contains('ignore-PIL'),
   )
 
   const b64s = await getImages(images)
   images.map((img, idx) => modifyDom(img, idx, b64s))
-
-  // Write to file
-  fs.writeFile(path, dom.serialize(), function (err) {
-    if (err) return console.log(err)
-  })
+  return dom
 }
 
 async function getImages(images) {
