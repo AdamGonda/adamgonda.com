@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pre-deploy": "node ./pre-deploy/index.js"
+    "pre-deploy": "node ./enable-PIL.js"
   },
   "repository": {
     "type": "git",
