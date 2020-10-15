@@ -239,6 +239,10 @@ footer a {
   border-radius: 5px;
   overflow: scroll;
 }
+.post main .highlighter-rouge,
+.post main ul {
+  margin-bottom: 30px;
+}
 
 .post main ul {
   padding-left: 20px;
