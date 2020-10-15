@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "post-build": "node ./_post-build/index.js"
+    "post-build": "node ./_post-build/processHtmls.js"
   },
   "repository": {
     "type": "git",
