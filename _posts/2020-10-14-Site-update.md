@@ -23,14 +23,14 @@ but I always like to listen for valuable feedback.
 I noted a few issues, both were on the index page, where you can scroll through the blog posts. Both related to the list items that represent a post.
 
 {% include post-image.html
-  src='tag-fix.svg'
+  src='tag-fix.jpg'
   date=page.date
 %}
 
 As you can see, if it was too many tags related to a blog post, it messed up the whole layout of the page on small screen sizes.
 
 {% include post-image.html
-  src='post-list-item-fix.svg'
+  src='post-list-item-fix.jpg'
   date=page.date
 %}
 
@@ -62,6 +62,6 @@ Then the last one, I changed the font type because people said the old one was n
 and at the same time, if I was considering readability I decided to go with a bit less blinding background color.
 
 {% include post-image.html
-  src='comparison-text-and-color.svg'
+  src='comparison-text-and-color.jpg'
   date=page.date
 %}

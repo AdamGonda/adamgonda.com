@@ -2,6 +2,8 @@ const fs = require('fs')
 const jsdom = require('jsdom')
 const { JSDOM } = jsdom
 const Jimp = require('jimp')
+const glob = require('glob')
+const path = require('path')
 
 async function resizeImage(image, width, quality, cl) {
   const jimpImg = await Jimp.read(image)
@@ -13,26 +15,25 @@ async function resizeImage(image, width, quality, cl) {
 async function getBase64Images(images) {
   return await Promise.all(
     Array.from(images).map(async img => {
-      const htmlPath =
-        '/' + img.src.slice(img.src.indexOf('assets'), img.src.length)
-      const diskPath = __dirname + '/_site' + htmlPath
+      const htmlPath = img.src.slice(img.src.indexOf('assets'), img.src.length)
+      const diskPath = __dirname + '/_site/' + htmlPath.replace('//', '/')
       return await resizeImage(diskPath, 64, 90)
     }),
   )
 }
 
-exports = async function enable(path) {
+async function enable(path) {
   const dom = await JSDOM.fromFile(path, {})
   const images = dom.window.document.querySelectorAll('img')
 
   const b64s = await getBase64Images(images)
 
   Array.from(images).map((img, idx) => {
-    const htmlPath =
+    const htmlImgPath =
       '/' + img.src.slice(img.src.indexOf('assets'), img.src.length)
 
-    img.classList.add('lazyloading')
-    img.setAttribute('data-src', htmlPath)
+    img.classList.add('lazyload')
+    img.setAttribute('data-src', htmlImgPath)
     img.setAttribute('src', b64s[idx])
   })
 
@@ -41,3 +42,23 @@ exports = async function enable(path) {
     console.log(`${path} > html`)
   })
 }
+
+
+function main() {
+  console.log(
+    `|------------ ${path.basename(__filename)}: STARTED ------------|`,
+  )
+
+  glob(__dirname + '../../**/*.html', {}, (err, files) => {
+    const filter = file => file.includes('_site')
+
+    files.filter(filter).forEach((absPath, idx) => {
+      const pathToHtml =
+        './' + absPath.slice(absPath.indexOf('_site'), absPath.length)
+
+      enable(pathToHtml)
+    })
+  })
+}
+
+main()
