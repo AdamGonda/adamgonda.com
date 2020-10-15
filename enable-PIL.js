@@ -15,8 +15,14 @@ async function resizeImage(image, width, quality, cl) {
 async function getBase64Images(images) {
   return await Promise.all(
     Array.from(images).map(async img => {
+      
+      
       const htmlPath = img.src.slice(img.src.indexOf('assets'), img.src.length)
       const diskPath = __dirname + '/_site/' + htmlPath.replace('//', '/')
+
+      console.log('curr dir: ', __dirname);
+      console.log('disk path: ', diskPath + '\n')
+
       return await resizeImage(diskPath, 64, 90)
     }),
   )
