@@ -23,7 +23,7 @@ async function getImages(images) {
   )
 }
 
-async function getResized_b64_image(image, width, quality, cl) {
+async function getResized_b64_image(image, width, quality) {
   const jimpImg = await Jimp.read(image)
   await jimpImg.resize(width, Jimp.AUTO)
   await jimpImg.quality(quality)
