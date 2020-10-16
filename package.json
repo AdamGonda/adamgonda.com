@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "post-process": "node ./_post-process/run.js"
+    "post-process-html": "node ./_post-process-html/run.js"
   },
   "repository": {
     "type": "git",

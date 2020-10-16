@@ -4,7 +4,7 @@ const glob = require('glob')
 const path = require('path')
 
 const { pipe } = require('./utils')
-const { list } = require('./tasks')
+const tasks = require('./tasks')
 
 console.log(`------------ ${path.basename(__dirname)}: STARTED ------------ \n`)
 glob(__dirname + '/../**/*.html', {}, (err, files) => {
@@ -15,12 +15,14 @@ glob(__dirname + '/../**/*.html', {}, (err, files) => {
   }
 
   htmlFiles.forEach(async absPath => {
-    const path =
+    const relPath =
       __dirname +
       '/../' +
       absPath.slice(absPath.indexOf('_site'), absPath.length)
-    const dom = await jsdom.JSDOM.fromFile(path, {})
-    const newDom = await pipe(dom)(...list)
-    fs.writeFile(path, newDom.serialize(), err => err ? console.log(err) : null) // prettier-ignore
+
+    const dom = await jsdom.JSDOM.fromFile(relPath, {})
+    const newDom = await pipe(dom)(...tasks.list)
+    
+    fs.writeFile(relPath, newDom.serialize(), err => err ? console.log(err) : null) // prettier-ignore
   })
 })
