@@ -259,7 +259,7 @@ footer a {
 }
 .post main li:before {
   position: absolute;
-  content: "->";
+  content: ">";
   top: 0;
   left: -20px;
 }
