@@ -1,6 +1,6 @@
 const Jimp = require('jimp')
 
-async function apply(dom) {
+exports.apply = async (dom) => {
   const images = Array.from(dom.window.document.querySelectorAll('img')).filter(
     image => !image.classList.contains('ignore-PIL'),
   )
@@ -45,5 +45,3 @@ function updateDom(img, idx, b64s) {
 
   console.log(`${htmlImgPath} > base64`)
 }
-
-exports.apply = apply
