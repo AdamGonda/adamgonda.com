@@ -4,13 +4,17 @@ const glob = require('glob')
 const path = require('path')
 
 const { pipe } = require('./utils')
-const { list } = require('./operations')
+const { list } = require('./tasks')
 
-console.log(`|------------ ${path.basename(__filename)}: STARTED ------------|`)
+console.log(`------------ ${path.basename(__dirname)}: STARTED ------------ \n`)
 glob(__dirname + '/../**/*.html', {}, (err, files) => {
-  const filter = file => file.includes('_site')
+  const htmlFiles = files.filter(file => file.includes('_site'))
 
-  files.filter(filter).forEach(async absPath => {
+  if (htmlFiles.length === 0) {
+    console.log('> No html files found!')
+  }
+
+  htmlFiles.forEach(async absPath => {
     const path =
       __dirname +
       '/../' +
