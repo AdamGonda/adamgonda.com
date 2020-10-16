@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Adam Gonda
-minutes: 3
+minutes: 4
 tags:
   - Blog
   - Coding
