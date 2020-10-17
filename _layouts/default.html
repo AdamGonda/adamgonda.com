@@ -20,10 +20,10 @@
 
   <!-- og stuff -->
   {% if page.url == '/' %}
-  <meta property="og:image" content="/assets/images/logo.png">
+  <meta property="og:image" content="{{ site.url }}/assets/images/logo.png">
   {% else %}
   <meta property="og:image"
-    content="/assets/images/{{  page.url | regex_replace: '[^\d/]', '' | replace_first: "/", "" | split: "" | reverse | join: "" | replace_first: "/", ""  | split: "" | reverse | join: "" | append: "/cover.jpg"  }}">
+    content="{{ site.url }}/assets/images/{{  page.url | regex_replace: '[^\d/]', '' | replace_first: "/", "" | split: "" | reverse | join: "" | replace_first: "/", ""  | split: "" | reverse | join: "" | append: "/cover.jpg"  }}">
   {% endif %}
 
   {% feed_meta %}
