@@ -23,7 +23,7 @@
   <meta property="og:image" content="https://amazing-pike-ac0ffd.netlify.app/assets/images/logo.png">
   {% else %}
   <meta property="og:image"
-    content="{{ site.url }}/assets/images/{{  page.url | regex_replace: '[^\d/]', '' | replace_first: "/", "" | split: "" | reverse | join: "" | replace_first: "/", ""  | split: "" | reverse | join: "" | append: "/cover.jpg"  }}">
+    content="https://amazing-pike-ac0ffd.netlify.app/assets/images/{{  page.url | regex_replace: '[^\d/]', '' | replace_first: "/", "" | split: "" | reverse | join: "" | replace_first: "/", ""  | split: "" | reverse | join: "" | append: "/cover.jpg"  }}">
   {% endif %}
 
   {% feed_meta %}
