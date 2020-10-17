@@ -19,12 +19,7 @@
   <script src="/assets/js/ lazysizes.min.js" async=""></script>
 
   <!-- og stuff -->
-  {% if page.url == '/' %}
-  <meta property="og:image" content="https://amazing-pike-ac0ffd.netlify.app/assets/images/logo.png">
-  {% else %}
-  <meta property="og:image"
-    content="https://amazing-pike-ac0ffd.netlify.app/assets/images/{{  page.url | regex_replace: '[^\d/]', '' | replace_first: "/", "" | split: "" | reverse | join: "" | replace_first: "/", ""  | split: "" | reverse | join: "" | append: "/cover.jpg"  }}">
-  {% endif %}
+  <meta property="og:image" content="https://adamgonda.com/logo.png">
 
   {% feed_meta %}
   {% seo %}
