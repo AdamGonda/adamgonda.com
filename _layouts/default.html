@@ -9,7 +9,7 @@
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
-  
+
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/destyle.css">
   <link rel="stylesheet" href="/assets/css/monokai.css">
@@ -17,19 +17,27 @@
 
   <!-- Progressive image loading: https://github.com/aFarkas/lazysizes -->
   <script src="/assets/js/ lazysizes.min.js" async=""></script>
-  
+
+  <!-- og stuff -->
+  {% if page.url == '/' %}
+  <meta property="og:image" content="/assets/images/logo.png">
+  {% else %}
+  <meta property="og:image"
+    content="/assets/images/{{  page.url | regex_replace: '[^\d/]', '' | replace_first: "/", "" | split: "" | reverse | join: "" | replace_first: "/", ""  | split: "" | reverse | join: "" | append: "/cover.jpg"  }}">
+  {% endif %}
+
   {% feed_meta %}
   {% seo %}
   {% if jekyll.environment == "production" %}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178874876-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178874876-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'UA-178874876-1');
-    </script>
+    gtag('config', 'UA-178874876-1');
+  </script>
   {% endif %}
 </head>
 
