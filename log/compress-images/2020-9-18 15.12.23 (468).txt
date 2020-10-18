@@ -1,7 +1,0 @@
-File from: [/Users/adamgonda/tmp/adamgonda.com/_post-process/../_site/assets/images/**/*.{jpg,JPG,jpeg,JPEG,png}]
-
-File to: [-]
-
-Compression algorithm: [-]
-
-Description:  Directory is empty!: 

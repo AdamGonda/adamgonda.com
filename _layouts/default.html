@@ -16,7 +16,15 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 
   <!-- Progressive image loading: https://github.com/aFarkas/lazysizes -->
-  <script src="/assets/js/ lazysizes.min.js" async=""></script>
+  <script src="/assets/js/lazysizes.min.js" async=""></script>
+
+  <!-- og img stuff -->
+  {% if page.url == '/' %}
+    <meta property="og:image" content="https://www.adamgonda.com/assets/images/logo.png">
+  {% else %}
+  <meta property="og:image"
+    content="https://www.adamgonda.com/assets/images/{{  page.url | regex_replace: '[^\d/]', '' | replace_first: "/", "" | split: "" | reverse | join: "" | replace_first: "/", ""  | split: "" | reverse | join: "" | replace: "/", "-" | append: "/cover.jpg"  }}">
+  {% endif %}
 
   {% feed_meta %}
   {% seo %}
