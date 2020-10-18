@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/AdamGonda/adamgonda.com#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
     "glob": "^7.1.6",
     "jimp": "^0.16.1",
     "jsdom": "^16.4.0",
-    "node": "^14.13.1"
+    "node": "^14.13.1",
+    "compress-images": "^1.9.5"
   }
 }
