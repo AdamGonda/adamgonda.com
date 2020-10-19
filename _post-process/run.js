@@ -5,7 +5,7 @@ const compression = require('./add-image-compression')
 // prettier-ignore
 asyncPipe({}) (
   PIL.apply,
-  compression.apply,
+  // compression.apply,
 )
 
 
