@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/AdamGonda/adamgonda.com#readme",
   "dependencies": {
-    "compress-images": "^1.9.5",
     "jimp": "^0.16.1",
     "jsdom": "^16.4.0",
     "node": "^14.13.1"
