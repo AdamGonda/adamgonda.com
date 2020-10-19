@@ -50,10 +50,7 @@ function updateDom(img, idx, b64s) {
     img.setAttribute('src', high)
   } else {
     img.classList.add('lazyload')
-    img.setAttribute(
-      'data-src',
-      htmlImgPath.replace(/(jpg|JPG|jpeg|JPEG|png)$/, 'webp'),
-    )
+    img.setAttribute('data-src', htmlImgPath)
     img.setAttribute('src', low)
   }
 
