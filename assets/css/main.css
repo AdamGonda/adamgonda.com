@@ -239,6 +239,15 @@ footer a {
   border-radius: 5px;
   overflow: scroll;
 }
+.post main hr {
+  display: block;
+  overflow: visible;
+  height: 30px;
+  border: 0;
+}
+.post main .pre-code {
+  margin-bottom: 10px;
+}
 .post main .highlighter-rouge,
 .post main ul {
   margin-bottom: 30px;
