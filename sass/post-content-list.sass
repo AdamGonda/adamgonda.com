@@ -1,0 +1,19 @@
+@use "./constants" as *
+  
+.post-content-list
+  ul
+    padding-left: $spacing-ss
+
+  li
+    position: relative
+    margin-top: $spacing-xs
+    font-size: $fontSizes-l
+
+    @media only screen and (max-width: $breakPoints-s)
+      font-size: $fontSizes-m
+
+  li:before
+    position: absolute
+    content: '>'
+    top: 0
+    left: - $spacing-ss

@@ -83,28 +83,27 @@
       height: $spacing-s
       border: 0
 
+    blockquote
+      margin-top: $spacing-l
+      position: relative
+      padding: 15px 0
+
+      p
+        margin: 0
+
+    blockquote:before
+      position: absolute
+      content: ''
+      left: -25px
+      top: 0
+      bottom: 0
+      background-color: $colors-black
+      width: 5px
+      
+
     .pre-code
       margin-bottom: $spacing-xs
 
     .highlighter-rouge,
     ul
       margin-bottom: $spacing-s
-
-.post
-  main
-    ul
-      padding-left: $spacing-ss
-
-    li
-      position: relative
-      margin-top: $spacing-xs
-      font-size: $fontSizes-l
-
-      @media only screen and (max-width: $breakPoints-s)
-        font-size: $fontSizes-m
-
-    li:before
-      position: absolute
-      content: '>'
-      top: 0
-      left: - $spacing-ss
