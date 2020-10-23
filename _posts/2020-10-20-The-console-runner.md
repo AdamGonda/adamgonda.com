@@ -12,12 +12,19 @@ titles:
   - Setup
   - Example
   - API
-  - Result
   - Next steps
 ---
 
-The goal of this post is to introduce the `console-runner` package.
-Show it's API through a toy example and tell a bit about it's inner workings.
+The goal of this part is to introduce the `console-runner` package.
+Show it's API through a toy example and tell a bit more about it's inner workings.
+
+> **Note:**
+this is part of a **"FP Snake"** series on creating a Snake game in FP style
+using JavaScript, where we learning Functional Programming concepts
+while we recreating this classing game.
+<br>
+<br>
+[Index](#) | [<Prev](#) | [Next>](#)
 
 {% include post-content-list.html titles=page.titles %}
 
@@ -25,19 +32,27 @@ Show it's API through a toy example and tell a bit about it's inner workings.
 
 If you ever created a game before, you know that in every game, there is a
 game loop at the core, and its job is to keep updating the game until we exit.
-In this case, the `console-runner` will provide our game loop, beside its other
-responsibilities seen ⬇️
+In case of snake, the `console-runner` will provide our game loop.
+Here is a high level overview of our architecture.
 
 {% include post-image.html
   src='snake-overview.jpg'
   date=page.date
 %}
 
+As you can see we have two main parts, one is the `console-runner`
+where most ot the `I/O` happens, and an other is the game where we
+will implement our game logic, with a clear `API` between the two.
+
 It is a nice practice to separate the presentation
 from the business logic. This approach simplifies
 our application and sets clear boundaries.
 So when we implement the game, our only job will be
 to deal with the game specific issues.
+
+We will lay down the basis of our setup now but
+we won't get into the game part just jet, first I like you to
+familiarize yourself with the `console-runner`.
 
 # Setup
 
@@ -51,9 +66,9 @@ mkdir snake-game && cd snake-game && code .
 npm init -y
 ```
 
-<p>Create a game.js file:</p>{: .pre-code}
+<p>Create a runSnake.js file:</p>{: .pre-code}
 ```js
-touch game.js
+touch runSnake.js
 ```
 
 <p>Install the console-runner package:</p>{: .pre-code}
@@ -64,7 +79,7 @@ npm i adamgonda/console-runner
 # Example
 
 ```js
-// in game.js
+// runSnake.js
 
 const { run } = require('console-runner')
 
@@ -95,13 +110,13 @@ run({
 Then run it with Node.
 
 ```js
-node game.js
+node runSnake.js
 ```
 
 If you did everything right, you have to see something like this.
-Try to play around with this. For example see what happens
+Try to play around with it. For example see what happens
 if you press AWSD or mess with the `update` function. Familiarize
-yourself with it, because we will use this during the course.
+yourself with this package and it's API, because we will use this during the course.
 
 ```js
 { player: { x: 10, y: 5 } }
@@ -147,5 +162,12 @@ render your game as you like
 # Next steps
 
 You did great and reached the end of this section.
-Next we will start to check out snake and the
-different features we have to implement.
+Next we will start to check out the
+different features we have to implement regarding the game.
+
+---
+---
+
+<p style="text-align: center">
+<a href="#"><b><Prev</b></a> | <a href="#"><b>Next></b></a>
+</p> 
