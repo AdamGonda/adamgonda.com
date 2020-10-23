@@ -4,9 +4,9 @@ author: Adam Gonda
 minutes: 5
 tags:
   - Tutorial
-  - Coding
   - Game
   - JavaScript
+  - FP Snake
 titles:
   - Intro
   - Setup
