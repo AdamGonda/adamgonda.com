@@ -31,5 +31,15 @@
 			"[${1:title}](${2:url}){:target='_blank'}"
 		],
 		"description": "Inserts a link with target blank"
+	},
+	"API signature": {
+		"scope": "markdown",
+		"prefix": "api",
+		"body": [
+			"{% include api-signature.html",
+			"  name='${1:name}'",
+			"  type='${2:type}'",
+			"%}"
+		]
 	}
 }
