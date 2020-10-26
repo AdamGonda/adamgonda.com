@@ -15,8 +15,8 @@ titles:
   - Next steps
 ---
 
-The goal of this part is to introduce the `console-runner` package.
-Show it's API through a toy example and tell a bit more about it's inner workings.
+The goal of this post is to introduce you to the `console-runner` package.
+Show it's API through a toy example and tell a bit more about its inner workings.
 
 > **Note:**
 this is part of a **"FP Snake"** series on creating a Snake game in FP style
@@ -30,10 +30,11 @@ while we recreating this classing game.
 
 # Intro
 
-If you ever created a game before, you know that in every game, there is a
-game loop at the core, and its job is to keep updating the game until we exit.
-In case of snake, the `console-runner` will provide our game loop.
-Here is a high level overview of our architecture.
+If you ever created a game before,
+you know that in the ❤️ of every game, there is a
+game loop and its job is to keep updating the game until we exit.
+In the case of Snake, the `console-runner` will provide our game loop.
+Here is a high-level overview of our architecture.
 
 {% include post-image.html
   src='snake-overview.jpg'
@@ -41,14 +42,14 @@ Here is a high level overview of our architecture.
 %}
 
 As you can see we have two main parts, one is the `console-runner`
-where most ot the `I/O` happens, and an other is the game where we
+where most of the `I/O` happens, and another is the game where we
 will implement our game logic, with a clear `API` between the two.
 
 It is a nice practice to separate the presentation
 from the business logic. This approach simplifies
 our application and sets clear boundaries.
 So when we implement the game, our only job will be
-to deal with the game specific issues.
+to deal with the game-specific issues.
 
 We will lay down the basis of our setup now but
 we won't get into the game part just jet, first I like you to
@@ -101,22 +102,21 @@ run({
     player: 'X',
   },
   dimensions: {
-    WIDTH: 20,
-    HEIGHT: 10,
+    width: 20,
+    height: 10,
   },
 })
 ```
 
-Then run it with Node.
-
+<p>Then run it with Node.</p>{: .pre-code}
 ```js
 node runSnake.js
 ```
 
 If you did everything right, you have to see something like this.
-Try to play around with it. For example see what happens
+Try to play around with it. For example, see what happens
 if you press AWSD or mess with the `update` function. Familiarize
-yourself with this package and it's API, because we will use this during the course.
+yourself with this package and it's API because we will use this during the course.
 
 ```js
 { player: { x: 10, y: 5 } }
@@ -138,36 +138,51 @@ input null
 
 # API
 
-**initialState**: will be the starting point of our game,
+{% include api-signature.html
+    name="initialState"
+    type="object"
+%}
+
+It will be the starting point of our game,
 here we provide a state that we like to have at the
-beginning
+beginning.
 
-**toCommon**: is a function that is specific to a given game,
-it's job is to transform the game state into a common format,
+{% include api-signature.html
+    name="toCommon"
+    type="function"
+%}
+
+It is specific to a given game,
+its job is to transform the game state into a common format,
 which is a list of objects, that has
-an `x`, `y` and a `tag` property. So the `console-runner`
-knows where and how to render them.
+an `x`, `y`, and a `tag` property.
 
-**update**: is a function that holds our game logic,
-the `console-runner` calls it before every render.
-it gets a state and an input from the
-`console-runner` than returns a new state
 
-**renderMap**: here you can specify a mapping between tags
-to ASCII characters, so the `console-runner` will
-render your game as you like
+{% include api-signature.html
+    name="update"
+    type="function"
+%}
 
-**dimensions**: tells how big view the `console-runner` has to create
+It encapsulates our game logic,
+and it is called before every render.
+
+{% include api-signature.html
+    name="renderMap"
+    type="object"
+%}
+
+Here you can specify a mapping between tags
+to ASCII characters.
+
+{% include api-signature.html
+    name="dimensions"
+    type="object"
+%}
+
+Tells how big a view you like to create.
 
 # Next steps
 
-You did great and reached the end of this section.
-Next we will start to check out the
+You did great 🥳 and reached the end of this section.
+[Next](#){:target='_blank'} we will start to check out the
 different features we have to implement regarding the game.
-
----
----
-
-<p style="text-align: center">
-<a href="#"><b><Prev</b></a> | <a href="#"><b>Next></b></a>
-</p> 
