@@ -139,8 +139,8 @@ input null
 # API
 
 {% include api-signature.html
-    name="initialState"
-    type="object"
+  name="initialState"
+  type="object"
 %}
 
 It will be the starting point of our game,
@@ -148,8 +148,8 @@ here we provide a state that we like to have at the
 beginning.
 
 {% include api-signature.html
-    name="toCommon"
-    type="function"
+  name="toCommon"
+  type="function"
 %}
 
 It is specific to a given game,
@@ -159,24 +159,24 @@ an `x`, `y`, and a `tag` property.
 
 
 {% include api-signature.html
-    name="update"
-    type="function"
+  name="update"
+  type="function"
 %}
 
 It encapsulates our game logic,
 and it is called before every render.
 
 {% include api-signature.html
-    name="renderMap"
-    type="object"
+  name="renderMap"
+  type="object"
 %}
 
 Here you can specify a mapping between tags
 to ASCII characters.
 
 {% include api-signature.html
-    name="dimensions"
-    type="object"
+  name="dimensions"
+  type="object"
 %}
 
 Tells how big a view you like to create.
