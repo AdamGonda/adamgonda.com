@@ -113,11 +113,12 @@ run({
 node runSnake.js
 ```
 
+<p>
 If you did everything right, you have to see something like this.
 Try to play around with it. For example, see what happens
-if you press AWSD or mess with the `update` function. Familiarize
+if you press AWSD or mess with the <code>update</code> function. Familiarize
 yourself with this package and it's API because we will use this during the course.
-
+</p>{: .pre-code}
 ```js
 { player: { x: 10, y: 5 } }
 input null
@@ -180,6 +181,16 @@ to ASCII characters.
 %}
 
 Tells how big a view you like to create.
+
+# Last touch
+
+<p>We will add a <code>start</code> script to <code>package.json</code> file so when we
+start to develop the game, it will be more convenient to start it.</p>{: .pre-code}
+```js
+"scripts": {
+  "start": "node runSnake.js"
+}
+```
 
 # Next steps
 

@@ -265,6 +265,9 @@ footer a {
 .post main .pre-code {
   margin-bottom: 10px;
 }
+.post main .highlight .err {
+  background-color: #272822;
+}
 .post main .highlighter-rouge,
 .post main ul {
   margin-bottom: 30px;
