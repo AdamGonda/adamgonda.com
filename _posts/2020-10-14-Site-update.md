@@ -6,7 +6,6 @@ tags:
   - Blog
   - Coding
   - Dev life
-  - FunMonth 3
 titles:
   - Bug fixes
   - Images
