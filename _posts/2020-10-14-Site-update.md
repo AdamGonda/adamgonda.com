@@ -5,7 +5,7 @@ minutes: 4
 tags:
   - Blog
   - Coding
-  - Dev life
+  - UX/UI
 titles:
   - Bug fixes
   - Images
