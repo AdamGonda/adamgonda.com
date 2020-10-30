@@ -295,6 +295,11 @@ footer a {
 .about h1, .about p {
   max-width: 500px;
 }
+@media only screen and (min-width: 1182px) {
+  .about h1, .about p {
+    max-width: 800px;
+  }
+}
 
 .post-image {
   display: flex;
