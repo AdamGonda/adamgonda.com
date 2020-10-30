@@ -7,6 +7,7 @@ tags:
   - Coding
   - UX/UI
 titles:
+  - Progressive image loading
   - Bug fixes
   - Images
   - Text and readability
@@ -16,6 +17,17 @@ Fixed a few issues, and redesigned some things. I think this blog is going in th
 but I always like to listen for valuable feedback.
 
 {% include post-content-list.html titles=page.titles %}
+
+# Progressive image loading
+
+This is a technic to create a better user experience by using minified base64 placeholders directly inlined into HTML. So when the page loads fist, these images will be there but blurred out, and when they load you swap them the original, usually using a fade-in animation for the transition between the two.
+
+It is about perceived load time, how long it takes to render the DOM. Most sites have images, and when you open up a site and everything is ready, except where the images should be there are nothing just white boxes, your impression won't be 😍
+
+{% include post-image.html
+  src='progressive-image-loading.jpg'
+  date=page.date
+%}
 
 # Bug fixes
 
