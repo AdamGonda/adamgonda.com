@@ -327,9 +327,14 @@ body {
     padding: 45px 100px;
   }
 }
+@media only screen and (min-width: 1182px) and (min-width: 1382px) {
+  .content {
+    padding: 45px 18vw;
+  }
+}
 @media only screen and (min-width: 1182px) {
   .content {
-    padding: 45px 250px;
+    padding: 45px 20vw;
   }
 }
 
