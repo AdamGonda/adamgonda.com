@@ -1,11 +1,11 @@
 const fs = require('fs')
 const jsdom = require('jsdom')
 const Jimp = require('jimp')
-const { getAllFromDir } = require('./utils')
+const { getAllPathsFromDir } = require('./utils')
 
 const apply = async () => {
   const paths = []
-  getAllFromDir(__dirname + '/../_site', '.html', paths)
+  getAllPathsFromDir(__dirname + '/../_site', '.html', paths)
 
   const tasks = paths.map(async path => {
     const dom = await jsdom.JSDOM.fromFile(path, {})
