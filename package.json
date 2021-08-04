@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "bundle exec jekyll serve --livereload",
+    "sass": "sass --watch sass/main.sass assets/css/main.css",
     "post-process": "node ./_post-process/run.js"
   },
   "repository": {
