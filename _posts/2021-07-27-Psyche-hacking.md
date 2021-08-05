@@ -84,7 +84,7 @@ This is the path you follow to get to the goal. The fastest route is a straight 
 Why time is important? Because you will die. But this fear of dieing isn't useful.
 Because these goals are just illusion.
 
-- “If this all is an illusion, then tools are illusions as well, and goals also"
+> If this all is an illusion, then tools are illusions as well, and goals also.
 
 They say not the goal but the journey is the point. Just think about it
 isn't this crazy game we playing would be the best way to find ourselves?  
