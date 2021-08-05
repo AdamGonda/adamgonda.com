@@ -43,16 +43,11 @@ async function getResized_b64_image(path, width, quality) {
 
 function updateDom(img, idx, b64s) {
   const htmlImgPath = '/' + img.src.slice(img.src.indexOf('assets'), img.src.length) // prettier-ignore
-  const { low, high } = b64s[idx]
-  const isThumbnail = htmlImgPath.includes('thumbnail')
+  const { low } = b64s[idx]
 
-  if (isThumbnail) {
-    img.setAttribute('src', high)
-  } else {
-    img.classList.add('lazyload')
-    img.setAttribute('data-src', htmlImgPath)
-    img.setAttribute('src', low)
-  }
+  img.classList.add('lazyload')
+  img.setAttribute('data-src', htmlImgPath)
+  img.setAttribute('src', low)
 
   console.log(`${htmlImgPath} > base64`)
 }
