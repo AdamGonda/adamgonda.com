@@ -26,10 +26,7 @@ async function getImages(images) {
     images.map(async img => {
       const htmlPath = img.src.slice(img.src.indexOf('assets'), img.src.length)
       const diskPath = __dirname + '/../_site/' + htmlPath.replace('//', '/')
-      return {
-        low: await getResized_b64_image(diskPath, 64, 90),
-        high: await getResized_b64_image(diskPath, 150, 100),
-      }
+      return await getResized_b64_image(diskPath, 64, 90)
     }),
   )
 }
@@ -43,11 +40,10 @@ async function getResized_b64_image(path, width, quality) {
 
 function updateDom(img, idx, b64s) {
   const htmlImgPath = '/' + img.src.slice(img.src.indexOf('assets'), img.src.length) // prettier-ignore
-  const { low } = b64s[idx]
 
   img.classList.add('lazyload')
   img.setAttribute('data-src', htmlImgPath)
-  img.setAttribute('src', low)
+  img.setAttribute('src', b64s[idx])
 
   console.log(`${htmlImgPath} > base64`)
 }
