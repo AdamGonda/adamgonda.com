@@ -1,5 +1,5 @@
 {
-  "name": "adamgonda.com",
+  "name": "pnl116.com",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/AdamGonda/adamgonda.com#readme",
   "dependencies": {
-    "jimp": "^0.16.1",
-    "jsdom": "^16.4.0",
-    "node": "^14.13.1"
+    "jimp": "0.16.1",
+    "jsdom": "16.4.0",
+    "node": "14.13.1"
   }
 }

@@ -3,12 +3,12 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #222222;
-  padding: 30px 30px;
+  background-color: #ED196E;
+  padding: 5px 30px;
   font-family: "Source Sans Pro", sans-serif;
 }
 nav img {
-  height: 50px;
+  height: 100px;
 }
 nav ul {
   display: flex;
@@ -33,7 +33,7 @@ nav ul a:hover:before {
 }
 @media only screen and (min-width: 680px) {
   nav {
-    padding: 30px 60px;
+    padding: 5px 30px;
   }
 }
 
@@ -53,7 +53,7 @@ footer {
   align-items: center;
   flex-direction: row;
   height: 50px;
-  background-color: #222222;
+  background-color: #ED196E;
   color: white;
   font-size: 14px;
 }
