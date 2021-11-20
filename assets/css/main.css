@@ -299,6 +299,10 @@ footer a {
   margin-bottom: 0;
 }
 
+.about {
+  display: flex;
+  justify-content: center;
+}
 .about h1 {
   font-weight: bold;
   font-size: 30px;
