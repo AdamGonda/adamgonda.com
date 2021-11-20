@@ -4,11 +4,16 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #ED196E;
-  padding: 5px 30px;
+  padding: 20px 30px;
   font-family: "Source Sans Pro", sans-serif;
 }
+@media only screen and (max-width: 450px) {
+  nav {
+    padding: 20px 5px;
+  }
+}
 nav img {
-  height: 100px;
+  height: 90px;
 }
 nav ul {
   display: flex;
@@ -30,11 +35,6 @@ nav ul a:hover:before {
   right: 0;
   height: 3px;
   background-color: whitesmoke;
-}
-@media only screen and (min-width: 680px) {
-  nav {
-    padding: 5px 30px;
-  }
 }
 
 .current-page:before {
@@ -187,7 +187,21 @@ footer a {
 }
 .post header img {
   width: 100%;
-  height: 30vw;
+}
+@media only screen and (min-width: 350px) {
+  .post header img {
+    height: 100vw;
+  }
+}
+@media only screen and (min-width: 450px) {
+  .post header img {
+    height: 70vw;
+  }
+}
+@media only screen and (min-width: 680px) {
+  .post header img {
+    height: 50vw;
+  }
 }
 
 .post main {
@@ -285,23 +299,6 @@ footer a {
   margin-bottom: 0;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 100px;
-}
-.about header {
-  display: flex;
-  justify-content: center;
-  margin: 30px 60px;
-}
-.about header img {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-}
 .about h1 {
   font-weight: bold;
   font-size: 30px;
@@ -315,11 +312,6 @@ footer a {
 }
 .about h1, .about p {
   max-width: 500px;
-}
-@media only screen and (min-width: 1441px) {
-  .about h1, .about p {
-    max-width: 800px;
-  }
 }
 
 .post-image {
