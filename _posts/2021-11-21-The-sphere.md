@@ -11,7 +11,7 @@ cover_and_thumbnail_img_ext: gif
 ---
 
 Is the whole universe slowly moving towards equilibrium,
-or the ever-merging entropy will eventually prevail?
+or the ever-emerging entropy will eventually prevail?
 
 
 
