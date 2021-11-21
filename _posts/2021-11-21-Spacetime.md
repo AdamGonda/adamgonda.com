@@ -14,12 +14,10 @@ ignore_pil: true
 Is the whole universe slowly moving towards equilibrium,
 or the ever-emerging entropy will eventually prevail?
 
+# Links
 
+[Open Sea](https://bit.ly/3x8ZhSd){:target="_blank"}
 
-<!-- # Links
+[Twitter](https://twitter.com/pnl116/status/1462497334760198146){:target="_blank"}
 
-[Open Sea](https://bit.ly/3qXBEuQ){:target="_blank"}
-
-[Twitter](https://twitter.com/pnl116/status/1462417998862503937){:target="_blank"}
-
-[Instagram](https://www.instagram.com/p/CWikZPNIWbX/){:target="_blank"} -->
+[Instagram](https://www.instagram.com/p/CWjIJc2jBUo/){:target="_blank"}
