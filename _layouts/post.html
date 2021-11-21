@@ -21,7 +21,7 @@ layout: default
         </span>
       </div>
     </section>
-    <img class="floating-image" src="/assets/images/{{ page.date | date: "%Y-%m-%d" }}/cover.{{page.cover_and_thumbnail_img_ext}}">
+    <img class="floating-image" src="/assets/images/{{ page.date | date: "%Y-%m-%d" }}/{{ page.title }}/cover.{{page.cover_and_thumbnail_img_ext}}">
   </header>
   <main>
     {{ content }}

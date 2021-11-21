@@ -16,6 +16,6 @@
         <span>{{ include.date | date_to_string }} - {{ include.min }} min read</span>
       </div>
     </section>
-    <img class="floating-image" src="/assets/images/{{ include.date | date: "%Y-%m-%d" }}/thumbnail.{{ include.cover_and_thumbnail_img_ext}}" alt="post image">
+    <img class="floating-image" src="/assets/images/{{ include.date | date: "%Y-%m-%d" }}/{{ include.title }}/thumbnail.{{ include.cover_and_thumbnail_img_ext}}" alt="post image">
   </a>
 </li>
