@@ -32,6 +32,8 @@ async function getImages(images) {
 }
 
 async function getResized_b64_image(path, width, quality) {
+  if (path.includes('gif')) return
+  
   const jimpImg = await Jimp.read(path)
   await jimpImg.resize(width, Jimp.AUTO)
   await jimpImg.quality(quality)
