@@ -1,14 +1,13 @@
 ---
 layout: post
 author: pnl116
-minutes: 2
+minutes: 1
 tags:
   - 3rd
   - NFT
   - Experimentation
   - Space
   - Time
-cover_and_thumbnail_img_ext: gif
 ignore_pil: true
 ---
 

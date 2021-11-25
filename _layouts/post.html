@@ -21,11 +21,6 @@ layout: default
         </span>
       </div>
     </section>
-    <img class="floating-image
-    {% if page.ignore_pil %}
-      ignore-PIL
-    {% endif %}
-    " src="/assets/images/{{ page.date | date: "%Y-%m-%d" }}/{{ page.title }}/cover.{{page.cover_and_thumbnail_img_ext}}">
   </header>
   <main>
     {{ content }}
