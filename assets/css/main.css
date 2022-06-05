@@ -24,16 +24,7 @@ nav ul li {
   margin: 10px;
 }
 nav ul a {
-  position: relative;
-}
-nav ul a:hover:before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background-color: whitesmoke;
+  font-size: 30px;
 }
 
 .current-page:before {
