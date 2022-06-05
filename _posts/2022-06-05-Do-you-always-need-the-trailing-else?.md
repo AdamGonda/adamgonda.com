@@ -13,8 +13,9 @@ titles:
   - Solution
 ---
 
-I was in the coding bootcamp, I did learned all the basics concepts before that
-so I tough an `if/else` can't teach me anything new, but I was wrong. I had this one left.
+One day when I was in the coding bootcamp and my mentor come over and asked about my code,
+I had to realize that although I thought I knew everything about `if/else` statements
+I was wrong. And I had this one left to learn.
 
 {% include post-content-list.html titles=page.titles %}
 
