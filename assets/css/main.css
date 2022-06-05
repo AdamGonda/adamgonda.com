@@ -3,7 +3,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #ED196E;
+  background-color: #222222;
   padding: 20px 30px;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -12,8 +12,10 @@ nav {
     padding: 20px 5px;
   }
 }
-nav img {
-  height: 90px;
+nav a {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 22px;
 }
 nav ul {
   display: flex;
@@ -22,9 +24,6 @@ nav ul li {
   margin: 10px;
 }
 nav ul a {
-  color: whitesmoke;
-  font-weight: bold;
-  font-size: 22px;
   position: relative;
 }
 nav ul a:hover:before {
@@ -53,7 +52,7 @@ footer {
   align-items: center;
   flex-direction: row;
   height: 50px;
-  background-color: #ED196E;
+  background-color: #222222;
   color: white;
   font-size: 14px;
 }

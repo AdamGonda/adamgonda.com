@@ -9,22 +9,21 @@ nav
   padding: $spacing-ss $spacing-s
   font-family: 'Source Sans Pro', sans-serif
 
-  @media only screen and (max-width: $breakPoints-xs) 
+  @media only screen and (max-width: $breakPoints-xs)
     padding: $spacing-ss $spacing-xxs
 
-  img
-    height: 90px
+  a
+    color: $colors-white
+    font-weight: bold
+    font-size: $fontSizes-l
 
   ul
     display: flex
 
     li
       margin: $spacing-xs
-    
+
     a
-      color: $colors-white
-      font-weight: bold
-      font-size: $fontSizes-l
       position: relative
 
     a:hover:before
@@ -44,4 +43,3 @@ nav
   right: 0
   height: 3px
   background-color: $colors-white
-  
