@@ -20,12 +20,12 @@
 
   <!-- og img stuff -->
   {% if page.url == '/' %}
-    <meta property="og:image" content="https://www.pnl116.com/assets/images/logo-for-links.jpg">
+    <meta property="og:image" content="https://www.adamgonda.com/assets/images/logo-for-links.jpg">
   {% elsif page.url == '/about.html' %}
-    <meta property="og:image" content="https://www.pnl116.com/assets/images/about/cover.jpg">
+    <meta property="og:image" content="https://www.adamgonda.com/assets/images/about/cover.jpg">
   {% else %}
   <meta property="og:image"
-    content="https://www.pnl116.com/assets/images/{{  page.url | regex_replace: '[^\d/]', '' | replace_first: "/", "" | split: "" | reverse | join: "" | replace_first: "/", ""  | split: "" | reverse | join: "" | replace: "/", "-" | append: "/cover.jpg"  }}">
+    content="https://www.adamgonda.com/assets/images/{{  page.url | regex_replace: '[^\d/]', '' | replace_first: "/", "" | split: "" | reverse | join: "" | replace_first: "/", ""  | split: "" | reverse | join: "" | replace: "/", "-" | append: "/cover.jpg"  }}">
   {% endif %}
 
   {% feed_meta %}
