@@ -13,8 +13,8 @@ titles:
   - Solution
 ---
 
-One day when I was in the coding bootcamp and my mentor come over and asked about my code,
-I had to realize that although I thought I knew everything about `if/else` statements
+One day when I was in the coding Bootcamp and my mentor come over and asked about my code,
+I had to realize that although I thought I knew everything about `if/else` best practices
 I was wrong, and I had this one left to learn.
 
 {% include post-content-list.html titles=page.titles %}
