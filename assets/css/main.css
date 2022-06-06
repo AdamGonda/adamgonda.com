@@ -323,32 +323,34 @@ footer a {
     grid-template-columns: 1fr 1fr;
   }
 }
-.mentoring #sessions li:nth-child(1) {
+.mentoring #sessions a {
+  border: 5px solid #222222;
+}
+.mentoring #sessions a:nth-child(1) {
   border-color: #17E785;
 }
-.mentoring #sessions li:nth-child(1) .time::before {
+.mentoring #sessions a:nth-child(1) .time::before {
   background-color: #17E785;
 }
-.mentoring #sessions li:nth-child(2) {
+.mentoring #sessions a:nth-child(2) {
   border-color: #FFA601;
 }
-.mentoring #sessions li:nth-child(2) .time::before {
+.mentoring #sessions a:nth-child(2) .time::before {
   background-color: #FFA601;
 }
-.mentoring #sessions li:nth-child(3) {
+.mentoring #sessions a:nth-child(3) {
   border-color: #8247F6;
 }
-.mentoring #sessions li:nth-child(3) .time::before {
+.mentoring #sessions a:nth-child(3) .time::before {
   background-color: #8247F6;
 }
-.mentoring #sessions li:nth-child(4) {
+.mentoring #sessions a:nth-child(4) {
   border-color: #FF4F01;
 }
-.mentoring #sessions li:nth-child(4) .time::before {
+.mentoring #sessions a:nth-child(4) .time::before {
   background-color: #FF4F01;
 }
 .mentoring #sessions .session-item {
-  border: 5px solid #222222;
   padding: 30px;
 }
 .mentoring #sessions .session-item div {

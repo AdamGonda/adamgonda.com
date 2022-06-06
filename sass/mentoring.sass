@@ -51,33 +51,35 @@
       @media only screen and (max-width: $breakPoints-m)
         display: grid
         grid-template-columns: 1fr 1fr
+    
+    a
+      border: 5px solid $colors-black
 
-    li:nth-child(1)
+    a:nth-child(1)
       border-color: #17E785
 
       .time::before
         background-color: #17E785
 
-    li:nth-child(2)
+    a:nth-child(2)
       border-color: #FFA601
 
       .time::before
         background-color: #FFA601
 
-    li:nth-child(3)
+    a:nth-child(3)
       border-color: #8247F6
 
       .time::before
         background-color: #8247F6
 
-    li:nth-child(4)
+    a:nth-child(4)
       border-color: #FF4F01
 
       .time::before
         background-color: #FF4F01
 
     .session-item
-      border: 5px solid $colors-black
       padding: $spacing-s
 
       div
