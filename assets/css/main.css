@@ -269,6 +269,66 @@ footer a {
   margin-bottom: 0;
 }
 
+.mentoring section {
+  margin-bottom: 60px;
+}
+.mentoring section h1 {
+  font-size: 45px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.mentoring #intro div {
+  display: flex;
+  align-items: center;
+}
+.mentoring #intro div .floating-image, .mentoring #intro div img {
+  width: 300px;
+  border-radius: 50% !important;
+  margin-right: 60px;
+}
+.mentoring #intro div p {
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 300;
+}
+.mentoring #sessions ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.mentoring #sessions li:nth-child(1) {
+  border-color: #FF4F01;
+}
+.mentoring #sessions li:nth-child(2) {
+  border-color: #8247F6;
+}
+.mentoring #sessions li:nth-child(3) {
+  border-color: #FFA601;
+}
+.mentoring #sessions li:nth-child(4) {
+  border-color: #17E785;
+}
+.mentoring #sessions .session-item {
+  border: 5px solid #222222;
+  padding: 30px;
+}
+.mentoring #sessions .session-item div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mentoring #sessions .session-item div .time {
+  font-size: 22px;
+}
+.mentoring #sessions .session-item div .time-unit {
+  font-size: 14px;
+}
+.mentoring #sessions .session-item div .price {
+  font-size: 30px;
+}
+
 .post-image {
   display: flex;
   flex-direction: column;

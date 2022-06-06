@@ -1,0 +1,65 @@
+@use "./constants" as *
+
+.mentoring
+  section
+    margin-bottom: $spacing-m
+
+    h1
+      font-size: $fontSizes-xxl
+      margin-bottom: $spacing-s
+      font-weight: bold
+      text-align: center
+      font-family: 'Source Sans Pro', sans-serif
+
+  #intro
+    div
+      display: flex
+      align-items: center
+
+      .floating-image,img
+        width: 300px
+        border-radius: 50% !important
+        margin-right: $spacing-m
+
+      p
+        font-size: $fontSizes-l
+        line-height: 27px
+        font-weight: 300
+
+  #sessions
+    ul
+      display: flex
+      justify-content: center
+      gap: $spacing-s
+    
+    li:nth-child(1)
+      border-color: #FF4F01
+
+    li:nth-child(2)
+      border-color: #8247F6
+
+    li:nth-child(3)
+      border-color: #FFA601
+
+    li:nth-child(4)
+      border-color: #17E785
+
+
+    
+    .session-item
+      border: 5px solid $colors-black
+      padding: $spacing-s
+
+      div
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        .time
+          font-size: $fontSizes-l
+        
+        .time-unit
+          font-size: $fontSizes-s
+
+        .price
+          font-size: $fontSizes-xl
