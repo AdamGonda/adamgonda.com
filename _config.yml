@@ -20,9 +20,7 @@
 
 title: adamgonda
 email: 
-description: >- # this means to ignore newlines until "baseurl:"
-  I started coding in 2015 to create a game. Since then I become a front-end 
-  developer specializing in React. I worked at startups and huge companies also. 
+description: >- # this means to ignore newlines until "baseurl:" 
   I am passionate about crafting clean code, FP concepts, and teaching. 
   If you need any help please reach out to me.
 baseurl: "" # the subpath of your site, e.g. /blog
