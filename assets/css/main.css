@@ -269,25 +269,6 @@ footer a {
   margin-bottom: 0;
 }
 
-.about {
-  display: flex;
-  justify-content: center;
-}
-.about h1 {
-  font-weight: bold;
-  font-size: 30px;
-  font-family: "Source Sans Pro", sans-serif;
-  margin-top: 60px;
-  margin-bottom: 10px;
-}
-.about p {
-  font-size: 18px;
-  font-weight: 300;
-}
-.about h1, .about p {
-  max-width: 500px;
-}
-
 .post-image {
   display: flex;
   flex-direction: column;
