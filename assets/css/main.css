@@ -298,8 +298,20 @@ footer a {
   justify-content: center;
   gap: 30px;
 }
+.mentoring #sessions li:nth-child(1) {
+  border-color: #FF4F01;
+}
+.mentoring #sessions li:nth-child(2) {
+  border-color: #8247F6;
+}
+.mentoring #sessions li:nth-child(3) {
+  border-color: #FFA601;
+}
+.mentoring #sessions li:nth-child(4) {
+  border-color: #17E785;
+}
 .mentoring #sessions .session-item {
-  border: 2px solid #222222;
+  border: 5px solid #222222;
   padding: 30px;
 }
 .mentoring #sessions .session-item div {
