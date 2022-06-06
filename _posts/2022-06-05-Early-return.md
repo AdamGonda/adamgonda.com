@@ -48,21 +48,22 @@ Where you have to return different values based on different conditions
 
 ```js
 if (condition) {
-  return 1
+  return 'early return'
 
 } else {
-  return 0
+  return 'base case'
 } 
 ```
 
 # Solution
 
-I think in this situation the last `else` is useless, and you are good to go with early returns.
+I think in this situation the last `else` is useless,
+and you are good to go with early returns.
 
 ```js
 if (condition) {
-  return 1
+  return 'early return'
 }
 
-return 0
+return 'base case'
 ```
