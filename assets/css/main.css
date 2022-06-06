@@ -296,10 +296,10 @@ footer a {
 .mentoring #sessions ul {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
 }
 .mentoring #sessions .session-item {
-  border: 1px solid #222222;
+  border: 2px solid #222222;
   padding: 30px;
 }
 .mentoring #sessions .session-item div {
