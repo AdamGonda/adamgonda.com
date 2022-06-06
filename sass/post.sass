@@ -15,8 +15,7 @@
       display: flex
       flex-direction: column
       align-items: center
-      padding-bottom: $spacing-xxs
-      border-bottom: 1px solid $colors-black
+      margin-bottom: $spacing-s
 
       h1
         font-size: $fontSizes-xxl
@@ -28,6 +27,18 @@
 
       li
         font-family: 'Source Sans Pro', sans-serif
+
+    img
+      width: 100%
+
+      @media only screen and (min-width: $breakPoints-xxs)
+        height: 100vw
+
+      @media only screen and (min-width: $breakPoints-xs)
+        height: 70vw
+
+      @media only screen and (min-width: $breakPoints-s)
+        height: 50vw
 
 // Main content
 .post
@@ -113,7 +124,7 @@
       left: 0
       width: $spacing-xs
       background-color: $colors-yellow
-    
+
     p
       font-weight: bold
       margin-bottom: 0
