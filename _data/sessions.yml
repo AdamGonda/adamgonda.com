@@ -1,0 +1,15 @@
+- time: 15
+  price: 20
+  url: https://youtube.com/
+
+- time: 30
+  price: 40
+  url: https://youtube.com/
+
+- time: 45
+  price: 60
+  url: https://youtube.com/
+
+- time: 60
+  price: 80
+  url: https://youtube.com/

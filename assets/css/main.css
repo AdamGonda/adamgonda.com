@@ -279,19 +279,42 @@ footer a {
   text-align: center;
   font-family: "Source Sans Pro", sans-serif;
 }
-.mentoring section div {
+.mentoring #intro div {
   display: flex;
   align-items: center;
 }
-.mentoring section div .floating-image, .mentoring section div img {
+.mentoring #intro div .floating-image, .mentoring #intro div img {
   width: 300px;
   border-radius: 50% !important;
   margin-right: 60px;
 }
-.mentoring section div p {
+.mentoring #intro div p {
   font-size: 22px;
   line-height: 27px;
   font-weight: 300;
+}
+.mentoring #sessions ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.mentoring #sessions .session-item {
+  border: 1px solid #222222;
+  padding: 30px;
+}
+.mentoring #sessions .session-item div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mentoring #sessions .session-item div .time {
+  font-size: 22px;
+}
+.mentoring #sessions .session-item div .time-unit {
+  font-size: 14px;
+}
+.mentoring #sessions .session-item div .price {
+  font-size: 30px;
 }
 
 .post-image {

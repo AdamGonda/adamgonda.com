@@ -11,6 +11,7 @@
       text-align: center
       font-family: 'Source Sans Pro', sans-serif
 
+  #intro
     div
       display: flex
       align-items: center
@@ -24,3 +25,27 @@
         font-size: $fontSizes-l
         line-height: 27px
         font-weight: 300
+
+  #sessions
+    ul
+      display: flex
+      justify-content: center
+      gap: $spacing-xs
+    
+    .session-item
+      border: 1px solid $colors-black
+      padding: $spacing-s
+
+      div
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        .time
+          font-size: $fontSizes-l
+        
+        .time-unit
+          font-size: $fontSizes-s
+
+        .price
+          font-size: $fontSizes-xl
