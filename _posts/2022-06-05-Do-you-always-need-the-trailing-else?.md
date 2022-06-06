@@ -15,7 +15,7 @@ titles:
 
 One day when I was in the coding bootcamp and my mentor come over and asked about my code,
 I had to realize that although I thought I knew everything about `if/else` statements
-I was wrong. And I had this one left to learn.
+I was wrong, and I had this one left to learn.
 
 {% include post-content-list.html titles=page.titles %}
 
