@@ -16,7 +16,7 @@
       display: flex
       align-items: center
 
-      .floating-image,img
+      #profile-picture
         width: 300px
         border-radius: 50% !important
         margin-right: $spacing-m
@@ -26,11 +26,30 @@
         line-height: 27px
         font-weight: 300
 
+      @media only screen and (max-width: $breakPoints-l)
+        flex-direction: column
+
+        #profile-picture
+          margin-right: 0
+          margin-top: $spacing-xs
+
+        p
+          margin-top: $spacing-m
+          width: 600px
+
+      @media only screen and (max-width: $breakPoints-l)
+        p
+          width: auto
+
   #sessions
     ul
       display: flex
       justify-content: center
       gap: $spacing-s
+
+      @media only screen and (max-width: $breakPoints-m)
+        display: grid
+        grid-template-columns: 1fr 1fr
 
     li:nth-child(1)
       border-color: #17E785

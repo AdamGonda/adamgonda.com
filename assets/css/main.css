@@ -283,7 +283,7 @@ footer a {
   display: flex;
   align-items: center;
 }
-.mentoring #intro div .floating-image, .mentoring #intro div img {
+.mentoring #intro div #profile-picture {
   width: 300px;
   border-radius: 50% !important;
   margin-right: 60px;
@@ -293,10 +293,34 @@ footer a {
   line-height: 27px;
   font-weight: 300;
 }
+@media only screen and (max-width: 1032px) {
+  .mentoring #intro div {
+    flex-direction: column;
+  }
+  .mentoring #intro div #profile-picture {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  .mentoring #intro div p {
+    margin-top: 60px;
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 1032px) {
+  .mentoring #intro div p {
+    width: auto;
+  }
+}
 .mentoring #sessions ul {
   display: flex;
   justify-content: center;
   gap: 30px;
+}
+@media only screen and (max-width: 855px) {
+  .mentoring #sessions ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .mentoring #sessions li:nth-child(1) {
   border-color: #17E785;
