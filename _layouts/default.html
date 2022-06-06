@@ -21,8 +21,8 @@
   <!-- og img stuff -->
   {% if page.url == '/' %}
     <meta property="og:image" content="https://www.adamgonda.com/assets/images/profile-picture.jpg">
-  {% elsif page.url == '/about.html' %}
-    <meta property="og:image" content="https://www.adamgonda.com/assets/images/about/cover.jpg">
+  {% elsif page.url == '/mentoring.html' %}
+    <meta property="og:image" content="https://www.adamgonda.com/assets/images/mentoring.jpg">
   {% else %}
   <meta property="og:image"
     content="https://www.adamgonda.com/assets/images/{{  page.url | regex_replace: '[^\d/]', '' | replace_first: "/", "" | split: "" | reverse | join: "" | replace_first: "/", ""  | split: "" | reverse | join: "" | replace: "/", "-" | append: "/cover.jpg"  }}">
