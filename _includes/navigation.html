@@ -1,13 +1,10 @@
 <nav>
-  <a href="/" alt="foo">
-    <p>[adam gonda]</p>
+  <a href="/">
+    <p id="logo">[adam gonda]</p>
   </a>
   <ul>
     <li>
-      <a href="/" {% if page.url=="/" %}class="current-page" {% endif %}>📚</a>
-    </li>
-    <li>
-      <a href="/" {% if page.url=="/" %}class="current-page" {% endif %}>👨‍💻</a>
+      <a href="/" class="cta" {% if page.url=="/" %}class="current-page" {% endif %}>mentoring</a>
     </li>
   </ul>
 </nav>
