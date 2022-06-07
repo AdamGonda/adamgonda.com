@@ -11,10 +11,7 @@ titles:
   - Solution
 ---
 
-I
-had the chance to interview a few hundred times 🤠
-and practice the process which usually involves some kind of a coding task
-a home assignment or a live challenge, this is the latter.
+I had the chance to interview a few hundred times 🤠 and practice the process which usually involves some kind of a coding task, a home assignment, or a live challenge, this is an example of the latter.
 
 {% include post-content-list.html titles=page.titles %}
 
