@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "concurrently --kill-others \"npm run serve\" \"npm run sass\"",
     "serve": "bundle exec jekyll serve --livereload",
     "sass": "sass --watch sass/main.sass assets/css/main.css",
     "post-process": "node ./_post-process/run.js"
@@ -23,5 +24,8 @@
     "jimp": "0.16.1",
     "jsdom": "16.4.0",
     "node": "17.7.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1"
   }
 }
