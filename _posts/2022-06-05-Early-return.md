@@ -44,7 +44,7 @@ In the previous☝️ example the `else` branch was needed, because if the condi
 we like to do something totally different.
 
 But in my day, to day I mostly encounter a different scenario.
-Where you have to return different values based on different conditions
+Where you have to return different values based on different conditions.
 
 ```js
 if (condition) {
