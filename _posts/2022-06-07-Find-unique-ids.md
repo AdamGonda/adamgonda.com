@@ -60,9 +60,9 @@ const tree = {
 
 # Solution
 
-We have to discover all the leafs of the tree to get all the ids than return the unique ones.
+We have to discover all the leaves of the tree to get all the ids and then return the unique ones.
 
-First I create a function called `discover`, as the name implies it's job is to recursively go through the data structure.
+First I create a function called to `discover`, as the name implies its job is to recursively go through the data structure.
 
 ```js
 function discover(node) {
@@ -74,7 +74,7 @@ function discover(node) {
 }
 ```
 
-Than we need to collect all the ids, for that I will use a list.
+Then we need to collect all the ids, for that, I will use a list.
 
 ```js
 const ids = []
@@ -90,7 +90,7 @@ function discover(node) {
 }
 ```
 
-At last but not least we have to get the unique ids and for that I use a simple set.
+Last but not least we have to get the unique ids and for that, I use a simple set.
 
 ```js
 discover(tree)
