@@ -40,10 +40,10 @@ I assume you can follow me so far, good.
 When it comes to clean and easily comprehendible code,
 unintentional `else` statements are a waste of precious brainpower.
 
-In the previous☝️ example the `else` branch was needed, because if the condition is falsy
+In the previous☝️ example the `else` branch was needed, because if the condition is false
 we like to do something totally different.
 
-But in my day, to day I mostly encounter a different scenario.
+But in my day to day, I mostly encounter different scenarios.
 Where you have to return different values based on different conditions.
 
 ```js
