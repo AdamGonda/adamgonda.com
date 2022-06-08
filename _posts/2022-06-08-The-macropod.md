@@ -13,7 +13,7 @@ titles:
 
 Tinkering with JavaScript during development to try out ideas is very valuable.
 Before the only way that I knew was opening devtools in the browser.
-Although it works it's not that convenient when you like workout something.
+Although it works it's not that convenient when you like work out something.
 For that I found the perfect solution.
 
 {% include post-content-list.html titles=page.titles %}
