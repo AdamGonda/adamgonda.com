@@ -22,8 +22,8 @@ I think it is a neat feature, one which is actually useful.
 
 This is a technic to create a better user experience by using
 minified base64 placeholders directly inlined into HTML.
-So when the page loads first, these images will there
-but blurred out, and when they load you swap them the original,
+So when the page loads first, these images will be there
+but blurred out, and when they load you swap them out to the original,
 usually using a fade-in animation for the transition between the two.
 
 # Why
