@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Adam Gonda
-minutes: 5
+minutes: 2
 tags:
   - JavaScript
   - Best practice
