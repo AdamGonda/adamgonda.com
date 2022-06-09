@@ -8,18 +8,18 @@ tags:
   - Battle tested
   - Clean code
 titles:
-  - If/else
+  - If-else
   - Problem
   - Solution
 ---
 
 One day when I was in the coding Bootcamp and my mentor come over and asked about my code,
-I had to realize that although I thought I knew everything about `if/else` best practices
+I had to realize that although I thought I knew everything about `if-else` best practices
 I was wrong, and I had this one left to learn.
 
 {% include post-content-list.html titles=page.titles %}
 
-# If/else
+# If-else
 
 It is a fairly simple control flow statement in (I assume) every programming language.
 
