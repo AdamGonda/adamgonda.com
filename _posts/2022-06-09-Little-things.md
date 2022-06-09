@@ -6,6 +6,7 @@ tags:
   - JavaScript
   - Tutorial
   - Technique
+  - UX
 titles:
   - Problem
   - Solution
