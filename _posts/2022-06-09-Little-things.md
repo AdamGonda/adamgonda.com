@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Adam Gonda
-minutes: 4
+minutes: 6
 tags:
   - JavaScript
   - Tutorial
