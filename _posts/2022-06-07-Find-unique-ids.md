@@ -97,5 +97,5 @@ discover(tree)
 
 const uniqueIds = new Set(ids)
 
-console.log(uniqueIds) // Set { '7', '5', '3', '9' }
+console.log(uniqueIds) Set { '7', '5', '3', '9' }
 ```

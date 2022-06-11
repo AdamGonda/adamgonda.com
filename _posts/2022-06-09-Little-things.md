@@ -39,14 +39,14 @@ This blog was created with [Jekyll](https://jekyllrb.com/){:target='_blank'} and
 I had the problems mentioned ☝️ so I took my own advice.
 
 So the technique is using minified `base64` placeholders
-inlined into `HTML`. So when the page loads first, these images will be there
+inlined into `html`. So when the page loads first, these images will be there
 but blurred out, and when they load you swap them out to the original,
 usually using a fade-in animation for the transition between the two.
 
 # Implementation
 
 I created a script that runs in the pipeline after the site has been generated.
-It finds all the images then creates a low res `base64` version from each and inlines them to the `HTML`.
+It finds all the images then creates a low res `base64` version from each and inlines them to the `html`.
 
 ```js
 const apply = async () => {
@@ -80,7 +80,7 @@ const apply = async () => {
 }
 ```
 
-To work with the `HTML` I used [jsdom](https://github.com/jsdom/jsdom){:target='_blank'}, it has a nice dom like API
+To work with the `html` I used [jsdom](https://github.com/jsdom/jsdom){:target='_blank'}, it has a nice dom like API
 and I used [jimp](https://github.com/oliver-moran/jimp){:target='_blank'} to transform the images to `base64`.
 
 For the lazy loading part and switching I decided to use this library called [lazysizes](https://github.com/aFarkas/lazysizes){:target='_blank'}.
