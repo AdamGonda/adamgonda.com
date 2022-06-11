@@ -20,16 +20,28 @@
 
   <!-- og img stuff -->
   {% if page.url == '/' %}
-    <meta property="og:image" content="https://www.adamgonda.com/assets/images/profile-picture.jpg">
+  <meta property="og:image" content="https://www.adamgonda.com/assets/images/profile-picture.jpg">
   {% elsif page.url == '/mentoring.html' %}
-    <meta property="og:image" content="https://www.adamgonda.com/assets/images/mentoring.jpg">
+  <meta property="og:image" content="https://www.adamgonda.com/assets/images/mentoring.jpg">
   {% else %}
   <meta property="og:image"
-    content="https://www.adamgonda.com/assets/images/{{  page.url | regex_replace: '[^\d/]', '' | replace_first: "/", "" | split: "" | reverse | join: "" | replace_first: "/", ""  | split: "" | reverse | join: "" | replace: "/", "-" | append: "/cover.jpg"  }}">
+    content="https://www.adamgonda.com/assets/images/{{  page.url | regex_replace: '[^\d/]', '' | replace_first: "
+    /", "" | split: "" | reverse | join: "" | replace_first: "/" , "" | split: "" | reverse | join: "" | replace: "/"
+    , "-" | append: "/cover.jpg" }}">
   {% endif %}
 
   {% feed_meta %}
   {% seo %}
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178874876-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-178874876-1');
+  </script>
 </head>
 
 <body>
