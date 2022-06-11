@@ -396,26 +396,26 @@ body {
 
 .content {
   min-height: calc(100vh - 135px);
-  padding: 45px 30px;
+  padding: 0 30px;
 }
 @media only screen and (min-width: 680px) and (max-width: 855px) {
   .content {
-    padding: 45px 60px;
+    padding: 0 60px;
   }
 }
 @media only screen and (min-width: 855px) and (max-width: 1182px) {
   .content {
-    padding: 45px 100px;
+    padding: 0 100px;
   }
 }
 @media only screen and (min-width: 1182px) and (min-width: 1382px) {
   .content {
-    padding: 45px 18vw;
+    padding: 0 18vw;
   }
 }
 @media only screen and (min-width: 1182px) {
   .content {
-    padding: 45px 20vw;
+    padding: 0 20vw;
   }
 }
 
@@ -451,6 +451,23 @@ body {
   color: #222222;
   margin-right: 10px;
   background-color: #FFBF09;
+}
+
+#filter-wrap {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#filter-wrap .tags li {
+  cursor: pointer;
+}
+#filter-wrap .tags li:hover {
+  color: white;
+  background-color: #222222;
+}
+
+#filter-wrap[data-is-open=false] {
+  justify-content: end;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,7 +2,16 @@
 layout: default
 ---
 <main>
-  <ul>
+  <div id="filter-wrap" data-is-open="false">
+    <button id="filter-icon">
+      <img src="assets/images/filter-icon.png" alt="filter-icon">
+    </button>
+    <button id="close-icon" style="display: none">
+      <img src="assets/images/close-icon.png" alt="filter-icon">
+    </button>
+  </div>
+  
+  <ul class="posts">
     {% for post in site.posts %}
       {% include post-list-item.html 
         title=post.title
