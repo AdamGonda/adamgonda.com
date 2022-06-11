@@ -453,4 +453,12 @@ body {
   background-color: #FFBF09;
 }
 
+code.language-plaintext {
+  background-color: #e1dede;
+  padding: 2px;
+  border-radius: 5px;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
+}
+
 /*# sourceMappingURL=main.css.map */
