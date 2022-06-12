@@ -9,19 +9,19 @@ tags:
   - Series
 titles:
   - What is a function?
-  - Higher order functions
+  - Type of functions
   - Immutability
+  - Piping
+  - Make it move
 ---
 
-Let's get moving! We will start implementing the `snake`'s movement.
-But before that we have to talk about a few concepts
-regarding functions in `JavaScript` and `FP` scenario.
+First, we will go through a few concepts regarding `FP` and `JavaScript`,
+then we start implementing the movement of the `snake` 🤠
 
 {% include post-content-list.html titles=page.titles %}
 
-# What is function?
+# What is a function?
 
-Let's start from the beginning, what is a `function`?
 It is the smallest reusable code block, it can accept arguments and has a return value.
 In `JavaScript` you can define one like this.
 
@@ -31,10 +31,9 @@ function greet(name) {
 }
 ```
 
-First it seems fairly simple right? But wait a bit.
-I had a hard time with the next concept because my first language was `Java`
+It's a fairly simple concept and the basic building block, that we will be using throughout this series.
 
-> in JavaScript functions are first-class citizens.
+> In JavaScript functions are first-class citizens.
 You can pass functions to other functions as arguments, return them from other functions as values, and store them in variables
 
 For example:
@@ -56,15 +55,102 @@ function _return(greet) {
 }
 ```
 
-# Higher order functions
+# Type of functions
 
-In this example, we have greet which is a `first order function`
-> first order functions don't take a function as an argument or return a function as output.
+In the example ☝️, we have `greet` which is a `first order function`
+> First order functions don't take a function as an argument or return a function as output.
 
 and `accept` and `_return` as `higher order functions`
 
-> a higher order function is a function that takes a function as an argument or returns a function.
+> A higher order function is a function that takes a function as an argument or returns a function.
 
-If you were me and started on the `OOP` path, your head is spinning by now.
+If you are like I was and started on the `OOP` path,  your head is spinning by now.
 Because the usual mental model or the level of abstraction for something is a `class` in `OOP` land.
 
+# Immutability
+
+How would you code if you were unable to change anything?
+
+> In the Functional Programming world, we create values or objects by initializing them. Then we use them, but we do not change their values or their state. If we need, we create a new one, but we do not modify the existing object's state.
+
+Mutable:
+
+```js
+const person = { name: 'Bob', age: 22 }
+
+function updateName(person, newName) {
+  // update the name directly on person
+  person.name = newName
+}
+
+updateName(person)
+
+console.log(person) // { name: 'Bob', age: 22 }
+```
+
+Immutable:
+
+```js
+const person = { name: 'Bob', age: 22 }
+
+function updateName(person, newName) {
+  // create a copy of a person, with a new name
+  return {
+    ...person,
+    name: newName
+  }
+}
+
+const updatedPerson = updateName(person, 'Harry')
+
+console.log(person) // { name: 'Bob', age: 22 }
+console.log(updatedPerson) // { name: 'Harry', age: 22 }
+```
+
+Sometimes it is not feasible in a language like `JavaScript` to always create a new copy of an object,
+but in this case, it will be totally fine.
+
+# Piping
+
+You can think of if as a pipeline 👇
+
+{% include post-image.html
+  src='pipeline.jpeg'
+  date=page.date
+%}
+
+But in this scenario, it will consist of multiple functions
+and not gas but data will flow through it.
+
+Example:
+
+```js
+function pipe(seed) {
+  return (...fns) => fns.reduce((state, fn) => fn(state), seed)
+}
+
+function addA(state) {
+  return {
+    ...state,
+    a: ''
+  }
+}
+
+function addB(state) {
+  return {
+    ...state,
+    b: ''
+  }
+}
+
+const state = { foo: 'bar' }
+
+const result = pipe(state)(
+  addA,
+  addB,
+)
+
+console.log(result) // { foo: 'bar', a: '', b: '' }
+```
+
+It's crucial because it helps us glue our functions together.
