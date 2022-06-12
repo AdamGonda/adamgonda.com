@@ -8,23 +8,18 @@ tags:
   - Tutorial
   - Series
 titles:
-  - First and higher order functions
-  
-  # - Immutability
-  # - Referential transparency
-  # - Closers
-  # - Functors
-  # - Piping
-  # - Partial application vs currying
+  - What is a function?
+  - Higher order functions
+  - Immutability
 ---
 
-Is `FP` better than `OOP`? I think yes so in this tutorial series I like to
-show you how to implement one of the simplest games ever:
-`Snake`, in a functional style using `JavaScript` and show you the basics.
+Let's get moving! We will start implementing the `snake`'s movement.
+But before that we have to talk about a few concepts
+regarding functions in `JavaScript` and `FP` scenario.
 
 {% include post-content-list.html titles=page.titles %}
 
-# First and higher order functions
+# What is function?
 
 Let's start from the beginning, what is a `function`?
 It is the smallest reusable code block, it can accept arguments and has a return value.
@@ -61,6 +56,8 @@ function _return(greet) {
 }
 ```
 
+# Higher order functions
+
 In this example, we have greet which is a `first order function`
 > first order functions don't take a function as an argument or return a function as output.
 
@@ -71,4 +68,3 @@ and `accept` and `_return` as `higher order functions`
 If you were me and started on the `OOP` path, your head is spinning by now.
 Because the usual mental model or the level of abstraction for something is a `class` in `OOP` land.
 
-But now lets see how we can use our new knowledge to implement our Snake game.
