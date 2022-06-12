@@ -457,6 +457,7 @@ body {
   display: flex;
   margin-top: 20px;
   margin-bottom: 30px;
+  align-items: baseline;
 }
 #filter-wrap .tags li {
   cursor: pointer;
