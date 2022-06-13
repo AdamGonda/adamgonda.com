@@ -31,7 +31,7 @@ function greet(name) {
 }
 ```
 
-It's a fairly simple concept and the basic building block, that we will be using throughout this series.
+It's a fairly simple concept and the basic building block that we will be using throughout this series.
 
 > In JavaScript functions are first-class citizens.
 You can pass functions to other functions as arguments, return them from other functions as values, and store them in variables
@@ -65,15 +65,17 @@ and `accept` and `_return` as `higher order functions`
 > A higher order function is a function that takes a function as an argument or returns a function.
 
 If you are like I was and started on the `OOP` path,  your head is spinning by now.
-Because the usual mental model or the level of abstraction for something is a `class` in `OOP` land.
+Because the usual mental model or the level of abstraction for "something" is a `class`, not a `function`.
 
 # Immutability
 
 How would you code if you were unable to change anything?
 
-> In the Functional Programming world, we create values or objects by initializing them. Then we use them, but we do not change their values or their state. If we need, we create a new one, but we do not modify the existing object's state.
+> In the Functional Programming world, we create values or objects by initializing them.
+Then we use them, but we do not change their values or their state. If we need, we create
+a new one, but we do not modify the existing object's state.
 
-Mutable:
+Modifying existing state:
 
 ```js
 const person = { name: 'Bob', age: 22 }
@@ -88,7 +90,7 @@ updateName(person)
 console.log(person) // { name: 'Bob', age: 22 }
 ```
 
-Immutable:
+Creating new state:
 
 ```js
 const person = { name: 'Bob', age: 22 }
@@ -107,8 +109,8 @@ console.log(person) // { name: 'Bob', age: 22 }
 console.log(updatedPerson) // { name: 'Harry', age: 22 }
 ```
 
-Sometimes it is not feasible in a language like `JavaScript` to always create a new copy of an object,
-but in this case, it will be totally fine.
+Sometimes it is not feasible to always create a new copy of an object,
+but in this case it's totally fine.
 
 # Piping
 
@@ -119,8 +121,9 @@ You can think of if as a pipeline 👇
   date=page.date
 %}
 
-But in this scenario, it will consist of multiple functions
-and not gas but data will flow through it.
+But in this scenario, it will consist of multiple functions,
+and not gas but data will flow through it,
+playing a key part in helping us to glue our functions together.
 
 Example:
 
@@ -152,5 +155,3 @@ const result = pipe(state)(
 
 console.log(result) // { foo: 'bar', a: '', b: '' }
 ```
-
-It's crucial because it helps us glue our functions together.
