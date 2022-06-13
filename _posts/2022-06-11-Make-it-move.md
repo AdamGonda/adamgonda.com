@@ -156,3 +156,13 @@ const result = pipe(state)(
 
 console.log(result) // { foo: 'bar', a: '', b: '' }
 ```
+
+# Make it move
+
+Our game will live in a 2D coordinate system, where
+every game object has a `x` and `y` position.
+
+{% include post-image.html
+  src='coordinate-system.jpg'
+  date=page.date
+%}
