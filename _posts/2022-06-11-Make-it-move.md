@@ -123,7 +123,8 @@ You can think of if as a pipeline 👇
 
 But in this scenario, it will consist of multiple functions,
 and not gas but data will flow through it,
-playing a key part in helping us to glue our functions together.
+playing an integral part in helping us to compose/glue our functions together
+to build complex data processing pipelines.
 
 Example:
 
