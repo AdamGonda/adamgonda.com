@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Adam Gonda
-minutes: 2
+minutes: 6
 tags:
   - JavaScript
   - FP
