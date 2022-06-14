@@ -56,9 +56,14 @@ function _return(greet) {
 # Type of functions
 
 In the example ☝️, we have `greet` which is a `first order function`
+
 > First order functions don't take a function as an argument or return a function as output.
 
-and `accept` and `_return` as `higher order functions`
+and also a `pure function`
+
+> Pure functions given the same input, always return the same output and produce no side effects.
+
+`accept` and `_return` are `higher order functions`
 
 > A higher order function is a function that takes a function as an argument or returns a function.
 
@@ -155,5 +160,5 @@ const result = pipe(state)(
 console.log(result) // { foo: 'bar', a: '', b: '' }
 ```
 
-Now you know the basic tools needed to start implementing `Snake`.
-Next up we will start [modeling the game ➡️](http://localhost:4000/2022/06/11/Modeling-the-game.html){:target='_blank'}.
+<!-- Now you know the basic tools needed to start implementing `Snake`.
+Next up we will start [modeling the game ➡️](http://localhost:4000/2022/06/11/Modeling-the-game.html){:target='_blank'}. -->
