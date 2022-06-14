@@ -270,6 +270,10 @@ footer a {
   margin-bottom: 0;
 }
 
+.post main .language-md.highlighter-rouge code {
+  color: #e1dede;
+}
+
 .mentoring section {
   margin-bottom: 60px;
 }
