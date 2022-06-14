@@ -12,6 +12,7 @@ titles:
   - Type of functions
   - Immutability
   - Piping
+  - Modelling the game
   - Make it move
 ---
 
@@ -157,12 +158,106 @@ const result = pipe(state)(
 console.log(result) // { foo: 'bar', a: '', b: '' }
 ```
 
-# Make it move
+# Modelling the game
 
-Our game will live in a 2D coordinate system, where
-every game object has a `x` and `y` position.
+I assume you know this game, but let's go through it.
+We have a snake in a constrained environment, where
+the goal is to eat the most amount of food and grow without
+colliding with the walls or with our own tail.
+
+We will model the game in a 2D coordinate system, where
+every object will have an `x` and `y` position.
 
 {% include post-image.html
   src='coordinate-system.jpg'
   date=page.date
 %}
+
+```ts
+type BodyPart = {
+  x: number
+  y: number
+
+  // previous x, y position
+  pX: number
+  pY: number
+}
+
+type Snake = {
+  body: BodyPart[]
+  dir: 'UP' | 'DOWN' | 'RIGHT' | 'LEFT'
+}
+
+type Food = {
+  x: number
+  y: number
+}
+
+type View = {
+  width: number
+  height: number
+}
+
+type State = {
+  view: View
+  snake: Snake
+  food: Food
+  isGameOver: boolean
+}
+```
+
+At a high level the implementation will be just a mapping between `(currentState, input) => newState`.
+Where our main function will consist of multiple state transitions on `State` piped together like this:
+
+```ts
+function update(currentState: State, input: 'UP' | 'DOWN' | 'RIGHT' | 'LEFT') {
+  return pipe(currentState)(
+    turnSnake(input),
+    moveSnake,
+    seekFood,
+    isGameOver,
+  )
+}
+```
+
+# Make it move
+
+Now we will concentrate on the `moveSnake` function.
+
+There will be multiple things in our game state,
+so first we will have to `destructure` the snake from it,
+then update it's body to make it move.
+
+```js
+export function moveSnake(state) {
+  const { snake } = state
+
+  return {
+    ...state,
+    snake: {
+      ...snake,
+      body: moveBody(snake),
+    },
+  }
+}
+```
+
+Move the body:
+
+```js
+function moveBody({ body, dir }) {
+  return body.map((part, index, arr) => {
+    if (index == 0) {
+      return moveHead(part, dir)
+    }
+
+    return {
+      ...part,
+      x: arr[index - 1].x,
+      y: arr[index - 1].y,
+      pX: part.x,
+      pY: part.y,
+    }
+  })
+}
+```
