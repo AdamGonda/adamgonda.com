@@ -20,4 +20,4 @@ show you how to implement one of the simplest games ever:
 # Useful concepts
 
 We go through a few concepts regarding `FP` and `JavaScript`
-before we start implementing the game [👉](http://localhost:4000/2022/06/14/Useful-concepts.html){:target='_blank'}.
+before we start implementing the game [👉](https://adamgonda.com/2022/06/14/Useful-concepts.html){:target='_blank'}.
