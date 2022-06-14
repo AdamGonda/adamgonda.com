@@ -4,20 +4,19 @@ author: Adam Gonda
 minutes: 2
 tags:
   - JavaScript
-  - Functional programming
+  - FP
   - Tutorial
   - Series
+  - Snake
 titles:
   - What is a function?
   - Type of functions
   - Immutability
   - Piping
-  - Modelling the game
-  - Make it move
 ---
 
-First, we will go through a few concepts regarding `FP` and `JavaScript`,
-then we start implementing the movement of the `snake` 🤠
+First, we will go through a few concepts regarding `FP` and `JavaScript`
+before we can start implementing the game.
 
 {% include post-content-list.html titles=page.titles %}
 
@@ -32,10 +31,8 @@ function greet(name) {
 }
 ```
 
-It's a fairly simple concept and the basic building block that we will be using throughout this series.
-
 > In JavaScript functions are first-class citizens.
-You can pass functions to other functions as arguments, return them from other functions as values, and store them in variables
+You can pass functions to other functions as arguments, return them from other functions as values, and store them in variables.
 
 For example:
 
@@ -66,7 +63,7 @@ and `accept` and `_return` as `higher order functions`
 > A higher order function is a function that takes a function as an argument or returns a function.
 
 If you are like I was and started on the `OOP` path,  your head is spinning by now.
-Because the usual mental model or the level of abstraction for "something" is a `class`, not a `function`.
+Because the usual mental model or the level of abstraction there for "something" is a `class`, not a `function`.
 
 # Immutability
 
@@ -86,9 +83,9 @@ function updateName(person, newName) {
   person.name = newName
 }
 
-updateName(person)
+updateName(person, 'Harry')
 
-console.log(person) // { name: 'Bob', age: 22 }
+console.log(person) // { name: 'Harry', age: 22 }
 ```
 
 Creating new state:
@@ -111,18 +108,18 @@ console.log(updatedPerson) // { name: 'Harry', age: 22 }
 ```
 
 Sometimes it is not feasible to always create a new copy of an object,
-but in this case it's totally fine.
+but in this case, it's totally fine.
 
 # Piping
 
-You can think of if as a pipeline 👇
+You can think of it as a pipeline 👇
 
 {% include post-image.html
   src='pipeline.jpeg'
   date=page.date
 %}
 
-But in this scenario, it will consist of multiple functions,
+But in this case, it will consist of multiple functions,
 and not gas but data will flow through it,
 playing an integral part in helping us to compose/glue our functions together
 to build complex data processing pipelines.
@@ -158,106 +155,5 @@ const result = pipe(state)(
 console.log(result) // { foo: 'bar', a: '', b: '' }
 ```
 
-# Modelling the game
-
-I assume you know this game, but let's go through it.
-We have a snake in a constrained environment, where
-the goal is to eat the most amount of food and grow without
-colliding with the walls or with our own tail.
-
-We will model the game in a 2D coordinate system, where
-every object will have an `x` and `y` position.
-
-{% include post-image.html
-  src='coordinate-system.jpg'
-  date=page.date
-%}
-
-```ts
-type BodyPart = {
-  x: number
-  y: number
-
-  // previous x, y position
-  pX: number
-  pY: number
-}
-
-type Snake = {
-  body: BodyPart[]
-  dir: 'UP' | 'DOWN' | 'RIGHT' | 'LEFT'
-}
-
-type Food = {
-  x: number
-  y: number
-}
-
-type View = {
-  width: number
-  height: number
-}
-
-type State = {
-  view: View
-  snake: Snake
-  food: Food
-  isGameOver: boolean
-}
-```
-
-At a high level the implementation will be just a mapping between `(currentState, input) => newState`.
-Where our main function will consist of multiple state transitions on `State` piped together like this:
-
-```ts
-function update(currentState: State, input: 'UP' | 'DOWN' | 'RIGHT' | 'LEFT') {
-  return pipe(currentState)(
-    turnSnake(input),
-    moveSnake,
-    seekFood,
-    isGameOver,
-  )
-}
-```
-
-# Make it move
-
-Now we will concentrate on the `moveSnake` function.
-
-There will be multiple things in our game state,
-so first we will have to `destructure` the snake from it,
-then update it's body to make it move.
-
-```js
-export function moveSnake(state) {
-  const { snake } = state
-
-  return {
-    ...state,
-    snake: {
-      ...snake,
-      body: moveBody(snake),
-    },
-  }
-}
-```
-
-Move the body:
-
-```js
-function moveBody({ body, dir }) {
-  return body.map((part, index, arr) => {
-    if (index == 0) {
-      return moveHead(part, dir)
-    }
-
-    return {
-      ...part,
-      x: arr[index - 1].x,
-      y: arr[index - 1].y,
-      pX: part.x,
-      pY: part.y,
-    }
-  })
-}
-```
+Now you know the basic tools needed to start implementing `Snake`.
+Next up we will start [modeling the game ➡️](http://localhost:4000/2022/06/11/Modeling-the-game.html){:target='_blank'}.
