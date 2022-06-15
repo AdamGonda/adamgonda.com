@@ -162,4 +162,4 @@ console.log(result) // { foo: 'bar', a: '', b: '' }
 
 Congrats!!! 🥳🥳🥳<br>
 You went through all of them, nice 👍
-Next let's look at how games are put together, continue with [the game loop 👉](/2022/06/15/The-game-loop.html){:target='_blank'}
+Next let's look at how games are put together, continue [in the loop 👉](/2022/06/15/In-the-loop.html){:target='_blank'}
