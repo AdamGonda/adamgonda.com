@@ -160,5 +160,6 @@ const result = pipe(state)(
 console.log(result) // { foo: 'bar', a: '', b: '' }
 ```
 
-<!-- Now you know the basic tools needed to start implementing `Snake`.
-Next up we will start [modeling the game ➡️](http://localhost:4000/2022/06/11/Modeling-the-game.html){:target='_blank'}. -->
+Congrats!!! 🥳🥳🥳<br>
+You went through all of them, nice 👍
+Next let's look at how games are put together, continue with [the game loop 👉](/2022/06/15/The-game-loop.html){:target='_blank'}
