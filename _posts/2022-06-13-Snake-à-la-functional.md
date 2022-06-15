@@ -4,7 +4,7 @@ author: Adam Gonda
 minutes: 2
 tags:
   - JavaScript
-  - Functional programming
+  - FP
   - Tutorial
   - Series
 titles:
