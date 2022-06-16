@@ -25,8 +25,6 @@ in a functional style using `JavaScript` and a package I wrote.
 
 # Game loop
 
-From the web:
-
 > The game loop is the overall flow control for the entire game. It's a loop because the game keeps doing a series of actions over and over again until the user quits. Each iteration of the game loop is known as a frame.
 
 For more complex games it can be pretty tricky to implement
