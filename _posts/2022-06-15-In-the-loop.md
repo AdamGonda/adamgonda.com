@@ -19,6 +19,7 @@ Let's read on and find out.
 
 It's part of a [series](/2022/06/13/Snake-à-la-functional.html){:target='_blank'} on recreating `Snake`
 in a functional style using `JavaScript` and a package I wrote.
+{: .info-box}
 
 {% include post-content-list.html titles=page.titles %}
 

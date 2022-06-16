@@ -274,6 +274,11 @@ footer a {
   color: #e1dede;
 }
 
+.post .info-box {
+  padding: 20px;
+  border: 1px dashed #222222;
+}
+
 .mentoring section {
   margin-bottom: 60px;
 }
