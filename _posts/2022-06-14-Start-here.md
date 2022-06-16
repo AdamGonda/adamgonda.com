@@ -18,6 +18,9 @@ titles:
 First, we will go through a few concepts regarding `FP` and `JavaScript`
 before we can start implementing the game.
 
+It's part of a [series](/2022/06/13/Snake-à-la-functional.html){:target='_blank'} on recreating `Snake`
+in a functional style using `JavaScript` and a package I wrote.
+
 {% include post-content-list.html titles=page.titles %}
 
 # What is a function?

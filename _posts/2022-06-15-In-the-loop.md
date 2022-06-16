@@ -17,6 +17,9 @@ Let's look at how games are put together, first of all we
 need a ...if you guessed it from the title there is hope 🤠
 Let's read on and find out.
 
+It's part of a [series](/2022/06/13/Snake-à-la-functional.html){:target='_blank'} on recreating `Snake`
+in a functional style using `JavaScript` and a package I wrote.
+
 {% include post-content-list.html titles=page.titles %}
 
 # Game loop
