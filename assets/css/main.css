@@ -463,4 +463,20 @@ body {
   background-color: #FFBF09;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination #prev-btn, .pagination #next-btn {
+  font-size: 14px;
+}
+.pagination .page {
+  margin: 0 2px;
+}
+.pagination .current {
+  border: 1px solid #222222;
+  padding: 1px 3px;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=main.css.map */
