@@ -474,9 +474,9 @@ body {
   margin: 0 2px;
 }
 .pagination .current {
-  border: 1px solid #222222;
+  background-color: #222222;
   padding: 1px 3px;
-  font-weight: bold;
+  color: whitesmoke;
 }
 
 /*# sourceMappingURL=main.css.map */
