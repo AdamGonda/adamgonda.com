@@ -12,8 +12,8 @@ titles:
   - State
 ---
 
-I will go through how we can model the `Snake` game.
-We will setup our dev env and start ironing out our types.
+I will start by modelling the game, then
+we will setup our dev env.
 
 This post is part of a [series](/2022/06/13/Snake-à-la-functional.html){:target='_blank'} on recreating `Snake`
 in a functional style using `JavaScript` and a package I wrote.
