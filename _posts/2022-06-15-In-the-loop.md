@@ -2,6 +2,7 @@
 layout: post
 author: Adam Gonda
 minutes: 5
+series: true
 tags:
   - JavaScript
   - FP

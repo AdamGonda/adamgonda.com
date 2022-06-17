@@ -85,10 +85,18 @@ footer a {
   justify-content: space-between;
   padding-right: 30px;
 }
-.post-list-item a section h1 {
+.post-list-item a section .title {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.post-list-item a section .title h1 {
+  display: inline;
   font-weight: bold;
   font-size: 22px;
-  margin-bottom: 10px;
+}
+.post-list-item a section .title img {
+  width: 15px;
 }
 .post-list-item a section p {
   font-size: 18px;
@@ -99,14 +107,14 @@ footer a {
   font-size: 14px;
   margin-top: 5px;
 }
-.post-list-item img {
+.post-list-item .post-image {
   max-height: 150px;
   min-height: 150px;
   max-width: 150px;
   min-width: 150px;
 }
 @media only screen and (max-width: 550px) {
-  .post-list-item img {
+  .post-list-item .post-image {
     display: none;
   }
 }

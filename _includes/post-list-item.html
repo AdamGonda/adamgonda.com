@@ -1,8 +1,13 @@
 <li class="post-list-item {% if include.loopIdx == 1 %}new{% endif %}">
   <a href={{ include.url }}>
     <section>
-      <div class="top">
-        <h1>{{ include.title }}</h1>
+      <div>
+        <div class="title">
+          <h1>{{ include.title }}</h1>
+          {% if include.series %}
+            <img src="/assets//images//series-icon.svg">
+          {% endif %}
+        </div>
         {{ include.excerpt }}
       </div>
       <div class="bottom">
@@ -16,7 +21,7 @@
         <span>{{ include.date | date_to_string }} - {{ include.min }} min read</span>
       </div>
     </section>
-    <img class="floating-image
+    <img class="post-image floating-image
     {% if include.ignore_pil %}
       ignore-PIL
     {% endif %}
