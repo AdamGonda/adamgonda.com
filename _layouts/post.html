@@ -11,13 +11,7 @@ layout: default
         {{ page.minutes }} min read
         <span>-</span>
         <span style="display: inline-block;">
-          <ul class="tags">
-            {% for tag in page.tags %}
-            <li>
-              {{ tag }}
-            </li>
-            {% endfor %}
-          </ul>
+          {% include tags.html tags=page.tags %}
         </span>
       </div>
     </section>

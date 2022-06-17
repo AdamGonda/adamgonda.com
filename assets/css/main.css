@@ -479,4 +479,9 @@ body {
   color: whitesmoke;
 }
 
+.tags li[data-content=Series] {
+  background-color: #222222;
+  color: whitesmoke;
+}
+
 /*# sourceMappingURL=main.css.map */
