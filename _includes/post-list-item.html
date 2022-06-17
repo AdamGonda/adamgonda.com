@@ -2,12 +2,7 @@
   <a href={{ include.url }}>
     <section>
       <div>
-        <div class="title">
-          <h1>{{ include.title }}</h1>
-          {% if include.series %}
-            <img class="ignore-PIL" src="/assets//images//series-icon.svg">
-          {% endif %}
-        </div>
+        <h1>{{ include.title }}</h1>
         {{ include.excerpt }}
       </div>
       <div class="bottom">
@@ -21,7 +16,7 @@
         <span>{{ include.date | date_to_string }} - {{ include.min }} min read</span>
       </div>
     </section>
-    <img class="post-list--item-image floating-image
+    <img class="floating-image
     {% if include.ignore_pil %}
       ignore-PIL
     {% endif %}
