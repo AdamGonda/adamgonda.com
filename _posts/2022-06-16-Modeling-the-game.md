@@ -54,30 +54,3 @@ Install [loop](https://github.com/AdamGonda/loop){:target='_blank'}:
 ```md
 npm install adamgonda/loop
 ```
-
-Create an `index.js`, and with that you will have the basic setup:
-
-```js
-const { run } = require('loop')
-const { pipe } = require('loop/utils')
-
-const initialState = { player: { x: 10, y: 5, isHappy: true }}
-const renderMap = { player: 'X' }
-const dimensions = { width: 20, height: 10 }
-
-function update(state, input) {
-  return pipe(state)(state => state)
-}
-
-function toCommon(state) {
-  return [{ ...state.player, tag: 'player' }]
-}
-
-run({
-  initialState,
-  update,
-  toCommon,
-  renderMap,
-  dimensions,
-})
-```
