@@ -20,6 +20,9 @@ This post is part of a [series](/2022/06/13/Snake-à-la-functional.html){:target
 in a functional style using `JavaScript` and a package I wrote.
 {: .info-box}
 
+All I did in this post can be found [in this repo](https://github.com/AdamGonda/snake-game/tree/start-modelling){:target='_blank'}
+{: .info-box}
+
 {% include post-content-list.html titles=page.titles %}
 
 # Refresher
@@ -34,9 +37,6 @@ colliding with the walls or with our own tail.
 Because I will use [loop](https://github.com/AdamGonda/loop){:target='_blank'}
 it's given that I model the game in a 2D coordinate system, where
 every `game object` will have an `x` and `y` position.
-
-The package will also provide us a game loop.
-So I can concatenate on the state and logic.
 
 {% include post-image.html
   src='snake-in-2d-grid.jpg'
@@ -54,3 +54,11 @@ Install [loop](https://github.com/AdamGonda/loop){:target='_blank'}:
 ```md
 npm install adamgonda/loop
 ```
+
+Create `src` folder with `index.js` and `utils.js`.
+
+```md
+mkdir src && cd src && touch index.js utils.js
+```
+
+
