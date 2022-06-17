@@ -107,14 +107,14 @@ footer a {
   font-size: 14px;
   margin-top: 5px;
 }
-.post-list-item .post-image {
+.post-list-item .post-list--item-image {
   max-height: 150px;
   min-height: 150px;
   max-width: 150px;
   min-width: 150px;
 }
 @media only screen and (max-width: 550px) {
-  .post-list-item .post-image {
+  .post-list-item .post-list--item-image {
     display: none;
   }
 }
