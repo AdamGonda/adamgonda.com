@@ -2,6 +2,7 @@
 layout: post
 author: Adam Gonda
 minutes: 1000
+series: true
 tags:
   - JavaScript
   - Functional programming
@@ -30,23 +31,19 @@ colliding with the walls or with our own tail.
 
 # State
 
-I model the game in a 2D coordinate system, where
+Because I will use [loop](https://github.com/AdamGonda/loop){:target='_blank'}
+it's given that I model the game in a 2D coordinate system, where
 every `game object` will have an `x` and `y` position.
-The `initial state` is a great place to define our game state.
 
-```js
-
-```
+The package will also provide us a game loop.
+So I can concatenate on the state and logic.
 
 {% include post-image.html
   src='snake-in-2d-grid.jpg'
   date=page.date
 %}
 
-As I said we will use [loop](https://github.com/AdamGonda/loop){:target='_blank'}
-for our game loop. So let's start with creating the dev setup.
-
-Create a folder and run npm init:
+Let's start creating the dev setup.
 
 ```md
 mkdir snake-game && cd snake-game && npm init -y
