@@ -32,6 +32,11 @@ colliding with the walls or with our own tail.
 
 I model the game in a 2D coordinate system, where
 every `game object` will have an `x` and `y` position.
+The `initial state` is a great place to define our game state.
+
+```js
+
+```
 
 {% include post-image.html
   src='snake-in-2d-grid.jpg'
@@ -41,56 +46,41 @@ every `game object` will have an `x` and `y` position.
 As I said we will use [loop](https://github.com/AdamGonda/loop){:target='_blank'}
 for our game loop. So let's start with creating the dev setup.
 
-First create a folder and run npm init:
+Create a folder and run npm init:
 
 ```md
 mkdir snake-game && cd snake-game && npm init -y
 ```
 
-Than install [loop](https://github.com/AdamGonda/loop){:target='_blank'}:
+Install [loop](https://github.com/AdamGonda/loop){:target='_blank'}:
 
 ```md
 npm install adamgonda/loop
 ```
 
-Now you can open the folder with your favorite text editor/IDE.
+Create an `index.js`, and with that you will have the basic setup:
 
-I use `TypeScript` because it helps a lot in describing our types.
-As you can see 👇 we are good with just a few.
+```js
+const { run } = require('loop')
+const { pipe } = require('loop/utils')
 
-```ts
-type BodyPart = {
-  x: number
-  y: number
-  pX: number
-  pY: number
+const initialState = { player: { x: 10, y: 5, isHappy: true }}
+const renderMap = { player: 'X' }
+const dimensions = { width: 20, height: 10 }
+
+function update(state, input) {
+  return pipe(state)(state => state)
 }
 
-type Snake = {
-  body: BodyPart[]
-  direction: 'UP' | 'DOWN' | 'RIGHT' | 'LEFT'
+function toCommon(state) {
+  return [{ ...state.player, tag: 'player' }]
 }
 
-type Food = {
-  x: number
-  y: number
-}
-
-type View = {
-  width: number
-  height: number
-}
-
-type State = {
-  view: View
-  snake: Snake
-  food: Food
-  isGameOver: boolean
-}
+run({
+  initialState,
+  update,
+  toCommon,
+  renderMap,
+  dimensions,
+})
 ```
-
-At a high level, the implementation will be just a mapping between `(currentState, input) => newState`.
-Where we will have a `Pure function` that will consist of multiple state transitions on the `State`,
-piped together like this:
-
-
