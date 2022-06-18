@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Adam Gonda
-minutes: 1000
+minutes: 10
 series: true
 tags:
   - JavaScript
