@@ -5,31 +5,53 @@
 	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
 	// Placeholders with the same ids are connected.
-	"Insert image": {
+	"AG: Insert image": {
 		"scope": "markdown",
-		"prefix": "i",
+		"prefix": "image",
 		"body": [
 			"{% include post-image.html",
-			"  src='${2:src}'",
+			"  src='${1:src}'",
 			"  date=page.date",
 			"%}"
 		],
 		"description": "Inserts post-image from _includes"
 	},
-	"Content list": {
+	"AG: Insert Link": {
 		"scope": "markdown",
-		"prefix": "c",
-		"body": [
-			"{% include post-content-list.html titles=page.titles %}"
-		],
-		"description": "Inserts post-content-list from _includes"
-	},
-	"Insert Link": {
-		"scope": "markdown",
-		"prefix": "l",
+		"prefix": "link",
 		"body": [
 			"[${1:title}](${2:url}){:target='_blank'}"
 		],
 		"description": "Inserts a link with target blank"
+	},
+	"AG: Inster code": {
+		"scope": "markdown",
+		"prefix": "code",
+		"body": [
+			"```${1:language}",
+			"${2:content}",
+			"```",
+		],
+		"description": "Inserts code black"
+	},
+	"AG: Inster post template": {
+		"scope": "markdown",
+		"prefix": "post",
+		"body": [
+			"---",
+			"layout: post",
+			"author: Adam Gonda",
+			"minutes: 1000",
+			"tags:",
+			"",
+			"titles:",
+			"---",
+			"",
+			"${1:extract}",
+			"",
+			"{% include post-content-list.html titles=page.titles %}",
+
+		],
+		"description": "Inster post template"
 	}
 }
