@@ -24,7 +24,7 @@ Follow me and find out where this FP journey could lead.
 
 This post is part of a [series](/2022/06/13/Snake-à-la-functional.html){:target='_blank'} on recreating `Snake`
 in a functional style using `JavaScript` and a package I wrote.
-Find what we achieved in the post code wise [here](https://github.com/AdamGonda/snake-game/tree/start-modelling){:target='_blank'}.
+[Code reference.](https://github.com/AdamGonda/snake-game/tree/start-modelling){:target='_blank'}
 {: .series-box}
 
 {% include post-content-list.html titles=page.titles %}
