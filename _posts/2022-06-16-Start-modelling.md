@@ -12,6 +12,10 @@ titles:
   - Refresher
   - Dev setup
   - State
+  - Map state to a common format
+  - How to render the snake
+  - Our pure update
+  - Running
 ---
 
 I will start by modelling the game, then
@@ -90,6 +94,8 @@ const initialState = {
 }
 ```
 
+# Map state to a common format
+
 Next we will add a function called `toCommon`,
 it's needed by loop again so it knows how to transform
 our unique game state to a common list of `game objects`
@@ -113,10 +119,58 @@ function toCommon(state) {
 }
 ```
 
+# How to render the snake?
+
 What is this tag prop? It's for loop so it knows how to render each `game object`.
 But it's just half of the picture, the other half is the `renderMap` that maps tags to characters.
 
 ```js
 // src/index.js
 const renderMap = { head: 'X', body: 'x' }
+```
+
+# Our pure update
+
+We almost there, the last thing is `update`, it will
+consist of the different features of the game piped together
+to implement our game logic, it will be a `Pure function`, a
+mapping between `(currentState, input) => newState`.
+
+If you checked out [Start here](/2022/06/14/Start-here.html){:target='_blank'}
+than these concepts won't be new.
+
+We start by adding `pipe` to `utils.js`:
+
+```js
+// src/utils.js
+function pipe(seed) {
+  return (...fns) => fns.reduce((state, fn) => fn(state), seed)
+}
+```
+
+than adding `update`:
+
+```js
+// src/index.js
+const { pipe } = require('./utils')
+
+function update(state, input) {
+  return pipe(state)(
+    // features...
+  )
+}
+```
+
+# Running!
+
+Now you can call run, it won't do much just render the snake,
+but from here we can start implement the different features or the game.
+
+```js
+run({
+  initialState,
+  update,
+  toCommon,
+  renderMap,
+})
 ```
