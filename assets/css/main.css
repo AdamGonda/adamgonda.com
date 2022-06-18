@@ -276,7 +276,7 @@ footer a {
 
 .post .info-box {
   padding: 20px;
-  border: 1px dashed #222222;
+  border: 2px dashed #222222;
 }
 
 .mentoring section {
@@ -480,8 +480,7 @@ body {
 }
 
 .tags li[data-content=Series] {
-  background-color: #222222;
-  color: whitesmoke;
+  border-style: dashed;
 }
 
 /*# sourceMappingURL=main.css.map */
