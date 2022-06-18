@@ -18,8 +18,8 @@ titles:
   - Run
 ---
 
-I will start by modelling the game, then
-we will setup our dev env.
+I will start by modeling the game, then
+we will set up our dev env.
 
 This post is part of a [series](/2022/06/13/Snake-à-la-functional.html){:target='_blank'} on recreating `Snake`
 in a functional style using `JavaScript` and a package I wrote.
@@ -65,7 +65,7 @@ every `game object` will have an `x` and `y` position.
 %}
 
 I start by defining the state of the game. I don't add the food just yet,
-I concentrate on the snake for now, it has a property `body`: it's an array
+I concentrate on the snake, for now, it has a property `body`: it's an array
 of body parts with an `x` and `y` position.
 
 `view` and `isGameOver` are required by loop's [API](https://github.com/AdamGonda/loop/blob/main/README.md#api){:target='_blank'}.
@@ -88,12 +88,12 @@ const initialState = {
 
 # To a common format
 
-Next we will add a function called `toCommon`,
+Next, we will add a function called `toCommon`,
 it's needed by loop again so it knows how to transform
 our unique game state to a common list of `game objects`
 
 Here I get snake from the game state then
-mapping through it's body parts,
+mapping through its body parts,
 I add the `x` and `y` position to them, and a `tag` property.
 
 ```js
@@ -160,7 +160,7 @@ function update(state, input) {
 # Run
 
 Now you can call run, it won't do much just render the snake,
-but from here we can start implement the different features or the game.
+but from here we can start implementing the different features of the game.
 
 ```js
 // src/index.js
