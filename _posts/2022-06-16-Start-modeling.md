@@ -8,6 +8,7 @@ tags:
   - Functional programming
   - Tutorial
   - Series
+  - Game
 titles:
   - Refresher
   - Dev setup
@@ -18,8 +19,7 @@ titles:
   - Run
 ---
 
-I will start by modeling the game, then
-we will set up our dev env.
+Let's start implementing our game!
 
 This post is part of a [series](/2022/06/13/Snake-à-la-functional.html){:target='_blank'} on recreating <b>Snake</b>
 in a functional style using `JavaScript` and a package I wrote.

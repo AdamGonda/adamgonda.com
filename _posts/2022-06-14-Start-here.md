@@ -7,7 +7,7 @@ tags:
   - FP
   - Tutorial
   - Series
-  - Snake
+  - Game
 titles:
   - What is a function?
   - Type of functions
@@ -165,5 +165,5 @@ console.log(result) // { foo: 'bar', a: '', b: '' }
 ```
 
 Congrats!!! 🥳🥳🥳<br>
-You went through all of them, nice 👍
+You reached the end, nice 👍
 Next let's look at how games are put together, continue [in the loop 👉](/2022/06/15/In-the-loop.html){:target='_blank'}

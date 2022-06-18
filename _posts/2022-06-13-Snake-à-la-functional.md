@@ -7,6 +7,7 @@ tags:
   - FP
   - Tutorial
   - Series
+  - Game
 titles:
   - Start here
   - In the loop
@@ -28,3 +29,7 @@ before we start implementing the game [👉](/2022/06/14/Start-here.html){:targe
 Let's look at how games are put together, first of all we
 need a ...if you guessed it from the title there is hope 🤠
 Let's read on and find out. [👉](/2022/06/15/In-the-loop.html){:target='_blank'}
+
+# Start modeling
+
+Let's start implementing our game! [👉](/2022/06/16/Start-modeling.html){:target='_blank'}

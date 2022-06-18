@@ -7,7 +7,7 @@ tags:
   - FP
   - Tutorial
   - Series
-  - Snake
+  - Game
 titles:
   - Game loop
   - The package
@@ -89,3 +89,6 @@ input null
 ```
 
 For more info about the [API](https://github.com/AdamGonda/loop/blob/main/README.md#api){:target='_blank'}
+
+Congrats!!! 🥳🥳🥳<br>
+You reached the end, nice 👍 Next we [start modeling 👉](/2022/06/16/Start-modeling.html){:target='_blank'}
