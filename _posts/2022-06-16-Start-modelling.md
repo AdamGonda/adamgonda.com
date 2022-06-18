@@ -57,7 +57,7 @@ mkdir src && cd src && touch index.js utils.js
 
 Because I will use [loop](https://github.com/AdamGonda/loop){:target='_blank'}
 it's given that I model the game in a 2D coordinate system, where
-every `game object` will have an `x` and `y` position.
+every game object will have an `x` and `y` position.
 
 {% include post-image.html
   src='snake-in-2d-grid.jpg'
@@ -90,7 +90,7 @@ const initialState = {
 
 Next, we will add a function called `toCommon`,
 it's needed by loop again so it knows how to transform
-our unique game state to a common list of `game objects`
+our unique game state to a common list of game objects
 
 Here I get snake from the game state then
 mapping through its body parts,
@@ -113,7 +113,7 @@ function toCommon(state) {
 
 # How to render
 
-What is this tag prop? It's for loop so it knows how to render each `game object`.
+What is this tag prop? It's for loop so it knows how to render each game object.
 But it's not the whole picture, we also need a `renderMap` that maps tags to characters.
 
 ```js
