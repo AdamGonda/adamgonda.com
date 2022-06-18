@@ -32,4 +32,5 @@ Let's read on and find out. [👉](/2022/06/15/In-the-loop.html){:target='_blank
 
 # Start modeling
 
-Let's start implementing our game! [👉](/2022/06/16/Start-modeling.html){:target='_blank'}
+We had to go over a few things to get here, but we finally arrived.
+Follow me and find out where this FP journey could lead. [👉](/2022/06/16/Start-modeling.html){:target='_blank'}

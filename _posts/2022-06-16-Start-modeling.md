@@ -19,9 +19,10 @@ titles:
   - Run
 ---
 
-Let's start implementing our game!
+We had to go over a few things to get here, but we finally arrived.
+Follow me and find out where this FP journey could lead.
 
-This post is part of a [series](/2022/06/13/Snake-à-la-functional.html){:target='_blank'} on recreating <b>Snake</b>
+This post is part of a [series](/2022/06/13/Snake-à-la-functional.html){:target='_blank'} on recreating `Snake`
 in a functional style using `JavaScript` and a package I wrote.
 Find what we achieved in the post code wise [here](https://github.com/AdamGonda/snake-game/tree/start-modelling){:target='_blank'}.
 {: .info-box}
