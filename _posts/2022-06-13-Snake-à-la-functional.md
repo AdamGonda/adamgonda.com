@@ -11,6 +11,7 @@ tags:
 titles:
   - Start here
   - In the loop
+  - Start modeling
 ---
 
 Is `FP` better than `OOP`? I think yes so in this tutorial series I like to
