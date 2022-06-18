@@ -15,7 +15,7 @@ titles:
   - To a common format
   - How to render
   - Our pure update
-  - Running
+  - Run
 ---
 
 I will start by modelling the game, then
@@ -53,14 +53,6 @@ Create `src` folder with `index.js` and `utils.js`.
 mkdir src && cd src && touch index.js utils.js
 ```
 
-First we import run from loop.
-
-```js
-// src/index.js
-const { run } = require('loop')
-
-```
-
 # State
 
 Because I will use [loop](https://github.com/AdamGonda/loop){:target='_blank'}
@@ -73,7 +65,7 @@ every `game object` will have an `x` and `y` position.
 %}
 
 I start by defining the state of the game. I don't add the food just yet,
-I concentrate on the snake, for now, it has a property `body`: it's an array
+I concentrate on the snake for now, it has a property `body`: it's an array
 of body parts with an `x` and `y` position.
 
 `view` and `isGameOver` are required by loop's [API](https://github.com/AdamGonda/loop/blob/main/README.md#api){:target='_blank'}.
@@ -100,7 +92,7 @@ Next we will add a function called `toCommon`,
 it's needed by loop again so it knows how to transform
 our unique game state to a common list of `game objects`
 
-Here I get the snake from our game state then
+Here I get snake from the game state then
 mapping through it's body parts,
 I add the `x` and `y` position to them, and a `tag` property.
 
@@ -122,7 +114,7 @@ function toCommon(state) {
 # How to render
 
 What is this tag prop? It's for loop so it knows how to render each `game object`.
-But it's just half of the picture, the other half is the `renderMap` that maps tags to characters.
+But it's not the whole picture, we also need a `renderMap` that maps tags to characters.
 
 ```js
 // src/index.js
@@ -139,12 +131,16 @@ mapping between `(currentState, input) => newState`.
 If you checked out [Start here](/2022/06/14/Start-here.html){:target='_blank'}
 than these concepts won't be new.
 
-We start by adding `pipe` to `utils.js`:
+We start by adding `pipe`:
 
 ```js
 // src/utils.js
 function pipe(seed) {
   return (...fns) => fns.reduce((state, fn) => fn(state), seed)
+}
+
+module.exports = {
+  pipe,
 }
 ```
 
@@ -161,12 +157,15 @@ function update(state, input) {
 }
 ```
 
-# Running
+# Run
 
 Now you can call run, it won't do much just render the snake,
 but from here we can start implement the different features or the game.
 
 ```js
+// src/index.js
+const { run } = require('loop')
+
 run({
   initialState,
   update,
