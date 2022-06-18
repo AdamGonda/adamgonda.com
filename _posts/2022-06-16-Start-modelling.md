@@ -12,8 +12,8 @@ titles:
   - Refresher
   - Dev setup
   - State
-  - Map state to a common format
-  - How to render the snake
+  - To a common format
+  - How to render
   - Our pure update
   - Running
 ---
@@ -94,7 +94,7 @@ const initialState = {
 }
 ```
 
-# Map state to a common format
+# To a common format
 
 Next we will add a function called `toCommon`,
 it's needed by loop again so it knows how to transform
@@ -119,7 +119,7 @@ function toCommon(state) {
 }
 ```
 
-# How to render the snake?
+# How to render
 
 What is this tag prop? It's for loop so it knows how to render each `game object`.
 But it's just half of the picture, the other half is the `renderMap` that maps tags to characters.
@@ -161,7 +161,7 @@ function update(state, input) {
 }
 ```
 
-# Running!
+# Running
 
 Now you can call run, it won't do much just render the snake,
 but from here we can start implement the different features or the game.
