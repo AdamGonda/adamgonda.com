@@ -399,6 +399,10 @@ footer a {
   width: 100%;
 }
 
+.art {
+  min-height: calc(100vh - 135px);
+}
+
 body {
   font-family: "Roboto Slab", serif;
   background-color: whitesmoke;
