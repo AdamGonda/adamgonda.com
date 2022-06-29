@@ -47,7 +47,7 @@
 			"titles:",
 			"---",
 			"",
-			"${1:extract}",
+			"${1:hook}",
 			"",
 			"{% include post-content-list.html titles=page.titles %}",
 
