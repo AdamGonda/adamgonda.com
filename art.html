@@ -3,5 +3,9 @@ layout: default
 ---
 
 <div class="art">
-  hello
+  
+  
+  {% for image in site.data.art-images %}
+    <img class="floating-image" src="./assets/images/art/{{ image.index }}.jpg" alt="{{ image.title }}">
+  {% endfor %}
 </div>
