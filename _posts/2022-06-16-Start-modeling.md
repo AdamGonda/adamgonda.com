@@ -20,7 +20,7 @@ titles:
 ---
 
 We had to go over a few things to get here, but we finally arrived.
-Follow me and find out where this FP journey could lead.
+Read on to find out where this FP journey could lead us.
 
 This post is part of a [series](/2022/06/13/Snake-à-la-functional.html){:target='_blank'} on recreating `Snake`
 in a functional style using `JavaScript` and a package I wrote.

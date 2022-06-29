@@ -14,7 +14,7 @@ titles:
 ---
 
 Let's look at how games are put together, first of all we
-need a ...if you guessed it from the title there is hope 🤠
+need a ... if you guessed it from the title there is hope 🤠
 Let's read on and find out.
 
 This post is part of a [series](/2022/06/13/Snake-à-la-functional.html){:target='_blank'} on recreating `Snake`
