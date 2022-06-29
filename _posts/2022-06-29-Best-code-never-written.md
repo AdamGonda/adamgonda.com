@@ -12,7 +12,7 @@ titles:
 ---
 
 All fired up, excited, interesting ideas flood your mind, you break open your laptop and start typing,
-but by then you already made the <b>no.1</b> mistake. Do you wanna know why?
+but by then you already made a <b>crucial mistake</b>. Do you wanna know why?
 
 {% include post-content-list.html titles=page.titles %}
 
