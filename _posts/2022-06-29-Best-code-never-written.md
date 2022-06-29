@@ -32,6 +32,15 @@ the problem wrong and start solving it needlessly.
 # Pen and paper
 
 Try spending <b>15 minutes</b> with a <b>pen and paper before</b> you start coding, so maybe you can avoid
-the painful realization after -hopefully just a day but some unfortunate times a week- of coding
-that you don't know what you're doing and it could be solved match simpler,
-but not just a few mental hoops simpler, a whole reverse the path in a binary tree simpler.
+the painful realization after -*hopefully just a day but some unfortunate times a week*- of coding
+that you solving the wrong problem.
+
+{% include post-image.html
+  src='tree.jpg'
+  date=page.date
+%}
+
+Because it is nice that you can reverse a path in a binary tree
+but it will be always easier to solve a simpler problem, no matter
+how good you are, your solution always will be more complicated if your
+mental model of the problem is also are.
