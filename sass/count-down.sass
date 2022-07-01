@@ -1,0 +1,22 @@
+@use "./constants" as *
+
+#count-down
+  display: flex
+  justify-content: center
+  color: $colors-red
+  margin-top: -$spacing-ss
+  margin-bottom: $spacing-sm
+  font-family: 'Roboto Slab', serif
+
+  p
+    border: 2px solid $colors-red
+    padding: $spacing-xxs $spacing-xs
+
+  .count-down-value
+    font-weight: 700
+    font-style: italic
+  
+  .count-down-unit
+    margin-left: 1px
+    margin-right: 4px
+    font-size: $fontSizes-s
