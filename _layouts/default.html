@@ -22,7 +22,9 @@
   <script src="/assets//js/moment.js"></script>
   
   <!-- Countdown -->
-  <script src="/assets//js/count-down.js" defer></script>
+  {% if paginator.page == 1%}
+    <script src="/assets//js/count-down.js" defer></script>
+  {% endif%}
 
   <!-- og img stuff -->
   {% if page.url == '/' %}
