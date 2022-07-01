@@ -5,18 +5,19 @@ layout: default
   <div id="count-down"></div>
   <ul>
     {% for post in paginator.posts %}
-    {% include post-list-item.html
-    title=post.title
-    url=post.url
-    excerpt=post.excerpt
-    cover=post.cover
-    tags=post.tags
-    date=post.date
-    min=post.minutes
-    loopIdx=forloop.index
-    thumbnail=post.thumbnail
-    ignore_pil=post.ignore_pil
-    %}
+      {% include post-list-item.html
+        isNew=paginator.page
+        title=post.title
+        url=post.url
+        excerpt=post.excerpt
+        cover=post.cover
+        tags=post.tags
+        date=post.date
+        min=post.minutes
+        loopIdx=forloop.index
+        thumbnail=post.thumbnail
+        ignore_pil=post.ignore_pil
+      %}
     {% endfor %}
   </ul>
   {% if paginator.total_pages > 1 %}
