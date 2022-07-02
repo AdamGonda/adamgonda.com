@@ -399,31 +399,6 @@ footer a {
   width: 100%;
 }
 
-#count-down {
-  display: flex;
-  justify-content: end;
-  color: #FF1F15;
-  margin-top: -30px;
-  margin-bottom: 15px;
-  font-family: "Roboto Slab", serif;
-}
-#count-down p {
-  border: 2px solid #FF1F15;
-  padding: 2px 5px;
-  border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-#count-down .count-down-value {
-  font-weight: 700;
-  font-style: italic;
-  font-size: 14px;
-}
-#count-down .count-down-unit {
-  margin-left: 1px;
-  margin-right: 4px;
-  font-size: 12px;
-}
-
 body {
   font-family: "Roboto Slab", serif;
   background-color: whitesmoke;
