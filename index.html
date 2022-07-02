@@ -2,7 +2,9 @@
 layout: default
 ---
 <main>
-  <div id="count-down"></div>
+  {% if paginator.page == 1%}
+    <div id="count-down"></div>
+  {% endif%}
   <ul>
     {% for post in paginator.posts %}
       {% include post-list-item.html
