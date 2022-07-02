@@ -2,21 +2,24 @@
 
 #count-down
   display: flex
-  justify-content: center
+  justify-content: end
   color: $colors-red
-  margin-top: -$spacing-ss
-  margin-bottom: $spacing-sm
+  margin-top: -30px
+  margin-bottom: 20px
   font-family: 'Roboto Slab', serif
 
   p
     border: 2px solid $colors-red
-    padding: $spacing-xxs $spacing-xs
+    padding: 2px 5px//$spacing-xxs $spacing-xs
+    border-top-left-radius: 15px
+    border-bottom-right-radius: 15px
 
   .count-down-value
     font-weight: 700
     font-style: italic
-  
+    font-size: $fontSizes-s
+
   .count-down-unit
     margin-left: 1px
     margin-right: 4px
-    font-size: $fontSizes-s
+    font-size: 12px
