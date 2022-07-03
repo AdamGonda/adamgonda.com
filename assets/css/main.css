@@ -18,6 +18,11 @@ nav a {
   font-size: 22px;
   padding: 10px;
 }
+@media only screen and (max-width: 855px) {
+  nav a {
+    padding: 5px;
+  }
+}
 nav ul {
   display: flex;
 }
