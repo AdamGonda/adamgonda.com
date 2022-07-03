@@ -1,15 +1,20 @@
-- time: 15
-  price: 20
-  url: https://calendly.com/adamgonda/code-mentoring-clone-1
-
-- time: 30
-  price: 40
-  url: https://calendly.com/adamgonda/code-mentoring
-
-- time: 45
-  price: 60
-  url: https://calendly.com/adamgonda/code-mentoring-clone-2
-
 - time: 60
-  price: 80
-  url: https://calendly.com/adamgonda/code-mentoring-clone
+  price: 15
+  url: https://calendly.com/adamgonda/code-mentoring-1
+
+
+# - time: 15
+#   price: 10
+#   url: https://calendly.com/adamgonda/code-mentoring-clone-1
+
+# - time: 30
+#   price: 15
+#   url: https://calendly.com/adamgonda/code-mentoring
+
+# - time: 45
+#   price: 20
+#   url: https://calendly.com/adamgonda/code-mentoring-clone-2
+
+# - time: 60
+#   price: 25
+#   url: https://calendly.com/adamgonda/code-mentoring-clone

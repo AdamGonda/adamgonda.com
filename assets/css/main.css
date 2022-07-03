@@ -327,12 +327,6 @@ footer a {
   justify-content: center;
   gap: 30px;
 }
-@media only screen and (max-width: 855px) {
-  .mentoring #sessions ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
 .mentoring #sessions a {
   border: 5px solid #222222;
 }
