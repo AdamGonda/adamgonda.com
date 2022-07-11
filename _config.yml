@@ -19,10 +19,9 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Adam Gonda
-email: 
+email: adamgondagyula@gmail.com
 description: >- # this means to ignore newlines until "baseurl:" 
   Clean code, FP concepts, and teaching. 
-  If you need any help please reach out to me.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
