@@ -17,7 +17,7 @@ layout: default
         <br>
         I am passionate about crafting <code>clean code</code>,
         <code>FP concepts</code>, and teaching.
-        If you need any help please reach out to me.
+        If you need any help please reach out.
       </p>
     </div>
   </section>
@@ -26,9 +26,7 @@ layout: default
     <ul>
       {% for session in site.data.sessions %}
         {% include session-item.html
-          time=session.time
-          price=session.price
-          url=session.url
+          title=session.title
         %}
       {% endfor %}
     </ul>
