@@ -40,7 +40,7 @@ that you solving the wrong problem.
   date=page.date
 %}
 
-Because it is nice that you can reverse a path in a binary tree
+> Because it is nice that you can reverse a path in a binary tree
 but it will be always easier to solve a simpler problem, no matter
 how good you are, your solution always will be more complicated if your
 mental model of the problem is also are.
