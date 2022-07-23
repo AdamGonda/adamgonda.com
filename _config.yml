@@ -20,10 +20,9 @@
 
 title: Adam Gonda
 email: adamgondagyula@gmail.com
-description: >- # this means to ignore newlines until "baseurl:" 
-  Clean code, FP concepts, and teaching. 
+description: React, clean code, FP concepts, and teaching. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.adamgonda.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  adamgonda
 paginate: 5
