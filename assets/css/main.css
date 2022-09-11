@@ -413,7 +413,13 @@ footer a {
   border: 1px solid black;
 }
 #easter-egg #tips-and-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 30px;
+}
+#easter-egg #tips-and-control .power-by {
+  font-size: 10px;
 }
 
 body {

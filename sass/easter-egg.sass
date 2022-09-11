@@ -1,4 +1,5 @@
 @use "./constants" as *
+
 #easter-egg
   display: flex
   align-items: center
@@ -8,4 +9,10 @@
     border: 1px solid black
 
   #tips-and-control
+    display: flex
+    flex-direction: column
+    align-items: center
     padding-top: 30px
+
+    .power-by
+      font-size: $fontSizes-xs
