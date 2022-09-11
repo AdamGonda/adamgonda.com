@@ -3,7 +3,7 @@
 
 	function showEasterEgg() {
 		const nameLogo = document.querySelector('nav a')
-		nameLogo.innerHTML = '[easter egg]'
+		nameLogo.innerHTML = '[ Easter 🐣 ]'
 		nameLogo.href = 'easter-egg'
 	}
 
