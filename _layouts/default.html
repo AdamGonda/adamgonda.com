@@ -20,9 +20,15 @@
   
   <!-- Manage scroll progress -->
   <script src="/assets/js/manageScrollProgress.js" defer></script>
+  
+  <!-- Easter egg -->
+  {% if page.url != '/easter-egg.html' %}
+  <script src="/assets/js/easter-egg.js" defer></script>
+  {% endif %}
 
-  {% if page.url == '/easter-egg.html' %}
+
   <!-- Game -->
+  {% if page.url == '/easter-egg.html' %}
   <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
   <script src="/assets/js/snake.js" defer></script>
   {% endif %}
