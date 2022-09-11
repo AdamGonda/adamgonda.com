@@ -17,6 +17,9 @@
 
   <!-- Progressive image loading: https://github.com/aFarkas/lazysizes -->
   <script src="/assets/js/lazysizes.min.js" async=""></script>
+  
+  <!-- Manage scroll progress -->
+  <script src="/assets/js/manageScrollProgress.js" defer></script>
 
   <!-- og img stuff -->
   {% if page.url == '/' %}
@@ -46,6 +49,7 @@
 
 <body>
   {% include navigation.html %}
+  <div class="scroll-progressbar"></div>
   <div class="content">
     {{ content }}
   </div>

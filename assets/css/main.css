@@ -393,6 +393,17 @@ footer a {
   width: 100%;
 }
 
+.scroll-progressbar {
+  display: none;
+  height: 4px;
+  background: #00b7d4;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 0;
+  z-index: 10;
+}
+
 body {
   font-family: "Roboto Slab", serif;
   background-color: whitesmoke;
