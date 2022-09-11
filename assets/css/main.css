@@ -404,6 +404,18 @@ footer a {
   z-index: 10;
 }
 
+#easter-egg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#easter-egg canvas {
+  border: 1px solid black;
+}
+#easter-egg #tips-and-control {
+  padding-top: 30px;
+}
+
 body {
   font-family: "Roboto Slab", serif;
   background-color: whitesmoke;
