@@ -395,14 +395,10 @@ footer a {
 
 .scroll-progressbar {
   display: none;
-  background: #222222;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;
-}
-
-.bar {
   height: 4px;
   background: #00b7d4;
 }

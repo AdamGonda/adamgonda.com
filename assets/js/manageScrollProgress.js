@@ -1,12 +1,8 @@
 ;(() => {
 	const bar = getBar()
-	
-	function getWrap() {
-		return document.getElementsByClassName('scroll-progressbar')[0]
-	}
 
 	function getBar() {
-		return document.getElementsByClassName('bar')[0]
+		return document.getElementsByClassName('scroll-progressbar')[0]
 	}
 
 	function getNav() {
@@ -34,9 +30,9 @@
 		const show = (getNav().offsetHeight - document.documentElement.scrollTop) <=0
 	
 		if (show && getPost()) {
-			getWrap().style.display = 'block'
+			getBar().style.display = 'block'
 		} else {
-			getWrap().style.display = 'none'
+			getBar().style.display = 'none'
 		}
 	}
 
