@@ -395,13 +395,16 @@ footer a {
 
 .scroll-progressbar {
   display: none;
-  height: 4px;
-  background: #00b7d4;
+  background: black;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  width: 0;
   z-index: 10;
+}
+
+.bar {
+  height: 4px;
+  background: #00b7d4;
 }
 
 #easter-egg {
@@ -410,13 +413,14 @@ footer a {
   flex-direction: column;
 }
 #easter-egg canvas {
-  border: 1px solid black;
+  border: 5px solid #222222;
 }
 #easter-egg #tips-and-control {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
+  font-weight: bold;
 }
 #easter-egg #tips-and-control .power-by {
   font-size: 10px;

@@ -68,7 +68,7 @@ async function draw() {
   } else {
     const { width, height } = currentState.view
 
-    fill('#FE3860')
+    fill('#FF1F15')
     textStyle(BOLD)
     textSize(72)
     text(
