@@ -18,8 +18,9 @@
 
 	function toggleProgressBarVisibility() {
 		const show = (navigation.offsetHeight - document.documentElement.scrollTop) <=0
+		const isMobile = window.innerWidth < 1000
 	
-		if (show && post) {
+		if (show && post && !isMobile) {
 			progressBar.style.display = 'block'
 		} else {
 			progressBar.style.display = 'none'
