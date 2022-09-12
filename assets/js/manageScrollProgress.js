@@ -1,6 +1,4 @@
 ;(() => {
-	const bar = getBar()
-
 	function getBar() {
 		return document.getElementsByClassName('scroll-progressbar')[0]
 	}
@@ -23,7 +21,7 @@
 
 	function updateProgress() {
 		const progress = getScrollProgress()
-		bar.style.width = progress + '%'
+		getBar().style.width = progress + '%'
 	}
 
 	function toggleProgressBarVisibility() {
