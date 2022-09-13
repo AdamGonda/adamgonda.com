@@ -393,6 +393,35 @@ footer a {
   width: 100%;
 }
 
+.scroll-progressbar {
+  display: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 4px;
+  background: #00b7d4;
+}
+
+#easter-egg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#easter-egg canvas {
+  border: 5px solid #222222;
+}
+#easter-egg #tips-and-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  font-weight: bold;
+}
+#easter-egg #tips-and-control .power-by {
+  font-size: 10px;
+}
+
 body {
   font-family: "Roboto Slab", serif;
   background-color: whitesmoke;
