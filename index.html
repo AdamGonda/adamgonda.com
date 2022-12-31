@@ -3,28 +3,24 @@ layout: default
 ---
 <main>
   <div class="company">
-
+    <div id="particles"></div>
+    <div class="arrows">
+      <button data-up>UP</button>
+      <button>DOWN</button>
+    </div>
   </div>
   <div class="position">
-
-  </div>
-
-  <!-- <div id="particles"></div>
-  {% for section in site.data.sections %}
-  <section id="_{{section.id}}" class="section" style="background: {{ section.color }}">
-    {{ section.id }}
-  </section>
-  {% endfor %}
-  <div class="scroll-navigator">
     {% for section in site.data.sections %}
-    <button data-target-id="{{section.id}}">
-      Scroll to {{ section.id }}
-    </button>
+    <section id="_{{section.id}}" class="section" style="background: {{ section.color }}">
+      {{ section.id }}
+    </section>
     {% endfor %}
+    <div class="scroll-navigator">
+      {% for section in site.data.sections %}
+      <button data-target-id="{{section.id}}">
+        Scroll to {{ section.id }}
+      </button>
+      {% endfor %}
+    </div>
   </div>
-
-  <div class="arrows">
-    <button data-up>UP</button>
-    <button>DOWN</button>
-  </div> -->
 </main>
