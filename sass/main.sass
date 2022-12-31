@@ -1,41 +1,11 @@
-@use "./navigation"
 @use "./footer"
 @use "./notfoundpage"
-@use "./post-list-item"
-@use "./post"
-@use "./mentoring"
-@use "./post-image"
-@use "./scroll-progressbar"
-@use "./easter-egg"
 
 @use "./constants" as *
 
 body
   font-family: 'Roboto Slab', serif
   background-color: $colors-white
-
-.content
-  min-height: calc(100vh - 135px)
-  padding: $spacing-sm $spacing-s
-
-  @media only screen and (min-width: $breakPoints-s) and (max-width: $breakPoints-m)
-    padding: $spacing-sm $spacing-m
-
-  @media only screen and (min-width: $breakPoints-m) and (max-width: $breakPoints-xl)
-    padding: $spacing-sm $spacing-l
-
-  @media only screen and (min-width: $breakPoints-xl) and (min-width: $breakPoints-xxl)
-    padding: $spacing-sm 18vw
-
-  @media only screen and (min-width: $breakPoints-xl)
-    padding: $spacing-sm 20vw
-
-.floating-image
-  object-fit: cover
-  border-radius: 5px
-  -webkit-box-shadow: 9px 10px 17px 0px rgba(0,0,0,0.09)
-  -moz-box-shadow: 9px 10px 17px 0px rgba(0,0,0,0.09)
-  box-shadow: 9px 10px 17px 0px rgba(0,0,0,0.09)
 
 .lazyload,
 .lazyloading
@@ -52,29 +22,27 @@ body
   to
     filter: blur(0)
 
-.cta
-  background-color: $colors-white
-  color: $colors-black
-  margin-right: $spacing-xs
-  background-color: #FFBF09
+main
+  height: 100vh
+  overflow: scroll
+  scroll-snap-type: y mandatory
 
-  @media only screen and (max-width: $breakPoints-m)
-    font-size: $fontSizes-m
 
-.pagination
+.position
+  scroll-snap-align: start
+  display: grid
+  place-items: center center
+  height: 100vh
+
+.navigator
+  position: absolute
+  top: 0
+  left: 0
   display: flex
-  justify-content: center
+  flex-direction: column
+  gap: 3px
 
-  #prev-btn, #next-btn
-    font-size: $fontSizes-s
-  
-  .page
-    margin: 0 2px
-
-  .current
-    background-color: $colors-black
-    padding: 1px 3px
-    color: $colors-white
-
-.tags li[data-content=Series]
-  border-style: dashed
+  button
+    border: 1px solid black
+    padding: 5px
+    border-radius: 10px

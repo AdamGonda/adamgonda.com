@@ -25,8 +25,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.adamgonda.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  adamgonda
-paginate: 5
-paginate_path: "/blog/page:num/"
 
 # Build settings
 theme: minima
@@ -34,7 +32,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
