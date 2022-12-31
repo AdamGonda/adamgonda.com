@@ -37,18 +37,10 @@ function onSectionBecomesVisible(id) {
   });
 }
 
-function showScrollNavigator() {
-  document.querySelector('.scroll-navigator').classList.remove('hidden')
-}
-
-function hideScrollNavigator() {
-  document.querySelector('.scroll-navigator').classList.add('hidden')
-}
-
 function foobar(){
   const ob1 = new IntersectionObserver(function(entries) {
     if(entries[0].isIntersecting === true){
-      hideScrollNavigator()
+      document.querySelector('.scroll-navigator').classList.add('hidden')
     }
   }, { threshold: [0.1] });
 
@@ -56,7 +48,7 @@ function foobar(){
 
   const ob2 = new IntersectionObserver(function(entries) {
     if(entries[0].isIntersecting === true){
-      showScrollNavigator()
+      document.querySelector('.scroll-navigator').classList.remove('hidden')
     }
   }, { threshold: [0.65] });
 
