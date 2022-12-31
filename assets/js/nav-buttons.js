@@ -1,4 +1,4 @@
-document.querySelectorAll('.arrows button').forEach(button => {
+document.querySelectorAll('.about button').forEach(button => {
 	button.addEventListener('click', handleClick)
 })
 

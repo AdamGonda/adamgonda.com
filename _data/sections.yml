@@ -1,5 +1,6 @@
 - id: '0'
-  color: green
+  position: Foo bar
+  duration: from to 1 yr
 - id: '1'
   color: lightcoral
 - id: '2'

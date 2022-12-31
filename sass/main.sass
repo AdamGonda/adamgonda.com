@@ -28,13 +28,33 @@ main
   grid-template-columns: 0.4fr 1fr
 
 .company
+  position: relative
   height: 100vh
   background: rgb(36,59,85)
   background: linear-gradient(0deg, rgba(36,59,85,1) 0%, rgba(20,30,48,1) 100%)
 
+  .about
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: flex
+    flex-direction: column
+    gap: 3px
+    color: white
+
+    button
+      display: flex
+      flex-direction: column
+      align-items: center
+      border: 1px solid black
+      padding: 5px
+      border-radius: 10px
+
 .position
   height: 100vh
-  
+
   overflow: scroll
   scroll-snap-type: y mandatory
 
@@ -84,20 +104,6 @@ main
 
     .current-position
       background: black
-
-.arrows
-  position: absolute
-  top: 0
-  left: 0
-  display: flex
-  flex-direction: column
-  gap: 3px
-
-  button
-    color: white
-    border: 1px solid black
-    padding: 5px
-    border-radius: 10px
 
 #particles
   width: 100%
