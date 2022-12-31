@@ -3,7 +3,7 @@ layout: default
 ---
 <main>
   <div class="content">
-      <sction class="section">
+      <sction class="section landing">
         <p>Landing</p>
       </sction>
       {% for section in site.data.sections %}
@@ -18,9 +18,9 @@ layout: default
       {% endfor %}
     
   </div>
-  <div id="particles" style="background: black; width: 100vw; height: 100vh;"></div>
+  <div id="particles"></div>
 
-  <div class="scroll-navigator">
+  <div class="scroll-navigator hidden">
     <div class="wrap">
       <div class="line"></div>
       {% for section in site.data.sections %}

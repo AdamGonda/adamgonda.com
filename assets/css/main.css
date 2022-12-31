@@ -119,4 +119,14 @@ main {
   background: black;
 }
 
+#particles {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */
