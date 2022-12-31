@@ -57,17 +57,18 @@ body {
 }
 main {
   overflow: hidden;
-  height: 100vh;
   display: grid;
   grid-template-columns: 0.4fr 1fr;
 }
 
 .company {
+  height: 100vh;
   background: #243b55;
   background: linear-gradient(0deg, #243b55 0%, #141e30 100%);
 }
 
 .position {
+  height: 100vh;
   background: lightcoral;
   overflow: scroll;
   scroll-snap-type: y mandatory;
@@ -106,6 +107,7 @@ main {
   gap: 3px;
 }
 .arrows button {
+  color: white;
   border: 1px solid black;
   padding: 5px;
   border-radius: 10px;
