@@ -1,6 +1,6 @@
 function handleClick(event) {
   const targetId = event.target.dataset.targetId;
-  document.getElementById('id-' + targetId).scrollIntoView({ behavior: 'smooth'});
+  document.getElementById('_' + targetId).scrollIntoView({ behavior: 'smooth'});
 }
 
 document.querySelectorAll('.scroll-navigator button').forEach((button) => {
@@ -19,7 +19,7 @@ for (let i = 0; i < 4; i++) {
 }
 
 for (let i = 0; i < observers.length; i++) {
-  observers[i].observe(document.querySelector("#id-" + i));
+  observers[i].observe(document.querySelector("#_" + i));
 }
 
 function onSectionBecomesVisible(id) {
