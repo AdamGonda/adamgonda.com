@@ -57,42 +57,19 @@ body {
 }
 main {
   overflow: hidden;
-  display: grid;
-  grid-template-columns: 0.4fr 1fr;
 }
 
-.company {
-  position: relative;
+.content {
   height: 100vh;
-  background: #243b55;
-  background: linear-gradient(0deg, #243b55 0%, #141e30 100%);
-}
-.company .about {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  color: white;
-}
-.company .about button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid black;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.position {
-  height: 100vh;
+  width: 100vw;
   overflow: scroll;
   scroll-snap-type: y mandatory;
+  background: rgba(0, 0, 0, 0);
+  position: fixed;
+  font-size: 50px;
+  color: white;
 }
-.position::-webkit-scrollbar {
+.content::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
@@ -100,7 +77,7 @@ main {
 .section {
   scroll-snap-align: start;
   display: grid;
-  place-items: center center;
+  grid-template-columns: 0.4fr 1fr;
   height: 100vh;
 }
 
@@ -140,11 +117,6 @@ main {
 }
 .scroll-navigator .wrap .current-position {
   background: black;
-}
-
-#particles {
-  width: 100%;
-  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

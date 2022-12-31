@@ -1,9 +1,13 @@
 - id: '0'
   position: Foo bar
   duration: from to 1 yr
+  color: white
+
 - id: '1'
   color: lightcoral
+
 - id: '2'
   color: grey
+  
 - id: '3'
   color: orange
