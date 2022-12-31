@@ -11,16 +11,17 @@ layout: default
   </div>
   <div class="position">
     {% for section in site.data.sections %}
-    <section id="_{{section.id}}" class="section" style="background: {{ section.color }}">
+    <section id="_{{section.id}}" class="section">
       {{ section.id }}
     </section>
     {% endfor %}
     <div class="scroll-navigator">
-      {% for section in site.data.sections %}
-      <button data-target-id="{{section.id}}">
-        Scroll to {{ section.id }}
-      </button>
-      {% endfor %}
+      <div class="wrap">
+        <div class="line"></div>
+        {% for section in site.data.sections %}
+        <button data-target-id="{{section.id}}"></button>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </main>
