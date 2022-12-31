@@ -2,15 +2,15 @@
 layout: default
 ---
 <main>
-  {% for position in site.data.positions %}
-  <section id="id-{{position.id}}" class="position" style="background: {{ position.color }}">
-    {{ position.id }}
+  {% for section in site.data.sections %}
+  <section id="id-{{section.id}}" class="section" style="background: {{ section.color }}">
+    {{ section.id }}
   </section>
   {% endfor %}
-  <div class="navigator">
-    {% for position in site.data.positions %}
-    <button data-target-id="{{position.id}}">
-      Scroll to {{ position.id }}
+  <div class="scroll-navigator">
+    {% for section in site.data.sections %}
+    <button data-target-id="{{section.id}}">
+      Scroll to {{ section.id }}
     </button>
     {% endfor %}
   </div>

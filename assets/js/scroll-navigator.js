@@ -3,7 +3,7 @@ function handleClickLink(event) {
   document.getElementById('id-' + targetId).scrollIntoView({ behavior: 'smooth'});
 }
 
-document.querySelectorAll('.navigator button').forEach((button) => {
+document.querySelectorAll('.scroll-navigator button').forEach((button) => {
   button.addEventListener('click', handleClickLink);
 });
 
