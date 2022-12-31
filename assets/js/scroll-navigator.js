@@ -1,10 +1,10 @@
-function handleClickLink(event) {
+function handleClick(event) {
   const targetId = event.target.dataset.targetId;
   document.getElementById('id-' + targetId).scrollIntoView({ behavior: 'smooth'});
 }
 
 document.querySelectorAll('.scroll-navigator button').forEach((button) => {
-  button.addEventListener('click', handleClickLink);
+  button.addEventListener('click', handleClick);
 });
 
 const observers = []
@@ -23,6 +23,12 @@ for (let i = 0; i < observers.length; i++) {
 }
 
 function onSectionBecomesVisible(id) {
-  console.log(id + ' got visible');
+  document.querySelectorAll('.scroll-navigator button').forEach((button, idx) => {
+    button.style.background = ''
+
+    if(id == idx){
+      button.style.background = 'red'
+    }
+  });
 }
 
