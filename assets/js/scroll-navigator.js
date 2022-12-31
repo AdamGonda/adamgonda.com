@@ -58,7 +58,7 @@ function foobar(){
     if(entries[0].isIntersecting === true){
       showScrollNavigator()
     }
-  }, { threshold: [0.6] });
+  }, { threshold: [0.65] });
 
   ob2.observe(document.querySelector('#_0'))
 }
