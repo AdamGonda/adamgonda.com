@@ -24,10 +24,10 @@ for (let i = 0; i < observers.length; i++) {
 
 function onSectionBecomesVisible(id) {
   document.querySelectorAll('.scroll-navigator button').forEach((button, idx) => {
-    button.style.background = ''
+    button.classList.remove('current-position')
 
     if(id == idx){
-      button.style.background = 'red'
+      button.classList.add('current-position')
     }
   });
 }

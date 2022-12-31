@@ -27,7 +27,6 @@ main
   overflow: scroll
   scroll-snap-type: y mandatory
 
-
 .section
   scroll-snap-align: start
   display: grid
@@ -35,6 +34,22 @@ main
   height: 100vh
 
 .scroll-navigator
+  position: absolute
+  top: 0
+  right: 0
+  display: flex
+  flex-direction: column
+  gap: 3px
+
+  .current-position
+    background: red
+
+  button
+    border: 1px solid black
+    padding: 5px
+    border-radius: 10px
+
+.arrows
   position: absolute
   top: 0
   left: 0

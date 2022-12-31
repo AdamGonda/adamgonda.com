@@ -71,12 +71,29 @@ main {
 .scroll-navigator {
   position: absolute;
   top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.scroll-navigator .current-position {
+  background: red;
+}
+.scroll-navigator button {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.arrows {
+  position: absolute;
+  top: 0;
   left: 0;
   display: flex;
   flex-direction: column;
   gap: 3px;
 }
-.scroll-navigator button {
+.arrows button {
   border: 1px solid black;
   padding: 5px;
   border-radius: 10px;
