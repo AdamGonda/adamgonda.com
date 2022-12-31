@@ -62,7 +62,8 @@ main {
 }
 
 .company {
-  background: lightblue;
+  background: #243b55;
+  background: linear-gradient(0deg, #243b55 0%, #141e30 100%);
 }
 
 .position {
