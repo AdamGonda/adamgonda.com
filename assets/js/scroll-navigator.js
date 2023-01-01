@@ -5,18 +5,6 @@ function handleClick(event) {
 	document.getElementById('_' + targetId).scrollIntoView({ behavior: 'smooth' })
 }
 
-function onSectionBecomesVisible(id) {
-	document
-		.querySelectorAll('.scroll-navigator button')
-		.forEach((button, idx) => {
-			button.classList.remove('current-position')
-
-			if (id == idx) {
-				button.classList.add('current-position')
-			}
-		})
-}
-
 function addIntersectionObservers() {
 	const observers = []
 
@@ -36,6 +24,18 @@ function addIntersectionObservers() {
 	for (let i = 0; i < observers.length; i++) {
 		observers[i].observe(document.querySelector('#_' + i))
 	}
+}
+
+function onSectionBecomesVisible(id) {
+	document
+		.querySelectorAll('.scroll-navigator button')
+		.forEach((button, idx) => {
+			button.classList.remove('current-position')
+
+			if (id == idx) {
+				button.classList.add('current-position')
+			}
+		})
 }
 
 function main() {
