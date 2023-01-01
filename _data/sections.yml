@@ -1,14 +1,19 @@
-- id: '0'
-  position: Foo bar
-  duration: from to 1 yr
-  color: white
+- id: 0
   img: rollet.png
+  foo: htec
 
-- id: '1'
-  color: lightcoral
+- id: 1
+  img: rollet.png
+  foo: diligent
 
-- id: '2'
-  color: grey
+- id: 2
+  img: rollet.png
+  foo: accenture
+
+- id: 3
+  img: rollet.png
+  foo: zoosh
   
-- id: '3'
-  color: orange
+- id: 4
+  img: rollet.png
+  foo: rollet

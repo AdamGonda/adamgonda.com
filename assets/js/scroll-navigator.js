@@ -1,3 +1,5 @@
+const NUMBER_OF_POSITIONS = 5
+
 handleShow()
 addIntersectionObservers()
 
@@ -50,7 +52,7 @@ function handleShow() {
 function addIntersectionObservers() {
 	const observers = []
 
-	for (let i = 0; i < 4; i++) {
+	for (let i = 0; i < NUMBER_OF_POSITIONS; i++) {
 		let observer = new IntersectionObserver(
 			function (entries) {
 				if (entries[0].isIntersecting === true) {
