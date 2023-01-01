@@ -74,6 +74,13 @@ main {
   height: 0;
 }
 
+.landing {
+  scroll-snap-align: start;
+  display: grid;
+  height: 100vh;
+  place-items: center center !important;
+}
+
 .section {
   scroll-snap-align: start;
   display: grid;
