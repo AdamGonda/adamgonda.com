@@ -25,7 +25,10 @@ layout: default
     <div class="wrap">
       <div class="line"></div>
       {% for section in site.data.sections %}
-      <button data-target-id="{{section.id}}"></button>
+        <button
+          data-target-id="{{section.id}}"
+          class="{% if forloop.index == 1 %}current-position{% endif %}">
+        </button>
       {% endfor %}
     </div>
   </div>
@@ -38,7 +41,7 @@ layout: default
       </div>
     </button>
     <button>
-      <div>
+      <div data-down>
         <p>prev</p>
         <i class="fa-solid fa-arrow-down"></i>
       </div>
