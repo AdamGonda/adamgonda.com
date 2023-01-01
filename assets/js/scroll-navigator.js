@@ -1,14 +1,15 @@
 handleShow()
 addIntersectionObservers()
 
+document.querySelectorAll('.scroll-navigator button').forEach(button => {
+	button.addEventListener('click', handleClick)
+})
+
+
 function handleClick(event) {
 	const targetId = event.target.dataset.targetId
 	document.getElementById('_' + targetId).scrollIntoView({ behavior: 'smooth' })
 }
-
-document.querySelectorAll('.scroll-navigator button').forEach(button => {
-	button.addEventListener('click', handleClick)
-})
 
 function onSectionBecomesVisible(id) {
 	document
