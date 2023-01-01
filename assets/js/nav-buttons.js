@@ -1,11 +1,11 @@
-document.querySelectorAll('.about button').forEach(button => {
-	button.addEventListener('click', handleClick)
+document.querySelectorAll('.nav-buttons button').forEach(button => {
+	button.addEventListener('click', () => handleClick(button))
 })
 
-function handleClick(e) {
+function handleClick(button) {
 	const currentPos = getCurrentPosition()
 
-	if (e.target.hasAttribute('data-up')) {
+	if (button.hasAttribute('data-up')) {
 		if (currentPos > 0) {
 			document
 				.getElementById('_' + (currentPos - 1))

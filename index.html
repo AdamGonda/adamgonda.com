@@ -3,20 +3,21 @@ layout: default
 ---
 <main>
   <div class="content">
-      <sction class="section landing">
-        <p>Landing</p>
-      </sction>
-      {% for section in site.data.sections %}
-      <section id="_{{section.id}}" class="section">
-        <div class="right" style="background: rgba(0,0,0,0); z-index: 0;">
-          <img src="" alt="company image" />
-        </div>
-        <div class="left" style="background: {{ section.color}};">
-          <p style="font-size: 50px;">{{ section.id }}</p>
-        </div>
-      </section>
-      {% endfor %}
-    
+    <sction class="section landing">
+      <p>Landing</p>
+    </sction>
+
+    {% for section in site.data.sections %}
+    <section id="_{{section.id}}" class="section">
+      <div class="right" style="padding-top: 300px;">
+        <img  src="" alt="company image" />
+      </div>
+      <div class="left" style="background: {{ section.color}};">
+        <p style="font-size: 50px;">{{ section.id }}</p>
+      </div>
+    </section>
+    {% endfor %}
+
   </div>
   <div id="particles"></div>
 
@@ -27,5 +28,20 @@ layout: default
       <button data-target-id="{{section.id}}"></button>
       {% endfor %}
     </div>
+  </div>
+
+  <div class="nav-buttons">
+    <button data-up>
+      <div>
+        <i class="fa-solid fa-arrow-up"></i>
+        <p>next</p>
+      </div>
+    </button>
+    <button>
+      <div>
+        <p>prev</p>
+        <i class="fa-solid fa-arrow-down"></i>
+      </div>
+    </button>
   </div>
 </main>
