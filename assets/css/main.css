@@ -181,7 +181,7 @@ main {
 }
 
 #particles {
-  background: linear-gradient(0deg, #32348c 0%, #00558a 100%);
+  background: linear-gradient(0deg, #0F2027 0%, #203A43 50%, #2C5364 100%);
   width: 100vw;
   height: 100vh;
 }
