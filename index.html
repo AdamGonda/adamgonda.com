@@ -10,9 +10,9 @@ layout: default
       <p>Landing</p>
     </sction>
 
-    <div class="foobar">
-      <div class="scroll-navigator">
-        <div class="wrap">
+    <div class="scroll-navigator">
+      <div class="wrap">
+        <div class="shapes">
           <div class="line"></div>
           {% for section in site.data.sections %}
           <button data-target-id="{{section.id}}" class="{% if forloop.index == 1 %}current-position{% endif %}">

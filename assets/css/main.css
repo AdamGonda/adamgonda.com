@@ -143,6 +143,11 @@ main {
 }
 
 .scroll-navigator {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+}
+.scroll-navigator .wrap {
   position: absolute;
   top: 0;
   right: 0;
@@ -152,7 +157,7 @@ main {
   height: 100vh;
   padding-right: 90px;
 }
-.scroll-navigator .wrap {
+.scroll-navigator .shapes {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -160,7 +165,7 @@ main {
   height: 80%;
   justify-content: space-between;
 }
-.scroll-navigator .wrap .line {
+.scroll-navigator .shapes .line {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -169,14 +174,14 @@ main {
   width: 5px;
   height: 100%;
 }
-.scroll-navigator .wrap button {
+.scroll-navigator .shapes button {
   z-index: 2;
   width: 20px;
   height: 20px;
   background: #D5D5D5;
   border-radius: 50px;
 }
-.scroll-navigator .wrap .current-position {
+.scroll-navigator .shapes .current-position {
   background: black;
 }
 
@@ -188,12 +193,6 @@ main {
 
 .hidden {
   opacity: 0;
-}
-
-.foobar {
-  z-index: 10;
-  position: sticky;
-  top: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
