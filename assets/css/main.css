@@ -190,4 +190,10 @@ main {
   opacity: 0;
 }
 
+.foobar {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+}
+
 /*# sourceMappingURL=main.css.map */

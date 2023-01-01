@@ -1,6 +1,5 @@
 const NUMBER_OF_POSITIONS = 5
 
-handleShow()
 addIntersectionObservers()
 
 document.querySelectorAll('.scroll-navigator button').forEach(button => {
@@ -23,30 +22,6 @@ function onSectionBecomesVisible(id) {
 				button.classList.add('current-position')
 			}
 		})
-}
-
-function handleShow() {
-	const ob1 = new IntersectionObserver(
-		function (entries) {
-			if (entries[0].isIntersecting === true) {
-				document.querySelector('.scroll-navigator').classList.add('hidden')
-			}
-		},
-		{ threshold: [0.1] },
-	)
-
-	ob1.observe(document.querySelector('.landing'))
-
-	const ob2 = new IntersectionObserver(
-		function (entries) {
-			if (entries[0].isIntersecting === true) {
-				document.querySelector('.scroll-navigator').classList.remove('hidden')
-			}
-		},
-		{ threshold: [0.65] },
-	)
-
-	ob2.observe(document.querySelector('#_0'))
 }
 
 function addIntersectionObservers() {

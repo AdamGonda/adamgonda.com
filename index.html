@@ -3,9 +3,24 @@ layout: default
 ---
 <main>
   <div class="content">
+
+    
+
     <sction class="landing">
       <p>Landing</p>
     </sction>
+
+    <div class="foobar">
+      <div class="scroll-navigator">
+        <div class="wrap">
+          <div class="line"></div>
+          {% for section in site.data.sections %}
+          <button data-target-id="{{section.id}}" class="{% if forloop.index == 1 %}current-position{% endif %}">
+          </button>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
 
     {% for section in site.data.sections %}
     <section id="_{{section.id}}" class="section">
@@ -36,14 +51,4 @@ layout: default
 
   </div>
   <div id="particles"></div>
-
-  <div class="scroll-navigator hidden">
-    <div class="wrap">
-      <div class="line"></div>
-      {% for section in site.data.sections %}
-      <button data-target-id="{{section.id}}" class="{% if forloop.index == 1 %}current-position{% endif %}">
-      </button>
-      {% endfor %}
-    </div>
-  </div>
 </main>
