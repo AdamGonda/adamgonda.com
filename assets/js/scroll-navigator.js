@@ -57,7 +57,7 @@ function addIntersectionObservers() {
 					onSectionBecomesVisible(i)
 				}
 			},
-			{ threshold: [0.6] },
+			{ threshold: [0.75] },
 		)
 
 		observers[i] = observer

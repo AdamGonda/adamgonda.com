@@ -126,24 +126,6 @@ main {
   background: black;
 }
 
-.nav-buttons {
-  position: absolute;
-  color: white;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 40px 0 40px 50px;
-}
-.nav-buttons > button > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #particles {
   background: black;
   width: 100vw;
