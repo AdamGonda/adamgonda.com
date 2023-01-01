@@ -1,12 +1,5 @@
 const NUMBER_OF_POSITIONS = 5
 
-addIntersectionObservers()
-
-document.querySelectorAll('.scroll-navigator button').forEach(button => {
-	button.addEventListener('click', handleClick)
-})
-
-
 function handleClick(event) {
 	const targetId = event.target.dataset.targetId
 	document.getElementById('_' + targetId).scrollIntoView({ behavior: 'smooth' })
@@ -44,3 +37,13 @@ function addIntersectionObservers() {
 		observers[i].observe(document.querySelector('#_' + i))
 	}
 }
+
+function main() {
+	addIntersectionObservers()
+	
+	document.querySelectorAll('.scroll-navigator button').forEach(button => {
+		button.addEventListener('click', handleClick)
+	})
+}
+
+main()
