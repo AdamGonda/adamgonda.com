@@ -26,7 +26,11 @@ layout: default
         </div>
       </div>
       <div class="left">
-        {{section.foo}}
+        <div>
+          <h1>{{section.jobTitle}}</h1>
+          <h2>{{section.duration}}</h2>
+          <p>{{section.jobDescription}}</p>
+        </div>
       </div>
     </section>
     {% endfor %}
