@@ -1,4 +1,4 @@
-foobar()
+handleShow()
 const OBSERVERS = []
 
 
@@ -37,7 +37,7 @@ function onSectionBecomesVisible(id) {
   });
 }
 
-function foobar(){
+function handleShow(){
   const ob1 = new IntersectionObserver(function(entries) {
     if(entries[0].isIntersecting === true){
       document.querySelector('.scroll-navigator').classList.add('hidden')
