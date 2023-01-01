@@ -88,6 +88,15 @@ main {
   height: 100vh;
 }
 
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right > img {
+  width: 100%;
+}
+
 .scroll-navigator {
   position: absolute;
   top: 0;
@@ -127,7 +136,8 @@ main {
 }
 
 #particles {
-  background: black;
+  background: #395a7f;
+  background: linear-gradient(0deg, #365376 0%, #1d2941 100%);
   width: 100vw;
   height: 100vh;
 }

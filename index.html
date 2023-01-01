@@ -9,8 +9,8 @@ layout: default
 
     {% for section in site.data.sections %}
     <section id="_{{section.id}}" class="section">
-      <div class="right" style="padding-top: 300px;">
-        <img  src="" alt="company image" />
+      <div class="right">
+        <img src="assets/images/{{ section.img }}" alt="company image" />
       </div>
       <div class="left" style="background: {{ section.color}};">
         <p style="font-size: 50px;">{{ section.id }}</p>
