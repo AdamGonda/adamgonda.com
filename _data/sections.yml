@@ -1,5 +1,5 @@
 - id: 0
-  img: rollet.png
+  img: htec-thumbnail.png
   name: htec
   about: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   hireStory: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
@@ -11,7 +11,7 @@
 
 - id: 1
   name: diligent
-  img: rollet.png
+  img: diligent-thumbnail.png
   about: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   hireStory: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   jobTitle: Frontend developer
@@ -23,7 +23,7 @@
 
 - id: 2
   name: accenture
-  img: rollet.png
+  img: accenture-thumbnail.png
   about: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   hireStory: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   jobTitle: Frontend developer
@@ -35,7 +35,7 @@
 
 - id: 3
   name: zoosh
-  img: rollet.png
+  img: zoosh-thumbnail.png
   about: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   hireStory: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   jobTitle: Full Stack developer
@@ -47,7 +47,7 @@
   
 - id: 4
   name: rollet
-  img: rollet.png
+  img: rollet-thumbnail.png
   about: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   hireStory: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   jobTitle: Full Stack developer
