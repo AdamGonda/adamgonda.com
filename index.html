@@ -11,6 +11,19 @@ layout: default
     <section id="_{{section.id}}" class="section">
       <div class="right">
         <img src="assets/images/{{ section.img }}" alt="company image" />
+        <div class="company">
+          <h1>{{section.name}}</h1>
+          <div class="about-and-hire-story">
+            <div>
+              <h1>About</h1>
+              <p>{{section.about}}</p>
+            </div>
+            <div>
+              <h1>Hire story</h1>
+              <p>{{section.about}}</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="left">
         {{section.foo}}
@@ -25,10 +38,8 @@ layout: default
     <div class="wrap">
       <div class="line"></div>
       {% for section in site.data.sections %}
-        <button
-          data-target-id="{{section.id}}"
-          class="{% if forloop.index == 1 %}current-position{% endif %}">
-        </button>
+      <button data-target-id="{{section.id}}" class="{% if forloop.index == 1 %}current-position{% endif %}">
+      </button>
       {% endfor %}
     </div>
   </div>
