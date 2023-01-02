@@ -1,20 +1,21 @@
 const wiggle = gsap.timeline({ repeat: -1, repeatDelay: 4 })
-wiggle.to('#logo', {
-  transform: 'rotate(3deg)',
-  duration: 0.1,
-})
-.to('#logo', {
-  transform: 'rotate(-3deg)',
-  duration: 0.1,
-})
-.to('#logo', {
-  transform: 'rotate(3deg)',
-  duration: 0.1,
-})
-.to('#logo', {
-  transform: 'rotate(0deg)',
-  duration: 0.1,
-})
+wiggle
+	.to('#logo', {
+		transform: 'rotate(3deg)',
+		duration: 0.1,
+	})
+	.to('#logo', {
+		transform: 'rotate(-3deg)',
+		duration: 0.1,
+	})
+	.to('#logo', {
+		transform: 'rotate(3deg)',
+		duration: 0.1,
+	})
+	.to('#logo', {
+		transform: 'rotate(0deg)',
+		duration: 0.1,
+	})
 
 document.getElementById('logo').addEventListener('click', e => {
 	e.currentTarget.dataset.clicked++
@@ -22,10 +23,10 @@ document.getElementById('logo').addEventListener('click', e => {
 
 	const tl = gsap.timeline()
 	tl.to('#logo', {
-		transform: 'rotate(3deg)',
-		duration: 0.1,
+		y: -3,
+		duration: 0.05,
 	}).to('#logo', {
-		transform: 'rotate(0deg)',
+		y: 0,
 		duration: 0.1,
 	})
 
@@ -39,7 +40,7 @@ document.getElementById('logo').addEventListener('click', e => {
 			x: 0,
 			duration: 0.7,
 		})
-    wiggle.pause()
+		wiggle.pause()
 	}
 
 	if (clicked == 2) {
