@@ -97,6 +97,9 @@ main {
 }
 .landing #logo {
   position: relative;
+  margin: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
   cursor: pointer;
 }
 .landing #logo-text {
@@ -117,9 +120,6 @@ main {
 .landing img {
   width: 100px;
   height: 100px;
-  margin: 50px;
-  margin-left: 20px;
-  margin-top: 20px;
 }
 
 .section {
