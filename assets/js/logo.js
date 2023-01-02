@@ -1,15 +1,15 @@
 const wiggle = gsap.timeline({ repeat: -1, repeatDelay: 4 })
 wiggle
 	.to('#logo', {
-		rotate: 3,
+		rotate: 5,
 		duration: 0.1,
 	})
 	.to('#logo', {
-		rotate: -3,
+		rotate: -5,
 		duration: 0.1,
 	})
 	.to('#logo', {
-		rotate: 3,
+		rotate: 5,
 		duration: 0.1,
 	})
 	.to('#logo', {
@@ -17,7 +17,7 @@ wiggle
 		duration: 0.1,
 	})
 
-document.getElementById('logo').addEventListener('click', e => {
+document.getElementById('dot').addEventListener('click', e => {
 	e.currentTarget.dataset.clicked++
 	const clicked = e.currentTarget.dataset.clicked
 

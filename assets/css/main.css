@@ -100,8 +100,17 @@ main {
   margin: 50px;
   margin-left: 20px;
   margin-top: 20px;
-  cursor: pointer;
   scale: 0.4;
+}
+.landing #dot {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background: white;
+  border-radius: 10px;
 }
 .landing #logo-text {
   bottom: 15px;
