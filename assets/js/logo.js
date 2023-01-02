@@ -78,11 +78,11 @@ document.getElementById('logo').addEventListener('click', e => {
       opacity: 1,
       y: 0,
     })
-    // .to('#logo-fun', {
-    //   opacity: 0,
-    //   delay: 1.5,
-    //   onComplete: () => document.getElementById('logo-fun').style.display = 'none'
-    // })
+    .to('#logo-fun', {
+      opacity: 0,
+      delay: 1.5,
+      onComplete: () => document.getElementById('logo-fun').style.display = 'none'
+    })
     
   }
 })
