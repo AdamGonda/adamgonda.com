@@ -88,7 +88,6 @@ main {
 .landing .logo-wrap {
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 .landing #hi {
   padding-left: 106px;
@@ -98,6 +97,7 @@ main {
 }
 .landing #logo {
   position: relative;
+  cursor: pointer;
 }
 .landing #logo-text {
   bottom: 15px;
@@ -112,10 +112,11 @@ main {
 .landing #fro {
   width: 243px;
   text-align: right;
+  margin-left: -25px;
 }
 .landing img {
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
   margin: 50px;
   margin-left: 20px;
   margin-top: 20px;
