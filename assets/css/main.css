@@ -93,7 +93,7 @@ main {
   padding-left: 106px;
 }
 .landing #iam {
-  margin-bottom: -40px;
+  margin-bottom: -35px;
 }
 .landing #logo {
   position: relative;
@@ -107,12 +107,12 @@ main {
   position: absolute;
 }
 .landing .skills {
-  margin-top: -65px;
+  margin-top: -75px;
 }
 .landing #fro {
   width: 243px;
   text-align: right;
-  margin-left: -25px;
+  margin-left: -35px;
 }
 .landing img {
   width: 100px;
