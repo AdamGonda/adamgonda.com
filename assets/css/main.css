@@ -77,7 +77,37 @@ main {
   scroll-snap-align: start;
   display: grid;
   height: 100vh;
-  place-items: center center !important;
+  place-items: center center;
+  font-family: Source sans pro;
+  font-weight: 900;
+  font-size: 45px;
+}
+.landing > div {
+  margin-right: -120px;
+}
+.landing .logo-wrap {
+  display: flex;
+  align-items: center;
+}
+.landing #hi {
+  padding-left: 106px;
+}
+.landing #iam {
+  margin-bottom: -40px;
+}
+.landing .skills {
+  margin-top: -65px;
+}
+.landing #fro {
+  width: 243px;
+  text-align: right;
+}
+.landing img {
+  width: 110px;
+  height: 110px;
+  margin: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .section {
