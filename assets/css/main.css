@@ -101,6 +101,7 @@ main {
   margin-left: 20px;
   margin-top: 20px;
   cursor: pointer;
+  scale: 0.4;
 }
 .landing #logo-text {
   bottom: 15px;

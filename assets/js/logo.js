@@ -21,16 +21,15 @@ document.getElementById('logo').addEventListener('click', e => {
 	e.currentTarget.dataset.clicked++
 	const clicked = e.currentTarget.dataset.clicked
 
-	const tl = gsap.timeline()
-	tl.to('#logo', {
-		y: -3,
-		duration: 0.05,
-	}).to('#logo', {
-		y: 0,
-		duration: 0.1,
-	})
-
 	if (clicked == 1) {
+		gsap.to('#logo', {
+			scale: 1,
+			duration: 0.5
+		})
+		wiggle.pause()
+	}
+
+	if (clicked == 2) {
 		gsap.to('#hi', {
 			x: 30,
 			duration: 0,
@@ -40,10 +39,9 @@ document.getElementById('logo').addEventListener('click', e => {
 			x: 0,
 			duration: 0.7,
 		})
-		wiggle.pause()
 	}
 
-	if (clicked == 2) {
+	if (clicked == 3) {
 		gsap.to('#iam', {
 			y: -30,
 			duration: 0,
@@ -55,7 +53,7 @@ document.getElementById('logo').addEventListener('click', e => {
 		})
 	}
 
-	if (clicked == 3) {
+	if (clicked == 4) {
 		gsap.to('#logo-text', {
 			x: -15,
 			duration: 0,
@@ -67,7 +65,7 @@ document.getElementById('logo').addEventListener('click', e => {
 		})
 	}
 
-	if (clicked == 4) {
+	if (clicked == 5) {
 		gsap.to('#fro', {
 			y: -15,
 			duration: 0,
@@ -79,7 +77,7 @@ document.getElementById('logo').addEventListener('click', e => {
 		})
 	}
 
-	if (clicked == 5) {
+	if (clicked == 6) {
 		const tl = gsap.timeline()
 		tl.to('#ux', {
 			y: -25,
