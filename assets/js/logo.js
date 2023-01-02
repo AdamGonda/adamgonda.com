@@ -1,6 +1,6 @@
 document.getElementById('logo').addEventListener('click', e => {
-	e.target.dataset.clicked++
-	const clicked = e.target.dataset.clicked
+	e.currentTarget.dataset.clicked++
+	const clicked = e.currentTarget.dataset.clicked
 
 	if (clicked == 1) {
 		gsap.to('#hi', {

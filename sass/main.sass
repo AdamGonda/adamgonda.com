@@ -30,7 +30,7 @@ main
   width: 100vw
   overflow: scroll
   scroll-snap-type: y mandatory
-  background: rgba(0,0,0,0)
+  background: #0F2027
   position: fixed
   color: white
   
@@ -53,12 +53,22 @@ main
   .logo-wrap
     display: flex
     align-items: center
-  
+
   #hi
     padding-left: 106px
   
   #iam
     margin-bottom: -40px
+
+  #logo
+    position: relative
+
+  #logo-text
+    bottom: 15px
+    right: 15px
+    width: 40px
+    height: 40px
+    position: absolute
 
   .skills
     margin-top: -65px
@@ -192,7 +202,6 @@ main
 
 .wiggle
   animation: wiggle 1.5s infinite
-  transform-origin: 50px 50px
   cursor: pointer
 
   @keyframes wiggle
