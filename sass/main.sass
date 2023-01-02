@@ -191,7 +191,7 @@ main
   opacity: 0
 
 .wiggle
-  animation: wiggle 3s infinite
+  animation: wiggle 1.5s infinite
   transform-origin: 50px 50px
   cursor: pointer
 
@@ -210,3 +210,14 @@ main
       transform: rotate(0deg)
     100%
       transform: rotate(0deg)
+
+.totransparent
+  background: linear-gradient(0deg, #0F2027 0%, #203A43 50%, #2C5364 100%)
+
+  animation: anim 10s forwards
+
+  @keyframes anim
+    from
+      background: #0F2027
+    to
+      background: rgba(0,0,0,0)
