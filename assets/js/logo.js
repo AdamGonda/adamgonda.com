@@ -2,6 +2,16 @@ document.getElementById('logo').addEventListener('click', e => {
 	e.currentTarget.dataset.clicked++
 	const clicked = e.currentTarget.dataset.clicked
 
+  const tl = gsap.timeline()
+  tl.to('#logo', {
+    transform: 'rotate(3deg)',
+    duration: 0.1
+  })
+  .to('#logo', {
+    transform: 'rotate(0deg)',
+    duration: 0.1
+  })
+
 	if (clicked == 1) {
 		gsap.to('#hi', {
 			x: 30,
@@ -41,12 +51,12 @@ document.getElementById('logo').addEventListener('click', e => {
 
   if (clicked == 4) {
     gsap.to('#fro', {
-      x: 30,
+      y: -15,
       duration: 0,
     })
     gsap.to('#fro', {
       opacity: 1,
-      x: 0,
+      y: 0,
       duration: 0.7,
     })
   }
