@@ -232,4 +232,33 @@ main {
   opacity: 0;
 }
 
+.wiggle {
+  animation: wiggle 3s infinite;
+  transform-origin: 50px 50px;
+  cursor: pointer;
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(7deg);
+  }
+  10% {
+    transform: rotate(-5deg);
+  }
+  20% {
+    transform: rotate(7deg);
+  }
+  30% {
+    transform: rotate(-7deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
