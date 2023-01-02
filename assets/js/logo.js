@@ -12,6 +12,7 @@ document.getElementById('logo').addEventListener('click', e => {
 			x: 0,
 			duration: 0.7,
 		})
+    e.currentTarget.classList.remove('wiggle')
 	}
 
 	if (clicked == 2) {
@@ -26,7 +27,23 @@ document.getElementById('logo').addEventListener('click', e => {
 		})
 	}
 
-  if (clicked == 3) {
+	if (clicked == 3) {
+		gsap.to('#logo-text', {
+			x: -15,
+			duration: 0,
+		})
+		gsap.to('#logo-text', {
+			opacity: 1,
+			x: 0,
+			duration: 0.7,
+		})
+	}
+
+  if (clicked == 4) {
+    gsap.to('#fro', {
+      x: 30,
+      duration: 0,
+    })
     gsap.to('#fro', {
       opacity: 1,
       x: 0,
@@ -34,7 +51,7 @@ document.getElementById('logo').addEventListener('click', e => {
     })
   }
   
-  if (clicked == 4) {
+  if (clicked == 5) {
     const tl = gsap.timeline()
     tl.to('#ux', {
       y: -25,
@@ -43,6 +60,7 @@ document.getElementById('logo').addEventListener('click', e => {
     tl.to('#ux', {
       opacity: 1,
       y: 0,
+      onComplete: () => document.querySelector('.content').classList.add('totransparent')
     })
     .to('#des', {
       y: -40,
@@ -59,7 +77,10 @@ document.getElementById('logo').addEventListener('click', e => {
     .to('#ani', {
       opacity: 1,
       y: 0,
-      onColmplete: () => e.target.classList.remove('wiggle')
+    })
+    .to('.landing > div', {
+      opacity: 0,
+      delay: 1.5
     })
   }
 })
