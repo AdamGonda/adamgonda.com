@@ -107,7 +107,7 @@ main {
   position: absolute;
 }
 .landing .skills {
-  margin-top: -75px;
+  margin-top: -70px;
 }
 .landing #fro {
   width: 243px;
@@ -252,16 +252,16 @@ main {
     transform: rotate(0deg);
   }
   5% {
-    transform: rotate(7deg);
+    transform: rotate(5deg);
   }
   10% {
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
   }
   20% {
-    transform: rotate(7deg);
+    transform: rotate(5deg);
   }
   30% {
-    transform: rotate(-7deg);
+    transform: rotate(-5deg);
   }
   40% {
     transform: rotate(0deg);
