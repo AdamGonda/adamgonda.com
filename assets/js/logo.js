@@ -24,7 +24,7 @@ document.getElementById('logo').addEventListener('click', e => {
 	if (clicked == 1) {
 		gsap.to('#logo', {
 			scale: 1,
-			duration: 0.5
+			duration: 0.2
 		})
 		wiggle.pause()
 	}
