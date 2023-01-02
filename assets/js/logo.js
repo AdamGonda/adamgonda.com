@@ -1,19 +1,19 @@
 const wiggle = gsap.timeline({ repeat: -1, repeatDelay: 4 })
 wiggle
 	.to('#logo', {
-		transform: 'rotate(3deg)',
+		rotate: 3,
 		duration: 0.1,
 	})
 	.to('#logo', {
-		transform: 'rotate(-3deg)',
+		rotate: -3,
 		duration: 0.1,
 	})
 	.to('#logo', {
-		transform: 'rotate(3deg)',
+		rotate: 3,
 		duration: 0.1,
 	})
 	.to('#logo', {
-		transform: 'rotate(0deg)',
+		rotate: 0,
 		duration: 0.1,
 	})
 
