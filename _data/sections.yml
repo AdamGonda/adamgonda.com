@@ -4,14 +4,15 @@
   duration: Apr 2022 - Present · 10 mos
   about:
     It's a really cool company that specializes in all things engineering and technology.
-    They were founded way back in 1994 and have been killing it ever since. They work with a ton of
+    They were founded way back in <b>1994</b> and have been killing it ever since. They work with a ton of
     different industries, like energy and manufacturing, and are always coming up with innovative solutions.
   hireStory:
-    They approached me with a job opportunity on LinkedIn which led to a really long and challenging technical
+    They approached me with a job opportunity on <b>LinkedIn</b> which led to a really long and challenging technical
     interview, and then an offer to join this excellent project where I do some micro-frontend magic + react.
   jobDescription:
-    I was really into React and the whole functional vibe when I finished Codecool so I
-    developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
+    When I started here a few key decisions were already made.
+    Mainly around the stack like it was a given that we go with <b>Piral</b> and <b>React</b> but other than that a lot
+    was left to me like come up with the main <b>architecture</b> of the project.
   stack: The stack the stack the stack
     developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   learned:
