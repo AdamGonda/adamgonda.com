@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently --kill-others \"npm run serve\" \"npm run sass\"",
+    "start": "concurrently --kill-others \"npm run serve\" \"npm run sass\"",
     "serve": "bundle exec jekyll serve --livereload",
     "sass": "sass --watch sass/main.sass assets/css/main.css",
     "post-process": "node ./_post-process/run.js"
