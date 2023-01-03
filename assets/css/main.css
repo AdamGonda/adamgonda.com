@@ -338,8 +338,10 @@ main {
 @keyframes appear {
   from {
     opacity: 0;
+    transform: translatey(10px);
   }
   to {
+    transform: translatey(0px);
     opacity: 1;
   }
 }
