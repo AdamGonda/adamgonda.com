@@ -1,12 +1,17 @@
 - id: 0
   img: htec-thumbnail.png
-  about: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
-  hireStory: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   jobTitle: Full Stack developer
   duration: Apr 2022 - Present · 10 mos
-  jobDescription: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  Dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                  Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like PageMaker including versions of.
+  about: I was really into React and the whole functional vibe when I finished Codecool so I
+         developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
+  hireStory: I was really into React and the whole functional vibe when I finished Codecool so I
+             developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
+  jobDescription: I was really into React and the whole functional vibe when I finished Codecool so I
+             developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
+  stack: The stack the stack the stack
+             developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
+  learned: I learned a lot here about different stuff I was really into React and the whole functional vibe when I finished Codecool so I
+             developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
 
 - id: 1
   img: diligent-thumbnail.png

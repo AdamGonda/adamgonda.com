@@ -58,14 +58,14 @@ layout: default
           <h1>{{section.jobTitle}}</h1>
           <h2>{{section.duration}}</h2>
           <div class="tab-comp-header" data-id="{{ forloop.index }}" data-active="0">
-            <button>tab 1</button>
-            <button>tab 2</button>
-            <button>tab 3</button>
+            <button>job</button>
+            <button>stack</button>
+            <button>learned</button>
           </div>
           <div class="tab-comp-body" data-id="{{ forloop.index }}">
-            <p>contnet 1</p>
-            <p>contnet 2</p>
-            <p>contnet 3</p>
+            <p>{{ section.jobDescription }}</p>
+            <p>{{ section.stack }}</p>
+            <p>{{ section.learned }}</p>
           </div>
         </div>
       </div>
