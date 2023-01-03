@@ -293,11 +293,11 @@ main {
   }
 }
 
-.tabs-wrap {
+.tab-comp-header {
   display: flex;
   gap: 10px;
 }
-.tabs-wrap > button {
+.tab-comp-header > button {
   background: lightgrey;
   padding: 5px;
 }

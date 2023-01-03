@@ -1,31 +1,29 @@
-// set active tab id
-// just show idx 0 tab first
 
-const tabsWraps = Array.from(document.querySelectorAll('.tabs-wrap'))
-const tabsContentWraps = Array.from(document.querySelectorAll('.tabs-content-wrap'))
+const tabCompHeaders = Array.from(document.querySelectorAll('.tab-comp-header'))
+const tabCompBodys = Array.from(document.querySelectorAll('.tab-comp-body'))
 
-tabsContentWraps.forEach(tabsContent => {
-	Array.from(tabsContent.children).forEach((content, idx) => {
+tabCompBodys.forEach(body => {
+	Array.from(body.children).forEach((child, idx) => {
 		if (idx > 0) {
-			content.style.display = 'none'
+			child.style.display = 'none'
 		}
 	})
 })
 
-tabsWraps.forEach(tabs => {
-	Array.from(tabs.children).forEach((tab, idx) => {
-		tab.addEventListener('click', () => handleTabClick(tabs, idx))
+tabCompHeaders.forEach(header => {
+	Array.from(header.children).forEach((child, idx) => {
+		child.addEventListener('click', () => handleClick(header, idx))
 	})
 })
 
-function handleTabClick(tabs, idx) {
-  tabsContentWraps.forEach(tabsContent => {
-    if(tabsContent.dataset.id == tabs.dataset.id){
-      Array.from(tabsContent.children).forEach((content, i) => {
+function handleClick(header, idx) {
+  tabCompBodys.forEach(body => {
+    if(body.dataset.id == header.dataset.id){
+      Array.from(body.children).forEach((child, i) => {
         if (i == idx) {
-          content.style.display = 'block'
+          child.style.display = 'block'
         } else {
-          content.style.display = 'none'
+          child.style.display = 'none'
         }
       })
     }
