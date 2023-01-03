@@ -10,16 +10,18 @@
     They approached me with a job opportunity on <b>LinkedIn</b> which led to a really long and challenging technical
     interview, and then an offer to join this excellent project where I do some micro-frontend magic + react.
   jobDescription:
-    I am really proud of the fact that I was quickly promoted to be the project's senior lead.
-    It was cool but steep, because I had to quickly become the "senior" with a lot of
-    new responsibilities. Tech wise a few key decisions were already made. Mainly around the stack, like it
+    I am really proud of the fact that I was quickly promoted to the project's senior lead.
+    It was cool but steep because I had to quickly become the "senior" with a lot of
+    new responsibilities. Tech-wise a few key decisions were already made. Mainly around the stack, like it
     was a given that we go with <b>Piral</b> and <b>React</b> but other than that a lot was left to me like coming up
-    with the project's whole <b>frontend architecture</b>. On the managerial side I got the challenging
+    with the project's whole <b>frontend architecture</b>. On the managerial side, I got the challenging
     task to retrain and lead a bunch of seasoned <b>C#</b> backend devs to work on the frontend.
 
   stack:
-    The stack the stack the stack
+    # <b>React, JavaScript, TypeScript, Nx, Piral</b>
+    I learned a lot here about different stuff I was really into React and the whole functional vibe when I finished Codecool so I
     developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
+
   learned:
     I learned a lot here about different stuff I was really into React and the whole functional vibe when I finished Codecool so I
     developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
