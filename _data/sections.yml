@@ -1,17 +1,22 @@
 - id: 0
   img: htec-thumbnail.png
-  jobTitle: Full Stack developer
+  jobTitle: Senior Frontend Lead
   duration: Apr 2022 - Present · 10 mos
-  about: I was really into React and the whole functional vibe when I finished Codecool so I
-         developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
-  hireStory: I was really into React and the whole functional vibe when I finished Codecool so I
-             developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
-  jobDescription: I was really into React and the whole functional vibe when I finished Codecool so I
-             developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
+  about:
+    It's a really cool company that specializes in all things engineering and technology.
+    They were founded way back in 1994 and have been killing it ever since. They work with a ton of
+    different industries, like energy and manufacturing, and are always coming up with innovative solutions.
+  hireStory:
+    They approached me with a job opportunity on LinkedIn which led to a really long and challenging technical
+    interview, and then an offer to join this excellent project where I do some micro-frontend magic + react.
+  jobDescription:
+    I was really into React and the whole functional vibe when I finished Codecool so I
+    developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   stack: The stack the stack the stack
-             developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
-  learned: I learned a lot here about different stuff I was really into React and the whole functional vibe when I finished Codecool so I
-             developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
+    developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
+  learned:
+    I learned a lot here about different stuff I was really into React and the whole functional vibe when I finished Codecool so I
+    developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
 
 - id: 1
   img: diligent-thumbnail.png
@@ -19,10 +24,10 @@
   hireStory: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   jobTitle: Frontend developer
   duration: Dec 2021 - Apr 2022 · 5 mos
-  jobDescription: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  Dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                  Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like PageMaker including versions of.
-
+  jobDescription:
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+    Dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like PageMaker including versions of.
 
 - id: 2
   img: accenture-thumbnail.png
@@ -30,10 +35,10 @@
   hireStory: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   jobTitle: Frontend developer
   duration: Mar 2021 - Dec 2021 · 10 mos
-  jobDescription: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  Dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                  Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like PageMaker including versions of.
-
+  jobDescription:
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+    Dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like PageMaker including versions of.
 
 - id: 3
   img: zoosh-thumbnail.png
@@ -41,17 +46,18 @@
   hireStory: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   jobTitle: Full Stack developer
   duration: Oct 2020 - Mar 2021 · 6 mos
-  jobDescription: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  Dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                  Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like PageMaker including versions of.
+  jobDescription:
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+    Dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like PageMaker including versions of.
 
-  
 - id: 4
   img: rollet-thumbnail.png
   about: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   hireStory: I was really into React and the whole functional vibe when I finished Codecool so I developed this Trello copy with it. One time there was an opportunity to demo it to hiring companies, I did it and got the job.
   jobTitle: Full Stack developer
   duration: Sep 2019 - Aug 2020 · 1 yr
-  jobDescription: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  Dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                  Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like PageMaker including versions of.
+  jobDescription:
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+    Dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like PageMaker including versions of.
