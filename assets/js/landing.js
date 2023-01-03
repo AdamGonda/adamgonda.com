@@ -128,6 +128,7 @@ document.getElementById('dot').addEventListener('click', e => {
 					scrollAid.style.display = 'flex'
 					scrollAid.classList.add('appear')
 					document.getElementById('arrow').classList.add('up-and-down')
+					document.querySelector('.content').style.overflow = 'scroll'
 				},
 			})
 	}

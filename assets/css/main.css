@@ -40,22 +40,6 @@ footer a {
   font-weight: 900;
   font-size: 45px;
 }
-.landing #scroll-aid {
-  place-self: end center;
-  padding-bottom: 50px;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.landing #scroll-aid p {
-  font-size: 17px;
-  font-weight: 600;
-}
-.landing #scroll-aid .fa-solid.fa-chevron-down {
-  margin-top: 5px;
-  font-size: 20px;
-}
 .landing #logo-fun {
   padding-left: 145px;
 }
@@ -131,6 +115,22 @@ footer a {
   100% {
     transform: translateX(0px);
   }
+}
+.landing #scroll-aid {
+  place-self: end center;
+  padding-bottom: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.landing #scroll-aid p {
+  font-size: 17px;
+  font-weight: 600;
+}
+.landing #scroll-aid .fa-solid.fa-chevron-down {
+  margin-top: 5px;
+  font-size: 20px;
 }
 
 .scroll-navigator {
@@ -255,7 +255,7 @@ main {
 .content {
   height: 100vh;
   width: 100vw;
-  overflow: scroll;
+  overflow: hidden;
   scroll-snap-type: y mandatory;
   background: #0F2027;
   position: fixed;
