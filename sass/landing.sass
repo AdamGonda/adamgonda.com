@@ -1,0 +1,96 @@
+.landing
+  scroll-snap-align: start
+  display: grid
+  height: 100vh
+  place-items: center center
+  font-family: Source sans pro
+  font-weight: 900
+  font-size: 45px
+
+  #scroll-aid
+    place-self: end center
+    padding-bottom: 50px
+    display: none
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    
+    p
+      font-size: 17px
+      font-weight: 600
+
+    .fa-solid.fa-chevron-down
+      margin-top: 5px
+      font-size: 20px
+
+  #logo-fun
+    padding-left: 145px
+  
+  .logo-wrap
+    display: flex
+    align-items: center
+
+  #hi
+    padding-left: 106px
+  
+  #iam
+    margin-bottom: -35px
+
+  #logo
+    position: relative
+    margin: 50px
+    margin-left: 20px
+    margin-top: 20px
+    scale: 0.4
+  
+  #dot
+    position: absolute
+    top: 20px
+    left: 20px
+    width: 10px
+    height: 10px
+    cursor: pointer
+    background: white
+    border-radius: 10px
+
+  #logo-text
+    bottom: 15px
+    right: 15px
+    width: 40px
+    height: 40px
+    position: absolute
+
+  .skills
+    margin-top: -70px
+
+  #fro
+    width: 243px
+    text-align: right
+    margin-left: -35px
+
+  img
+    width: 100px
+    height: 100px
+
+  .appear
+    animation: appear 1s ease-in
+
+    @keyframes appear
+      from
+        opacity: 0
+        transform: translatey(10px)
+      to
+        transform: translatey(0px)
+        opacity: 1
+
+  .up-and-down
+    animation: upAndDown 2.5s 1s ease-in-out infinite
+
+    @keyframes upAndDown
+      0%
+        transform: translateX(0px)
+      50%
+        transform: translateY(7px)
+      100%
+        transform: translateX(0px)
+    

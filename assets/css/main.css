@@ -31,48 +31,6 @@ footer a {
   font-size: 22px;
 }
 
-body {
-  font-family: "Roboto Slab", serif;
-  background-color: whitesmoke;
-}
-
-.lazyload,
-.lazyloading {
-  filter: blur(5px);
-}
-
-.lazyloaded {
-  animation-name: fadein;
-  animation-duration: 0.4s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadein {
-  from {
-    filter: blur(5px);
-  }
-  to {
-    filter: blur(0);
-  }
-}
-main {
-  overflow: hidden;
-}
-
-.content {
-  height: 100vh;
-  width: 100vw;
-  overflow: scroll;
-  scroll-snap-type: y mandatory;
-  background: #0F2027;
-  position: fixed;
-  color: white;
-}
-.content::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
 .landing {
   scroll-snap-align: start;
   display: grid;
@@ -147,73 +105,32 @@ main {
   width: 100px;
   height: 100px;
 }
-
-.section {
-  scroll-snap-align: start;
-  display: grid;
-  grid-template-columns: 0.4fr 1fr;
-  height: 100vh;
+.landing .appear {
+  animation: appear 1s ease-in;
 }
-
-.right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translatey(10px);
+  }
+  to {
+    transform: translatey(0px);
+    opacity: 1;
+  }
 }
-.right > .company {
-  padding: 20px 50px;
-  height: 100%;
+.landing .up-and-down {
+  animation: upAndDown 2.5s 1s ease-in-out infinite;
 }
-.right > .company > h1 {
-  place-self: start;
-  font-size: 50px;
-  text-transform: capitalize;
-  margin-bottom: 10px;
-}
-.right > img {
-  width: 101%;
-}
-
-.about-and-hire-story > div {
-  margin-top: 50px;
-}
-.about-and-hire-story > div > h1 {
-  font-size: 25px;
-  font-family: "avenir";
-  font-weight: 700;
-}
-.about-and-hire-story > div > p {
-  margin-top: 10px;
-  font-size: 17px;
-  line-height: 1.5;
-  font-weight: 300;
-}
-
-.left {
-  color: black;
-  background: white;
-  padding-left: 130px;
-  padding-top: 240px;
-}
-.left > div {
-  width: 500px;
-}
-.left h1 {
-  font-size: 25px;
-  margin-bottom: 7px;
-  font-family: "avenir";
-  font-weight: 900;
-}
-.left h2 {
-  font-family: "avenir";
-  font-weight: 500;
-  font-size: 18px;
-  margin-bottom: 45px;
-}
-.left p {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.5;
+@keyframes upAndDown {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 .scroll-navigator {
@@ -259,10 +176,28 @@ main {
   background: black;
 }
 
-#particles {
-  background: linear-gradient(0deg, #0F2027 0%, #203A43 50%, #2C5364 100%);
-  width: 100vw;
-  height: 100vh;
+.tab-comp-header {
+  display: flex;
+  gap: 10px;
+  font-family: "avenir";
+  font-weight: 900;
+  font-size: 20px;
+}
+.tab-comp-header > .active:before {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  content: "";
+  background: black;
+}
+.tab-comp-header > button {
+  position: relative;
+}
+
+.tab-comp-body {
+  padding-top: 25px;
 }
 
 .hidden {
@@ -308,57 +243,100 @@ main {
   }
 }
 
-.tab-comp-header {
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: whitesmoke;
+}
+
+main {
+  overflow: hidden;
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  background: #0F2027;
+  position: fixed;
+  color: white;
+}
+.content::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.section {
+  scroll-snap-align: start;
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  height: 100vh;
+}
+
+.right {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.right .company {
+  padding: 20px 50px;
+  height: 100%;
+}
+.right .company > h1 {
+  place-self: start;
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.right img {
+  width: 101%;
+}
+.right .about-and-hire-story div {
+  margin-top: 50px;
+}
+.right .about-and-hire-story h1 {
+  font-size: 25px;
+  font-family: "avenir";
+  font-weight: 700;
+}
+.right .about-and-hire-story p {
+  margin-top: 10px;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.left {
+  color: black;
+  background: white;
+  padding-left: 130px;
+  padding-top: 240px;
+}
+.left > div {
+  width: 500px;
+}
+.left h1 {
+  font-size: 25px;
+  margin-bottom: 7px;
   font-family: "avenir";
   font-weight: 900;
+}
+.left h2 {
+  font-family: "avenir";
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+.left p {
   font-size: 20px;
-}
-.tab-comp-header > .active:before {
-  position: absolute;
-  bottom: -7px;
-  left: 0;
-  right: 0;
-  height: 4px;
-  content: "";
-  background: black;
-}
-.tab-comp-header > button {
-  position: relative;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
-.tab-comp-body {
-  padding-top: 25px;
-}
-
-.appear {
-  animation: appear 1s ease-in;
-}
-@keyframes appear {
-  from {
-    opacity: 0;
-    transform: translatey(10px);
-  }
-  to {
-    transform: translatey(0px);
-    opacity: 1;
-  }
-}
-
-.up-and-down {
-  animation: upAndDown 2.5s 1s ease-in-out infinite;
-}
-@keyframes upAndDown {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateY(7px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
+#particles {
+  background: linear-gradient(0deg, #0F2027 0%, #203A43 50%, #2C5364 100%);
+  width: 100vw;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=main.css.map */
