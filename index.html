@@ -57,15 +57,15 @@ layout: default
         <div>
           <h1>{{section.jobTitle}}</h1>
           <h2>{{section.duration}}</h2>
-          <div class="tabs" data-id="{{ forloop.index }}" data-active="0">
+          <div class="tabs-wrap" data-id="{{ forloop.index }}" data-active="0">
             <button>tab 1</button>
             <button>tab 2</button>
             <button>tab 3</button>
           </div>
-          <div class="tabs-content" data-id="{{ forloop.index }}">
-            <p>{{section.jobDescription}}</p>
-            <p>{{section.jobDescription}}</p>
-            <p>{{section.jobDescription}}</p>
+          <div class="tabs-content-wrap" data-id="{{ forloop.index }}">
+            <p>contnet 1</p>
+            <p>contnet 2</p>
+            <p>contnet 3</p>
           </div>
         </div>
       </div>

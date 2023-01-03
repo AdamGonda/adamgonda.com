@@ -293,11 +293,11 @@ main {
   }
 }
 
-.tabs {
+.tabs-wrap {
   display: flex;
   gap: 10px;
 }
-.tabs > button {
+.tabs-wrap > button {
   background: lightgrey;
   padding: 5px;
 }
