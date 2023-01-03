@@ -196,7 +196,7 @@ footer a {
 @keyframes tabCompAnim {
   from {
     opacity: 0;
-    transform: translateY(5px);
+    transform: translateY(3px);
   }
   to {
     opacity: 1;
