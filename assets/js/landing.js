@@ -23,21 +23,20 @@ document.getElementById('dot').addEventListener('click', e => {
 
 	if (clicked == 1) {
 		const tl = gsap.timeline()
-		
+
 		gsap.to('#logo', {
 			scale: 1,
-			duration: 0.1
+			duration: 0.1,
+			rotate: 0,
 		})
-		tl
-		.to('#logo', {
+		tl.to('#logo', {
 			y: -15,
 			duration: 0.1,
-			ease: "back.out(5.7)"
-		})
-		.to('#logo', {
+			ease: 'back.out(5.7)',
+		}).to('#logo', {
 			y: 0,
 			duration: 0.1,
-			ease: "back.out(4)"
+			ease: 'back.out(4)',
 		})
 
 		wiggle.pause()
@@ -121,9 +120,15 @@ document.getElementById('dot').addEventListener('click', e => {
 			})
 			.to('#logo-fun', {
 				opacity: 0,
+				y: -20,
 				delay: 1,
-				onComplete: () =>
-					(document.getElementById('logo-fun').style.display = 'none'),
+				onComplete: () => {
+					document.getElementById('logo-fun').style.display = 'none'
+					const scrollAid = document.getElementById('scroll-aid')
+					scrollAid.style.display = 'flex'
+					scrollAid.classList.add('appear')
+					document.getElementById('arrow').classList.add('up-and-down')
+				},
 			})
 	}
 })

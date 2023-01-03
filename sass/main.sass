@@ -45,11 +45,27 @@ main
   place-items: center center
   font-family: Source sans pro
   font-weight: 900
-  font-size: 45px  
+  font-size: 45px
 
-  & > div
-    margin-right: -120px
+  #scroll-aid
+    place-self: end center
+    padding-bottom: 50px
+    display: none
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    
+    p
+      font-size: 14px
+      font-weight: 600
 
+    .fa-solid.fa-chevron-down
+      margin-top: 10px
+      font-size: 20px
+
+  #logo-fun
+    padding-left: 145px
+  
   .logo-wrap
     display: flex
     align-items: center
@@ -261,3 +277,27 @@ main
 
 .tab-comp-body
   padding-top: 25px
+
+.appear
+  animation: appear 1s ease-in
+
+  @keyframes appear
+    from
+      opacity: 0
+    to
+      opacity: 1
+
+.up-and-down
+  animation: upAndDown 2.5s ease-in-out infinite
+
+  @keyframes upAndDown
+    0%
+      transform: translateX(0px)
+      opacity: 0.2
+    50%
+      transform: translateY(3px)
+      opacity: 1
+    100%
+      transform: translateX(0px)
+      opacity: 0.2
+  

@@ -82,8 +82,24 @@ main {
   font-weight: 900;
   font-size: 45px;
 }
-.landing > div {
-  margin-right: -120px;
+.landing #scroll-aid {
+  place-self: end center;
+  padding-bottom: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.landing #scroll-aid p {
+  font-size: 14px;
+  font-weight: 600;
+}
+.landing #scroll-aid .fa-solid.fa-chevron-down {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.landing #logo-fun {
+  padding-left: 145px;
 }
 .landing .logo-wrap {
   display: flex;
@@ -314,6 +330,36 @@ main {
 
 .tab-comp-body {
   padding-top: 25px;
+}
+
+.appear {
+  animation: appear 1s ease-in;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.up-and-down {
+  animation: upAndDown 2.5s ease-in-out infinite;
+}
+@keyframes upAndDown {
+  0% {
+    transform: translateX(0px);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(3px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 0.2;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
