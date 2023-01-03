@@ -22,10 +22,24 @@ document.getElementById('dot').addEventListener('click', e => {
 	const clicked = e.currentTarget.dataset.clicked
 
 	if (clicked == 1) {
+		const tl = gsap.timeline()
+		
 		gsap.to('#logo', {
 			scale: 1,
-			duration: 0.2
+			duration: 0.1
 		})
+		tl
+		.to('#logo', {
+			y: -15,
+			duration: 0.1,
+			ease: "back.out(5.7)"
+		})
+		.to('#logo', {
+			y: 0,
+			duration: 0.1,
+			ease: "back.out(4)"
+		})
+
 		wiggle.pause()
 	}
 
@@ -107,7 +121,7 @@ document.getElementById('dot').addEventListener('click', e => {
 			})
 			.to('#logo-fun', {
 				opacity: 0,
-				delay: 1.5,
+				delay: 1,
 				onComplete: () =>
 					(document.getElementById('logo-fun').style.display = 'none'),
 			})
