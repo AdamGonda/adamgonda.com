@@ -4,7 +4,7 @@ layout: default
 <main>
   <div class="content">
 
-    <sction class="landing">
+    <!-- <sction class="landing">
       <div id="logo-fun">
         <p id="hi" class="hidden">hi</p>
         <div class="logo-wrap">
@@ -22,7 +22,7 @@ layout: default
         </div>
         <p id="fro" class="hidden">frontend developer</p>
       </div>
-    </sction>
+    </sction> -->
 
     <div class="scroll-navigator">
       <div class="wrap">
@@ -57,7 +57,16 @@ layout: default
         <div>
           <h1>{{section.jobTitle}}</h1>
           <h2>{{section.duration}}</h2>
-          <p>{{section.jobDescription}}</p>
+          <div class="tabs" data-id="{{ forloop.index }}" data-active="0">
+            <button>tab 1</button>
+            <button>tab 2</button>
+            <button>tab 3</button>
+          </div>
+          <div class="tabs-content" data-id="{{ forloop.index }}">
+            <p>{{section.jobDescription}}</p>
+            <p>{{section.jobDescription}}</p>
+            <p>{{section.jobDescription}}</p>
+          </div>
         </div>
       </div>
     </section>

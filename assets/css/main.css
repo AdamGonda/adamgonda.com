@@ -293,4 +293,13 @@ main {
   }
 }
 
+.tabs {
+  display: flex;
+  gap: 10px;
+}
+.tabs > button {
+  background: lightgrey;
+  padding: 5px;
+}
+
 /*# sourceMappingURL=main.css.map */
