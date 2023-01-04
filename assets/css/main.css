@@ -301,28 +301,21 @@ main {
   align-items: center;
   color: whitesmoke;
 }
-.right .company {
-  padding: 20px 50px;
-  height: 100%;
-}
-.right .company > h1 {
-  place-self: start;
-  font-size: 50px;
-  text-transform: capitalize;
-  margin-bottom: 10px;
-}
 .right img {
   width: 101%;
 }
-.right .about-and-hire-story div {
-  margin-top: 50px;
+.right > div {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 4.9vw 3.5vw;
 }
-.right .about-and-hire-story h1 {
+.right > div h1 {
   font-size: 25px;
   font-family: "avenir";
   font-weight: 700;
 }
-.right .about-and-hire-story p {
+.right > div p {
   margin-top: 10px;
   font-size: 17px;
   line-height: 1.5;
