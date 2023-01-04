@@ -10,6 +10,7 @@
 body
   font-family: 'Roboto Slab', serif
   background-color: $colors-white
+  color: $colors-black
 
 main
   overflow: hidden
@@ -17,11 +18,11 @@ main
 .content
   height: 100vh
   width: 100vw
-  overflow: hidden
+  // overflow: hidden
+  overflow: scroll
   scroll-snap-type: y mandatory
   background: #0F2027
   position: fixed
-  color: white
   
   &::-webkit-scrollbar
     width: 0
@@ -37,6 +38,7 @@ main
   display: flex
   flex-direction: column
   align-items: center
+  color: $colors-white
 
   .company
     padding: 20px 50px
@@ -67,8 +69,8 @@ main
       font-weight: 300
 
 .left
-  color: black
-  background: white
+  color: $colors-black
+  background: $colors-white
   padding-left: 130px
   padding-top: 240px
   
