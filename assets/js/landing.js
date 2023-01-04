@@ -1,19 +1,15 @@
-const wiggle = gsap.timeline({ repeat: -1, repeatDelay: 4 })
+const wiggle = gsap.timeline({ delay: 1.5, repeat: -1, repeatDelay: 3.5 })
 wiggle
-	.to('#logo', {
-		rotate: 5,
+	.to('#dot', {
+		transform: 'translateY(10px)',
 		duration: 0.1,
 	})
-	.to('#logo', {
-		rotate: -5,
+	.to('#dot', {
+		transform: 'translateY(10px)',
 		duration: 0.1,
 	})
-	.to('#logo', {
-		rotate: 5,
-		duration: 0.1,
-	})
-	.to('#logo', {
-		rotate: 0,
+	.to('#dot', {
+		transform: 'translateY(0)',
 		duration: 0.1,
 	})
 
@@ -37,6 +33,10 @@ document.getElementById('dot').addEventListener('click', e => {
 			y: 0,
 			duration: 0.1,
 			ease: 'back.out(4)',
+		})
+		.to('#dot', {
+			transform: 'translateY(0)',
+			duration: 0
 		})
 
 		wiggle.pause()
