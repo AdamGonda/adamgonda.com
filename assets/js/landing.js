@@ -34,6 +34,10 @@ document.getElementById('dot').addEventListener('click', e => {
 			duration: 0.1,
 			ease: 'back.out(4)',
 		})
+		.to('#dot', {
+			transform: 'translateY(0)',
+			duration: 0
+		})
 
 		wiggle.pause()
 	}
