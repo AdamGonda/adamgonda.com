@@ -202,7 +202,7 @@ footer a {
   height: 5px;
   content: "";
   background: black;
-  animation: tabCompAnim 0.1s ease-in;
+  animation: tabCompAnim 0.2s ease-in;
 }
 @keyframes tabCompAnim {
   from {
