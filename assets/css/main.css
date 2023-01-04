@@ -62,13 +62,24 @@ footer a {
 }
 .landing #dot {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 5px;
+  left: 5px;
   width: 10px;
   height: 10px;
+  padding: 20px;
   cursor: pointer;
+  border-radius: 20px;
+}
+.landing #dot::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  content: "";
   background: white;
   border-radius: 10px;
+  width: 10px;
+  height: 10px;
 }
 .landing #logo-text {
   bottom: 15px;
