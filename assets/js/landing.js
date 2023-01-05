@@ -1,17 +1,17 @@
-const wiggle = gsap.timeline({ delay: 1.5, repeat: -1, repeatDelay: 3.5 })
-wiggle
-	.to('#dot', {
-		transform: 'translateY(10px)',
-		duration: 0.1,
-	})
-	.to('#dot', {
-		transform: 'translateY(10px)',
-		duration: 0.1,
-	})
-	.to('#dot', {
-		transform: 'translateY(0)',
-		duration: 0.1,
-	})
+// const wiggle = gsap.timeline({ delay: 1.5, repeat: -1, repeatDelay: 3.5 })
+// wiggle
+// 	.to('#dot', {
+// 		transform: 'translateY(10px)',
+// 		duration: 0.1,
+// 	})
+// 	.to('#dot', {
+// 		transform: 'translateY(10px)',
+// 		duration: 0.1,
+// 	})
+// 	.to('#dot', {
+// 		transform: 'translateY(0)',
+// 		duration: 0.1,
+// 	})
 
 document.getElementById('dot').addEventListener('click', e => {
 	e.currentTarget.dataset.clicked++
@@ -38,8 +38,6 @@ document.getElementById('dot').addEventListener('click', e => {
 			transform: 'translateY(0)',
 			duration: 0
 		})
-
-		wiggle.pause()
 	}
 
 	if (clicked == 2) {
@@ -124,11 +122,6 @@ document.getElementById('dot').addEventListener('click', e => {
 				delay: 1,
 				onComplete: () => {
 					document.getElementById('logo-fun').style.display = 'none'
-					const scrollAid = document.getElementById('scroll-aid')
-					scrollAid.style.display = 'flex'
-					scrollAid.classList.add('appear')
-					document.getElementById('arrow').classList.add('up-and-down')
-					document.querySelector('.content').style.overflow = 'scroll'
 				},
 			})
 	}
