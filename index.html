@@ -10,7 +10,7 @@ layout: default
         <div class="logo-wrap">
           <p id="iam" class="hidden">I am</p>
           <div id="logo" >
-            <img id="logo-rect" src="assets/images/logo-rect.png" alt="logo" class="ignore-PIL">
+            <div id="logo-rect"></div>
             <div id="dot" data-clicked="0"></div>
             <img id="logo-text" class="hidden" src="assets/images/logo-text.png" alt="logo">
           </div>
@@ -22,60 +22,6 @@ layout: default
         </div>
         <p id="fro" class="hidden">frontend developer</p>
       </div>
-      <div id="scroll-aid">
-        <p>Scroll</p>
-        <i id="arrow" class="fa-solid fa-chevron-down"></i>
-      </div>
-    </sction>
-
-    <div class="scroll-navigator">
-      <div class="wrap">
-        <div class="shapes">
-          <div class="line"></div>
-          {% for section in site.data.sections %}
-          <button data-target-id="{{section.id}}" class="{% if forloop.index == 1 %}current-position{% endif %}">
-          </button>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-
-    {% for section in site.data.sections %}
-    <section id="_{{section.id}}" class="section">
-      <div class="right">
-        <img src="assets/images/{{ section.img }}" alt="company image" />
-        <div class="company">
-          <div class="about-and-hire-story">
-            <div>
-              <h1>About</h1>
-              <p>{{section.about}}</p>
-            </div>
-            <div>
-              <h1>Hire story</h1>
-              <p>{{section.hireStory}}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="left">
-        <div>
-          <h1>{{section.jobTitle}}</h1>
-          <h2>{{section.duration}}</h2>
-          <div class="tab-comp-header" data-id="{{ forloop.index }}">
-            <button class="active">job</button>
-            <button>stack</button>
-            <button>learned</button>
-          </div>
-          <div class="tab-comp-body" data-id="{{ forloop.index }}">
-            <p>{{ section.jobDescription }}</p>
-            <p>{{ section.stack }}</p>
-            <p>{{ section.learned }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    {% endfor %}
-
   </div>
   <div id="particles"></div>
 </main>

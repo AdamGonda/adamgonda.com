@@ -1,24 +1,3 @@
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 50px;
-  background-color: #222222;
-  color: white;
-  font-size: 14px;
-}
-footer p,
-footer span {
-  margin: 0 10px;
-}
-footer p {
-  font-size: 10px;
-}
-footer a {
-  text-decoration: underline;
-}
-
 .not-found {
   display: grid;
   place-items: center center;
@@ -40,27 +19,33 @@ footer a {
   font-weight: 900;
   font-size: 45px;
 }
-.landing #logo-fun {
+
+#logo-fun {
   padding-left: 145px;
 }
-.landing .logo-wrap {
+
+.logo-wrap {
   display: flex;
   align-items: center;
 }
-.landing #hi {
+
+#hi {
   padding-left: 106px;
 }
-.landing #iam {
+
+#iam {
   margin-bottom: -35px;
 }
-.landing #logo {
+
+#logo {
   position: relative;
   margin: 50px;
   margin-left: 20px;
   margin-top: 20px;
   scale: 0.4;
 }
-.landing #dot {
+
+#dot {
   position: absolute;
   top: 5px;
   left: 5px;
@@ -70,7 +55,7 @@ footer a {
   cursor: pointer;
   border-radius: 20px;
 }
-.landing #dot::after {
+#dot::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -81,26 +66,32 @@ footer a {
   width: 10px;
   height: 10px;
 }
-.landing #logo-text {
+
+#logo-rect {
+  width: 100px;
+  height: 100px;
+  border: 4px solid whitesmoke;
+}
+
+#logo-text {
   bottom: 15px;
   right: 15px;
   width: 40px;
   height: 40px;
   position: absolute;
 }
-.landing .skills {
+
+.skills {
   margin-top: -70px;
 }
-.landing #fro {
+
+#fro {
   width: 243px;
   text-align: right;
   margin-left: -35px;
 }
-.landing img {
-  width: 100px;
-  height: 100px;
-}
-.landing .appear {
+
+.appear {
   animation: appear 1s ease-in;
 }
 @keyframes appear {
@@ -113,144 +104,9 @@ footer a {
     opacity: 1;
   }
 }
-.landing .up-and-down {
-  animation: upAndDown 2.5s 1s ease-in-out infinite;
-}
-@keyframes upAndDown {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateY(7px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-.landing #scroll-aid {
-  place-self: end center;
-  padding-bottom: 50px;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.landing #scroll-aid p {
-  font-size: 17px;
-  font-weight: 600;
-}
-.landing #scroll-aid .fa-solid.fa-chevron-down {
-  margin-top: 5px;
-  font-size: 20px;
-}
-
-.scroll-navigator {
-  z-index: 10;
-  position: sticky;
-  top: 0;
-}
-.scroll-navigator .wrap {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  padding-right: 90px;
-}
-.scroll-navigator .shapes {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 80%;
-  justify-content: space-between;
-}
-.scroll-navigator .shapes .line {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  background: #D5D5D5;
-  width: 5px;
-  height: 100%;
-}
-.scroll-navigator .shapes button {
-  z-index: 2;
-  width: 20px;
-  height: 20px;
-  background: #D5D5D5;
-  border-radius: 50px;
-}
-.scroll-navigator .shapes .current-position {
-  background: black;
-}
-
-.tab-comp-header {
-  display: flex;
-  gap: 10px;
-  font-family: "avenir";
-  font-weight: 900;
-  font-size: 20px;
-}
-.tab-comp-header > .active:before {
-  position: absolute;
-  bottom: -7px;
-  left: 0;
-  right: 0;
-  height: 5px;
-  content: "";
-  background: black;
-  animation: tabCompAnim 0.2s ease-in;
-}
-@keyframes tabCompAnim {
-  from {
-    opacity: 0;
-    transform: translateY(3px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.tab-comp-header > button {
-  position: relative;
-}
-
-.tab-comp-body {
-  padding-top: 25px;
-}
 
 .hidden {
   opacity: 0;
-}
-
-.wiggle {
-  animation: wiggle 1.5s infinite;
-}
-@keyframes wiggle {
-  0% {
-    transform: rotate(0deg);
-  }
-  5% {
-    transform: rotate(5deg);
-  }
-  10% {
-    transform: rotate(-3deg);
-  }
-  20% {
-    transform: rotate(5deg);
-  }
-  30% {
-    transform: rotate(-5deg);
-  }
-  40% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
 }
 
 .totransparent {
@@ -286,73 +142,6 @@ main {
 .content::-webkit-scrollbar {
   width: 0;
   height: 0;
-}
-
-.section {
-  scroll-snap-align: start;
-  display: grid;
-  grid-template-columns: 0.4fr 1fr;
-  height: 100vh;
-}
-
-.right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.right .company {
-  padding: 20px 50px;
-  height: 100%;
-}
-.right .company > h1 {
-  place-self: start;
-  font-size: 50px;
-  text-transform: capitalize;
-  margin-bottom: 10px;
-}
-.right img {
-  width: 101%;
-}
-.right .about-and-hire-story div {
-  margin-top: 50px;
-}
-.right .about-and-hire-story h1 {
-  font-size: 25px;
-  font-family: "avenir";
-  font-weight: 700;
-}
-.right .about-and-hire-story p {
-  margin-top: 10px;
-  font-size: 17px;
-  line-height: 1.5;
-  font-weight: 300;
-}
-
-.left {
-  color: black;
-  background: white;
-  padding-left: 130px;
-  padding-top: 240px;
-}
-.left > div {
-  width: 500px;
-}
-.left h1 {
-  font-size: 25px;
-  margin-bottom: 7px;
-  font-family: "avenir";
-  font-weight: 900;
-}
-.left h2 {
-  font-family: "avenir";
-  font-weight: 500;
-  font-size: 18px;
-  margin-bottom: 45px;
-}
-.left p {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.5;
 }
 
 #particles {

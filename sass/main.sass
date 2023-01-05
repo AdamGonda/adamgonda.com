@@ -1,9 +1,5 @@
-@use "./footer"
 @use "./notfoundpage"
 @use "./landing"
-@use "./scroll-navigator"
-@use "./tabs"
-@use "./ect"
 
 @use "./constants" as *
 
@@ -26,71 +22,6 @@ main
   &::-webkit-scrollbar
     width: 0
     height: 0
-
-.section
-  scroll-snap-align: start
-  display: grid
-  grid-template-columns: 0.4fr 1fr
-  height: 100vh
-
-.right
-  display: flex
-  flex-direction: column
-  align-items: center
-
-  .company
-    padding: 20px 50px
-    height: 100%
-
-  .company > h1
-    place-self: start
-    font-size: 50px
-    text-transform: capitalize
-    margin-bottom: 10px
-  
-  img
-    width: 101%
-
-  .about-and-hire-story
-    div
-      margin-top: 50px
-
-    h1
-      font-size: 25px
-      font-family: 'avenir'
-      font-weight: 700
-    
-    p
-      margin-top: 10px
-      font-size: 17px
-      line-height: 1.5
-      font-weight: 300
-
-.left
-  color: black
-  background: white
-  padding-left: 130px
-  padding-top: 240px
-  
-  & > div
-    width: 500px
-
-  h1
-    font-size: 25px
-    margin-bottom: 7px
-    font-family: 'avenir'
-    font-weight: 900
-
-  h2
-    font-family: 'avenir'
-    font-weight: 500
-    font-size: 18px
-    margin-bottom: 45px
-  
-  p
-    font-size: 20px
-    font-weight: 300
-    line-height: 1.5
 
 #particles
   background: linear-gradient(0deg, #0F2027 0%, #203A43 50%, #2C5364 100%)
