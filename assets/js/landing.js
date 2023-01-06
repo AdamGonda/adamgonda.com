@@ -25,7 +25,12 @@ document.getElementById('dot').addEventListener('click', e => {
 			duration: 0.1,
 			rotate: 0,
 		})
-		tl.to('#logo', {
+		gsap.to('#help', {
+			opacity: 0,
+			duration: 0
+		})
+		tl
+		.to('#logo', {
 			y: -15,
 			duration: 0.1,
 			ease: 'back.out(5.7)',
