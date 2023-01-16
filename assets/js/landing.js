@@ -1,16 +1,13 @@
 const wiggle = gsap.timeline({ delay: 1.5, repeat: -1, repeatDelay: 3.5 })
 wiggle
 	.to('#dot', {
-		transform: 'translateY(10px)',
-		duration: 0.1,
+		translate: '0 15px',
+		duration: 0.2,
 	})
 	.to('#dot', {
-		transform: 'translateY(10px)',
-		duration: 0.1,
-	})
-	.to('#dot', {
-		transform: 'translateY(0)',
-		duration: 0.1,
+		translate: '0 0',
+		duration: 0.2,
+		delay: 0.1
 	})
 
 document.getElementById('dot').addEventListener('click', e => {
@@ -104,8 +101,8 @@ document.getElementById('dot').addEventListener('click', e => {
 		tl.to('#ux', {
 			opacity: 1,
 			y: 0,
-			onComplete: () =>
-				document.querySelector('.content').classList.add('totransparent'),
+			// onComplete: () =>
+				// document.querySelector('.content').classList.add('totransparent'),
 		})
 			.to('#des', {
 				y: -40,
@@ -123,13 +120,13 @@ document.getElementById('dot').addEventListener('click', e => {
 				opacity: 1,
 				y: 0,
 			})
-			.to('#logo-fun', {
-				opacity: 0,
-				y: -20,
-				delay: 1,
-				onComplete: () => {
-					document.getElementById('logo-fun').style.display = 'none'
-				},
-			})
+			// .to('#logo-fun', {
+			// 	opacity: 0,
+			// 	y: -20,
+			// 	delay: 1,
+			// 	onComplete: () => {
+			// 		document.getElementById('logo-fun').style.display = 'none'
+			// 	},
+			// })
 	}
 })
