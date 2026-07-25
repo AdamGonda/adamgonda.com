@@ -1,0 +1,27 @@
+export function SiteFooter() {
+  return (
+    <footer>
+      <a
+        href="https://github.com/AdamGonda"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span>Github</span>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/adam-gonda/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span>LinkedIn</span>
+      </a>
+      <a
+        href="https://www.retrogameapi.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span>Retro game API</span>
+      </a>
+    </footer>
+  );
+}
