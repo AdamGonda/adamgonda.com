@@ -3,7 +3,6 @@ import Script from "next/script";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { ScrollProgress } from "@/components/ScrollProgress";
-import { EasterEggHint } from "@/components/EasterEggHint";
 import "@/sass/main.sass";
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function RootLayout({
         <ScrollProgress />
         <div className="content">{children}</div>
         <SiteFooter />
-        <EasterEggHint />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=UA-178874876-1"
           strategy="afterInteractive"

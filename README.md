@@ -16,7 +16,6 @@ Open http://localhost:3000
 | `/` | Post list (page 1) |
 | `/blog/page/2` | Post list pagination |
 | `/blog/[slug]` | Post |
-| `/easter-egg` | Snake (random nav hint) |
 
 Posts: `content/blog/`. Styles: `sass/` (from the Jekyll blog era).
 

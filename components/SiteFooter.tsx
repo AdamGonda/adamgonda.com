@@ -15,13 +15,6 @@ export function SiteFooter() {
       >
         <span>LinkedIn</span>
       </a>
-      <a
-        href="https://www.retrogameapi.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span>Retro game API</span>
-      </a>
     </footer>
   );
 }
