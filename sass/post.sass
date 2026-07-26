@@ -72,17 +72,18 @@
       height: 2px
 
     pre
-      padding: 25px
-      border-radius: 5px
-      overflow: scroll
-
-    .highlighter-rouge,
-    ul
       margin-bottom: $spacing-s
+      border-radius: 5px
+      overflow: auto
+
+      code.hljs
+        padding: 25px
+        border-radius: 5px
 
 .post
   main
     ul
+      margin-bottom: $spacing-s
       padding-left: $spacing-ss
 
     li
@@ -122,9 +123,8 @@
 
 .post
   main
-    .language-md.highlighter-rouge
-      code
-        color: $colors-light-grey
+    code.language-md
+      color: $colors-light-grey
 
 .post
   .series-box
