@@ -1,0 +1,238 @@
+/* destyle + monokai in base so Tailwind utilities/components can override */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "../public/assets/css/destyle.css" layer(base);
+@import "../public/assets/css/monokai.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  --color-yellow: #f0c300;
+  --color-black: #222222;
+  --color-grey: #606060;
+  --color-light-grey: #e1dede;
+  --color-blue: #00b7d4;
+  --color-red: #ff1f15;
+  --color-white: whitesmoke;
+  --color-pnl-pink: #ed196e;
+  --color-cta: #ffbf09;
+  --color-quote: #eeeeee;
+
+  --font-body: "Roboto Slab", serif;
+  --font-sans: "Source Sans Pro", sans-serif;
+
+  --text-xs: 10px;
+  --text-s: 14px;
+  --text-m: 18px;
+  --text-l: 22px;
+  --text-xl: 30px;
+  --text-xxl: 45px;
+
+  --spacing-xxs: 5px;
+  --spacing-xs: 10px;
+  --spacing-ss: 20px;
+  --spacing-s: 30px;
+  --spacing-sm: 45px;
+  --spacing-m: 60px;
+  --spacing-l: 100px;
+  --spacing-xl: 150px;
+  --spacing-xxl: 250px;
+
+  --breakpoint-xxs: 350px;
+  --breakpoint-xs: 450px;
+  --breakpoint-ss: 550px;
+  --breakpoint-s: 680px;
+  --breakpoint-m: 855px;
+  --breakpoint-l: 1032px;
+  --breakpoint-xl: 1182px;
+  --breakpoint-xxl: 1382px;
+
+  --shadow-float: 9px 10px 17px 0px rgba(0, 0, 0, 0.09);
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-white);
+  }
+}
+
+/* Markdown / content HTML classes — utilities can't wrap rehype output */
+@layer components {
+  .floating-image {
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: var(--shadow-float);
+  }
+
+  .post h1 {
+    font-family: var(--font-sans);
+  }
+
+  .post > p,
+  .post header p {
+    font-weight: 300;
+  }
+
+  .post header {
+    margin-bottom: var(--spacing-s);
+  }
+
+  .post header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--spacing-s);
+  }
+
+  .post header section h1 {
+    font-size: var(--text-xxl);
+    margin-bottom: var(--spacing-xs);
+    font-weight: bold;
+  }
+
+  @media (max-width: 680px) {
+    .post header section h1 {
+      font-size: var(--text-xl);
+    }
+  }
+
+  .post header section li {
+    font-family: var(--font-sans);
+  }
+
+  .post header img {
+    width: 100%;
+  }
+
+  .post > main {
+    padding: 0 var(--spacing-m);
+    font-size: var(--text-m);
+  }
+
+  @media (max-width: 550px) {
+    .post > main {
+      padding: 0;
+    }
+  }
+
+  .post > main h1 {
+    margin-top: var(--spacing-l);
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--text-xl);
+    font-weight: bold;
+    line-height: initial;
+  }
+
+  @media (max-width: 680px) {
+    .post > main h1 {
+      margin-top: var(--spacing-m);
+      font-size: var(--text-l);
+    }
+  }
+
+  .post > main p {
+    margin-bottom: var(--spacing-s);
+    font-size: var(--text-l);
+    line-height: initial;
+  }
+
+  @media (max-width: 680px) {
+    .post > main p {
+      font-size: var(--text-m);
+    }
+  }
+
+  .post > main a {
+    position: relative;
+  }
+
+  .post > main a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-black);
+    height: 2px;
+  }
+
+  .post > main pre {
+    margin-bottom: var(--spacing-s);
+    border-radius: 5px;
+    overflow: auto;
+  }
+
+  .post > main pre code.hljs {
+    padding: 25px;
+    border-radius: 5px;
+  }
+
+  .post > main ul {
+    margin-bottom: var(--spacing-s);
+    padding-left: var(--spacing-ss);
+  }
+
+  .post > main li {
+    position: relative;
+    margin-top: var(--spacing-xs);
+    font-size: var(--text-l);
+  }
+
+  @media (max-width: 680px) {
+    .post > main li {
+      font-size: var(--text-m);
+    }
+  }
+
+  .post > main li::before {
+    position: absolute;
+    content: ">";
+    top: 0;
+    left: calc(-1 * var(--spacing-ss));
+  }
+
+  .post blockquote {
+    padding: var(--spacing-ss) 0;
+    padding-left: var(--spacing-s);
+    margin-bottom: var(--spacing-s);
+    position: relative;
+    background-color: var(--color-quote);
+  }
+
+  .post blockquote::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: var(--spacing-xs);
+    background-color: var(--color-yellow);
+  }
+
+  .post blockquote p {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .post > main code.language-md {
+    color: var(--color-light-grey);
+  }
+
+  .post .series-box {
+    padding: var(--spacing-ss);
+    border: 2px dashed var(--color-black);
+  }
+
+  .post-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--spacing-s);
+    position: relative;
+  }
+
+  .post-image img {
+    margin-top: 0;
+    width: 100%;
+  }
+}

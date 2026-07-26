@@ -9,12 +9,15 @@ export function SnakeGame() {
   const key = pathname;
 
   return (
-    <div id="easter-egg">
-      <div id="container" />
-      <div id="tips-and-control">
+    <div id="easter-egg" className="flex flex-col items-center">
+      <div id="container" className="[&_canvas]:border-[5px] [&_canvas]:border-black" />
+      <div
+        id="tips-and-control"
+        className="flex flex-col items-center pt-s font-bold"
+      >
         <h3>Use the arrows</h3>
         <span>
-          <span className="power-by">Powered by </span>
+          <span className="text-xs">Powered by </span>
           <a
             target="_blank"
             rel="noopener noreferrer"

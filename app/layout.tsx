@@ -3,7 +3,7 @@ import Script from "next/script";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { ScrollProgress } from "@/components/ScrollProgress";
-import "@/sass/main.sass";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Adam Gonda",
@@ -31,13 +31,13 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap"
           rel="stylesheet"
         />
-        <link rel="stylesheet" href="/assets/css/destyle.css" />
-        <link rel="stylesheet" href="/assets/css/monokai.css" />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <SiteNav />
         <ScrollProgress />
-        <div className="content">{children}</div>
+        <div className="min-h-[calc(100vh-135px)] px-s py-sm min-s:max-m:px-m min-m:max-xl:px-l min-xl:px-[20vw]">
+          {children}
+        </div>
         <SiteFooter />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=UA-178874876-1"

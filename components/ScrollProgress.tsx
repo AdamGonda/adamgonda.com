@@ -41,5 +41,7 @@ export function ScrollProgress() {
     };
   }, []);
 
-  return <div className="scroll-progressbar" />;
+  return (
+    <div className="scroll-progressbar sticky top-0 z-10 hidden h-[4px] bg-blue" />
+  );
 }

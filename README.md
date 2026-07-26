@@ -17,7 +17,7 @@ Open http://localhost:3000
 | `/blog/page/2` | Post list pagination |
 | `/blog/[slug]` | Post |
 
-Posts: `content/blog/`. Styles: `sass/` (from the Jekyll blog era).
+Posts: `content/blog/`. Styles: Tailwind (`app/globals.css`).
 
 ## Deploy
 

@@ -1,19 +1,21 @@
 export function SiteFooter() {
   return (
-    <footer>
+    <footer className="flex h-[50px] flex-row items-center justify-center bg-black text-s text-[white]">
       <a
         href="https://github.com/AdamGonda"
         target="_blank"
         rel="noopener noreferrer"
+        className="underline"
       >
-        <span>Github</span>
+        <span className="mx-xs">Github</span>
       </a>
       <a
         href="https://www.linkedin.com/in/adam-gonda/"
         target="_blank"
         rel="noopener noreferrer"
+        className="underline"
       >
-        <span>LinkedIn</span>
+        <span className="mx-xs">LinkedIn</span>
       </a>
     </footer>
   );
