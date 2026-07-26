@@ -21,4 +21,4 @@ Posts: `content/blog/`. Styles: `sass/` (from the Jekyll blog era).
 
 ## Deploy
 
-Netlify: `npm run build` via `@netlify/plugin-nextjs`.
+Vercel: import the repo; framework preset is Next.js (`npm run build`).
