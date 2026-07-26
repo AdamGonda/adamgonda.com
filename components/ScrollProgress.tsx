@@ -2,6 +2,9 @@
 
 import { useEffect } from "react";
 
+/** Matches `--breakpoint-l` in app/globals.css @theme. */
+const BREAKPOINT_L = 1032;
+
 /** Sticky post reading progress bar (matches 5b6bb88 manageScrollProgress.js). */
 export function ScrollProgress() {
   useEffect(() => {
@@ -27,7 +30,7 @@ export function ScrollProgress() {
       const post = document.getElementsByClassName("post")[0];
       const show =
         navigation.offsetHeight - document.documentElement.scrollTop <= 0;
-      const isMobile = window.innerWidth < 1000;
+      const isMobile = window.innerWidth < BREAKPOINT_L;
       progressBar.style.display = show && post && !isMobile ? "block" : "none";
     };
 
@@ -42,6 +45,6 @@ export function ScrollProgress() {
   }, []);
 
   return (
-    <div className="scroll-progressbar sticky top-0 z-10 hidden h-[4px] bg-blue" />
+    <div className="scroll-progressbar sticky top-0 z-10 hidden h-progress bg-blue" />
   );
 }

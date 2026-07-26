@@ -38,7 +38,7 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   return (
-    <main className="post" style={{ overflow: "visible" }}>
+    <main className="post overflow-visible">
       <header>
         <section>
           <h1>{post.title}</h1>
@@ -47,7 +47,7 @@ export default async function BlogPostPage({ params }: Props) {
             <span> - </span>
             {post.minutes} min read
             <span> - </span>
-            <span style={{ display: "inline-block" }}>
+            <span className="inline-block">
               <Tags tags={post.tags} />
             </span>
           </div>

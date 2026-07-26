@@ -13,8 +13,6 @@
   --color-blue: #00b7d4;
   --color-red: #ff1f15;
   --color-white: whitesmoke;
-  --color-pnl-pink: #ed196e;
-  --color-cta: #ffbf09;
   --color-quote: #eeeeee;
 
   --font-body: "Roboto Slab", serif;
@@ -36,6 +34,9 @@
   --spacing-l: 100px;
   --spacing-xl: 150px;
   --spacing-xxl: 250px;
+  --spacing-thumb: 150px;
+  --spacing-footer: 50px;
+  --spacing-progress: 4px;
 
   --breakpoint-xxs: 350px;
   --breakpoint-xs: 450px;
@@ -45,6 +46,8 @@
   --breakpoint-l: 1032px;
   --breakpoint-xl: 1182px;
   --breakpoint-xxl: 1382px;
+
+  --radius-sm: 5px;
 
   --shadow-float: 9px 10px 17px 0px rgba(0, 0, 0, 0.09);
 }
@@ -60,7 +63,7 @@
 @layer components {
   .floating-image {
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     box-shadow: var(--shadow-float);
   }
 
@@ -90,7 +93,7 @@
     font-weight: bold;
   }
 
-  @media (max-width: 680px) {
+  @media (max-width: theme(--breakpoint-s)) {
     .post header section h1 {
       font-size: var(--text-xl);
     }
@@ -109,7 +112,7 @@
     font-size: var(--text-m);
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: theme(--breakpoint-ss)) {
     .post > main {
       padding: 0;
     }
@@ -123,7 +126,7 @@
     line-height: initial;
   }
 
-  @media (max-width: 680px) {
+  @media (max-width: theme(--breakpoint-s)) {
     .post > main h1 {
       margin-top: var(--spacing-m);
       font-size: var(--text-l);
@@ -136,7 +139,7 @@
     line-height: initial;
   }
 
-  @media (max-width: 680px) {
+  @media (max-width: theme(--breakpoint-s)) {
     .post > main p {
       font-size: var(--text-m);
     }
@@ -158,13 +161,13 @@
 
   .post > main pre {
     margin-bottom: var(--spacing-s);
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     overflow: auto;
   }
 
   .post > main pre code.hljs {
     padding: 25px;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
   }
 
   .post > main ul {
@@ -178,7 +181,7 @@
     font-size: var(--text-l);
   }
 
-  @media (max-width: 680px) {
+  @media (max-width: theme(--breakpoint-s)) {
     .post > main li {
       font-size: var(--text-m);
     }

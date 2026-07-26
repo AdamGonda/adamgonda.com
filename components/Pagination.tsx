@@ -12,7 +12,7 @@ export function Pagination({ page, totalPages }: Props) {
 
   return (
     <div className="flex justify-center">
-      <div>
+      <div className="flex items-center gap-xs">
         {page > 1 && (
           <Link id="prev-btn" href={hrefFor(page - 1)} className="text-s">
             Prev
@@ -24,14 +24,14 @@ export function Pagination({ page, totalPages }: Props) {
             return (
               <span
                 key={n}
-                className="mx-[2px] bg-black px-[3px] py-px text-white"
+                className="bg-black px-[3px] py-px text-white"
               >
                 {n}
               </span>
             );
           }
           return (
-            <Link key={n} className="mx-[2px]" href={hrefFor(n)}>
+            <Link key={n} href={hrefFor(n)}>
               {n}
             </Link>
           );

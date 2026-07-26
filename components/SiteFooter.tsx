@@ -1,6 +1,6 @@
 export function SiteFooter() {
   return (
-    <footer className="flex h-[50px] flex-row items-center justify-center bg-black text-s text-[white]">
+    <footer className="flex h-footer flex-row items-center justify-center bg-black text-s text-white">
       <a
         href="https://github.com/AdamGonda"
         target="_blank"

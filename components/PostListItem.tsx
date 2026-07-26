@@ -40,7 +40,7 @@ export function PostListItem({ post, isNew }: Props) {
           </div>
         </section>
         <img
-          className="floating-image hidden size-[150px] max-h-[150px] min-h-[150px] max-w-[150px] min-w-[150px] ss:block"
+          className="floating-image hidden size-thumb ss:block"
           src={`/assets/images/${post.date}/thumbnail.jpg`}
           alt=""
         />

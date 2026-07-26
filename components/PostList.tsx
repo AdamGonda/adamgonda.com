@@ -8,7 +8,7 @@ export function PostList({ page = 1 }: Props) {
   const { posts, page: current, totalPages } = getPostsPage(page);
 
   return (
-    <main style={{ overflow: "visible" }}>
+    <main className="overflow-visible">
       <ul>
         {posts.map((post, idx) => (
           <PostListItem

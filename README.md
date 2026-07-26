@@ -17,7 +17,7 @@ Open http://localhost:3000
 | `/blog/page/2` | Post list pagination |
 | `/blog/[slug]` | Post |
 
-Posts: `content/blog/`. Styles: Tailwind (`app/globals.css`).
+Posts: `content/blog/`. Styles: Tailwind `@theme` in `app/globals.css` — see [DESIGN.md](DESIGN.md).
 
 ## Deploy
 
